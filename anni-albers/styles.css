@@ -24,18 +24,18 @@ p {
 
 }
 #row2 p {
- margin-left: calc(100/6);   
+ margin-left: calc(100%/6);   
 }
 #row3 p{
-margin-left: calc(100*2/6)
+margin-left: calc(100%*2/6)
 }
 #row4 p{
 margin-left: 50%;}
 
 #row5 p{
-margin-left: calc(100*5/6);
+margin-left: calc(100%*5/6);
 }
 
 #row6 p{
-margin-left: calc(100/6);
+margin-left: calc(100%/6);
 }
