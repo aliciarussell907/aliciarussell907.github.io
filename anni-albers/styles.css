@@ -19,7 +19,7 @@ p {
     font-size: 2rem;
     line-height: 2rem;
     font-style: italic;
-    margin-left: calc(100*2/6)
+    margin-left: calc(100*2/6)%;
 
 }
 #row2 p {
