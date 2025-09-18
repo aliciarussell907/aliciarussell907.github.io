@@ -69,7 +69,7 @@ p.callout {
 #secondLayout main {
     display: grid;
     grid-template-columns: repeat(6, calc(100% / 6) );
-    grid-template-rows: repeat(13, auto);
+    grid-template-rows: repeat(15, auto);
     grid-template-areas:
         'title title title title title title'
         '. p1 p1 . . .'
@@ -83,11 +83,14 @@ p.callout {
         '. p9 p9 c4 c4 .'
         '. . p10 p10 . .'
         '. . . . p11 p11'
-        'p12 p12 . . . .';
+        't2 t2 . . . .'
+        'p12 p12 . . . .'
+        '. p13 p13 . . .';
 }
 
 /* assigning grid area names to DOM elements */
 #secondLayout #title { grid-area: title; }
+#secondLayout #title2 { grid-area: t2; }
 #secondLayout #para1 { grid-area: p1; }
 #secondLayout #para2 { grid-area: p2; }
 #secondLayout #para3 { grid-area: p3; }
@@ -100,6 +103,7 @@ p.callout {
 #secondLayout #para10 { grid-area: p10; }
 #secondLayout #para11 { grid-area: p11; }
 #secondLayout #para12 { grid-area: p12; }
+#secondLayout #para13 { grid-area: p13; }
 #secondLayout #callout1 { grid-area: c1; }
 #secondLayout #callout2 { grid-area: c2; }
 #secondLayout #callout3 { grid-area: c3; }
