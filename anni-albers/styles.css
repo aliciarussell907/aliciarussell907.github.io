@@ -28,5 +28,6 @@ p {
 }
 
 #row3 p {
- margin-left: 16.67%;   
+ margin-left: calc(100/6);
+ width: 33.33%;
 }
