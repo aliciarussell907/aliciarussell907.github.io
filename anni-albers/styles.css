@@ -19,4 +19,8 @@ p.callout{
     font-size: 2rem;
     line-height: auto;
     font-style: italic;
+    
+}
+#row2 p {
+ margin-left: 50%;   
 }
