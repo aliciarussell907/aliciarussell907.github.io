@@ -15,11 +15,12 @@ p {
     line-height: 2rem;
     width: 50%;
 }
-p.callout{
+#callout p{
     font-size: 2rem;
-    line-height: auto;
+    line-height: 2rem;
     font-style: italic;
-    
+    margin-left: calc(100*2/6)
+
 }
 #row2 p {
  margin-left: 50%;   
