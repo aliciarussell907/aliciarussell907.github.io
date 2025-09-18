@@ -25,7 +25,8 @@ p.callout {
     font-style: italic;
     max-width: calc(100%*2/6);
     float: left;
-    text-align: center;
+    text-align: left;
+    padding-right: 2%;
 
 }
 #row1 p {
