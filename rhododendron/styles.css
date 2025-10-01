@@ -43,9 +43,7 @@ header {
 }
 
 div {
-    padding: 1em;
     overflow: hidden;
-    
 }
 
 h2 {
@@ -55,9 +53,12 @@ h2 {
     width: calc(100vw*5/6);
 }
 
+p {
+    margin-left: 1em;
+}
+
 img {
-    float: right;
-    max-width: calc(100vw*2/6); 
+    width: 95vw;   
 }
 
 /* PUT THE REST OF THE MOBILE BASELINE LAYOUT HERE */
@@ -84,6 +85,19 @@ header{
             width: 100%;
             font-size: 2.5em;
             overflow-wrap:break-word;
+    }
+
+    #sizePhoto {
+        margin: 0em 1em 0em 1em;
+        float: left;
+        max-width: calc(100vw*2/6)
+
+    }
+    #climatePhoto {
+        margin: 0em 1em 1em 1em;
+        float: right;
+        max-width: calc(100vw*2/6)
+
     }
 }
 @media screen and (min-width: 1024px) {
