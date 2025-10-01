@@ -42,6 +42,10 @@ header {
     
 }
 
+section {
+    margin: 1em;
+}
+
 h2 {
     color: darkslategray;
     font-size: 1.5em;
