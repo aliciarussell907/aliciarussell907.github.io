@@ -19,7 +19,7 @@ header {
     position: absolute;
     width: 100vw;
     height: 80vh;
-    background-image: url("Pacific\ Rhododendron\ 3\ -\ Gary\ Monroe-1.jpeg");
+    background-image: url("Pacific\ Rhododendron\ 2\ -\ Gary\ Monroe-1.jpeg");
     background-size: cover;
     background-position: center center;
 }
@@ -64,7 +64,7 @@ header{
         width: calc(100vw*4/6);
         left: calc(100vw*2/6);
         height: calc(100vw*2/6);
-        background-position: top;
+
     }
 
     #rhodieTitle {
@@ -87,7 +87,7 @@ header {
         width: 100vw;
         height: calc(100vw/3);
         left: 0;
-        background-position: center top;
+    
 }
        #rhodieTitle {
         width: 100vw;
