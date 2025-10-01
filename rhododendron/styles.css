@@ -12,7 +12,7 @@ body {
 
 header {
     width: 100vw;
-    height: 85vh;
+    height: 80vh;
 }
 
 #rhodiePicture {
@@ -43,7 +43,7 @@ header {
 }
 
 section {
-    margin: 1em;
+    padding: 1em;
 }
 
 h2 {
@@ -57,7 +57,10 @@ h2 {
 
 
 @media screen and (orientation: landscape) {
-#rhodiePicture {
+header{
+    max-height: 35vw;
+}
+    #rhodiePicture {
         width: calc(100vw*4/6);
         left: calc(100vw*2/6);
         height: calc(100vw*2/6);
@@ -77,7 +80,9 @@ h2 {
     }
 }
 @media screen and (min-width: 1024px) {
-
+header {
+    max-height: 45vw; 
+}
     #rhodiePicture {
         width: 100vw;
         height: calc(100vw/3);
@@ -102,5 +107,3 @@ h2 {
         width: 100vw;
        
        }
-    
-}
