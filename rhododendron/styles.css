@@ -18,7 +18,7 @@ header {
 #rhodiePicture {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
     background-image: url("Pacific\ Rhododendron\ 3\ -\ Gary\ Monroe-1.jpeg");
     background-size: cover;
     background-position: center center;
@@ -27,7 +27,7 @@ header {
 #rhodieTitle {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
 }
 
 #rhodieTitle h1 {
@@ -36,9 +36,29 @@ header {
     left: auto;
     background-color: darkslategrey;
     color: lightpink;
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
-    width: calc(100vw - 2em);
+    width: 66vw;
+    
 }
 
+/* PUT THE REST OF THE MOBILE BASELINE LAYOUT HERE */
 
+
+@media screen and (orientation: landscape) {
+#rhodiePicture {
+        width: calc(100vw*4/6);
+        left: calc(100vw*2/6);
+        background-position: top;
+    }
+
+    #rhodieTitle {
+        width: calc(100vw*2/6);
+        background-color: darkslategray; 
+    }
+
+        #rhodieTitle h1 {
+            width: 100%;
+            font-size: 2.5em;
+            overflow-wrap:break-word;
+    }
