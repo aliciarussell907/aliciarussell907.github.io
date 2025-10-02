@@ -20,12 +20,18 @@
             border-radius: 5px;
             background-color: ghostwhite;
         }
+         hr {
+            border: none;
+            height: 3px;
+            background-color: darkslateblue;
+            margin: 20px 0;
+        }
     </style>
 
 </head>
 
 <body>
-    <h1>Code Log 2: CSS Measuring Units</h1>
+    <h1>Code Log 3: CSS Media Queries</h1>
 
     <div class="text-box">
         <h2>How does a CSS media query work, and why is it useful?</h2>
@@ -45,15 +51,18 @@
             versus portrait. Maybe a header needs to be wider or shorter to look better in a landscape view versus a
             portrait view. This media query would allow the style to change depending on the orientation of the user's
             screen.
+            <hr>
         </p>
         <h3>"max-width"</h3>
         <p>Max-width can change the code and styles based on the width of the viewport (screen). Specifically, it will
             apply to all screen sizes below the determined threshold. This is most commonly used in the "desktop first"
             approach to responsive design.</p>
+            <hr>
         <h3>"hover"</h3>
         <p>Hover allows the user the ability to hover over an element. For example, a user could hover their mouse over
             a link and the link could change font color in response. This media query does require that the device has
             the ability to use some kind of pointing device.</p>
+            <hr>
         <h3>"and"</h3>
         <p>"And" in a media query allows the combination of media features. An example could be <textarea cols="50"
                 rows="2">@media screen and (width >= 600px) and (orientation: landscape)</textarea>. This would change
