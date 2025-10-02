@@ -97,13 +97,13 @@ img {
     }
 
     #sizePhoto {
-        margin: 0em 1em 0em 1em;
+        margin: 0em 1em 0em 0em;
         float: left;
         max-width: calc(100vw*2/6)
     }
 
     #climatePhoto {
-        margin: 0em 1em 1em 1em;
+        margin: 0em 0em 1em 1em;
         float: right;
         max-width: calc(100vw*2/6)
     }
