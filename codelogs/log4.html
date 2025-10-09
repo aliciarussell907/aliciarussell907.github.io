@@ -41,6 +41,18 @@
             border-style: double;
             border-width: 2em;
         }
+
+        .named-example {
+            color: purple;
+            background-color: linen;
+            max-width: 50%;
+        }
+
+        .hexAA-example {
+            color: #80008050;
+            background-color: #FAF0E6FF;
+            max-width: 50%;
+        }
     </style>
 
 </head>
@@ -79,10 +91,11 @@
             <li>Named</li>
             <li>Hexadecimal</li>
             <li>RGB</li>
+            <li>Hexadecimal colors with transparency</li>
             <li>HSLA</li>
             <li>HSL colors</li>
             <li>RGBA</li>
-            <li>Hexadecimal colors with transparency</li>
+
         </ul>
         </p>
 
@@ -93,20 +106,37 @@
                 href="https://www.w3schools.com/cssref/css_colors.php"> W3Schools</a>. I used a named color in my <span
                 class="purple">purple</span> text example using <textarea cols="25" rows="1">color: purple;</textarea>
         </p>
+        <div class="named-example">
+            This text is purple. The background is linen.
+        </div>
 
         <h4>Hexadecimal</h4>
         <p>A hexidecimal color uses the format #RRGGBB where RR is red, GG is green, and BB is blue. Each of these
             values can be set between 00 (lowest value) to FF (highest value). To reach the same color value as the
             named color "purple", we could instead use the hexidecimal code <textarea cols="15"
                 rows="1">#800080</textarea>. </p>
+        <div class="named-example">
+            This text is #800080. The background is #FAF0E6.
+        </div>
 
         <h4>RGB</h4>
         <p>A RGB color uses the format <textarea cols="25" rows="1">rgb(red, green, blue)</textarea>. Each parameter
             (red, green, and blue) is given a different value to indicate the intensity. This value can use integers
-            from 0 to 255 or a percentage from 0% to 100%. To reach the same color value as the named color "purple", we could instead use the RGB format <textarea cols="25" rows="1">rgb(128, 0, 128)</textarea>.</p>
+            from 0 to 255 or a percentage from 0% to 100%. To reach the same color value as the named color "purple", we
+            could instead use the RGB format <textarea cols="25" rows="1">rgb(128, 0, 128)</textarea>.</p>
+      <div class="named-example">
+            This text is rgb(128, 0, 128). The background is rgb(250, 240, 230).
+        </div>
 
-        <h4>HSLA</h4>
-        <p>text here</p>
+
+        <h4>Hexadecimal colors with transparency</h4>
+        <p>This uses the same premise as hexidecimal colors, but with an added value for the transparency. The format
+            for this is the #RRGGBBAA where the "AA" (alpha value) indicates the transparency and must be set to a value between
+            00 (lowest value) and FF (highest value). An example would be to use the same value as the named color "purple" with 50% transparency like this <textarea cols="15"
+                rows="1">#80008050</textarea>.</p>
+        <div class="hexAA-example">
+            This text is #80008050. The background is #FAF0E6FF.
+        </div>
     </div>
 
 
