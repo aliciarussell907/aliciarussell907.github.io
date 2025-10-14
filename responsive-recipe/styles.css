@@ -8,6 +8,8 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     background-color: #dae3ec;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -15,34 +17,27 @@ header {
 
 #breadTitle h1 {
     font-family: Bradley Han2.5d, cursive;
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
-    padding: 0em;
-    margin: 0em;
     color: #4b484f;
+    padding-top: 0.3em;
+    margin: 0;
 }
 #tagline {
     font-family: Arial, sans-serif;
-    font-size: 0.5em;
-    text-align: left;
-    max-width: calc(100vw*4/6);
-    margin-left: 1em;
-    margin-top: 0em;
+    font-size: 0.2em;
+    max-width: calc(100vw*3/6);
+    margin: 1em;
+    padding: 0.5em;
     color: #36393e;
-    border-right: dotted;
     border-left: dotted;
-    padding-left: 1em;
     border-width: 0.2em;
-}
-#breadpic {
     width: 100vw;
-    height: auto;
-
 }
 
 #authorDate{
     width: 100vw;
-    font-size: 0.45em;
+    font-size: 0.1em;
     display: inline-flex;
     color: #36393e;
     border-bottom: outset;  
@@ -50,11 +45,11 @@ header {
 }
 
 #author {
-    margin-left: calc(100vw*2/6);
+    margin-left: calc(100vw*3/6);
 }
 
 #date {
-    margin-left: 3em;
+    margin-left: 5em;
 }
 
 #ingredients {
