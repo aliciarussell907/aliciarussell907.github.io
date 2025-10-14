@@ -28,6 +28,7 @@ header {
 #tagline {
     font-size: 0.5em;
     font-style: italic;
+    text-align: left;
 }
 #breadpic {
     position: absolute;
