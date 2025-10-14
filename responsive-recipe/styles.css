@@ -65,3 +65,10 @@ header {
     Font-size: .8em;
     border-style: solid;
 }
+
+#time #timeSection {
+    border-style:dashed;
+    border-width: 0.5px;
+    margin-bottom: 0.5em;
+
+}
