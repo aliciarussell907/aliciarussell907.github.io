@@ -32,5 +32,14 @@ header {
 }
 
 #authorDate{
-    font-size: 0.6em;    
+    font-size: 0.6em;
+    display: inline-flex;   
+}
+
+#author {
+    margin-left: calc(100vw*2/6)
+}
+
+#date {
+    margin-left: calc(100vw*4/6)
 }
