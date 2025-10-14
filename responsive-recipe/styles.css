@@ -15,6 +15,15 @@ header {
     height: 80vh;
 }
 
+#breadTitle {
+    position: absolute;
+    width: 100vw;
+    height: 75vh;
+}
+#breadTitle h1 {
+    font-size: 2em;
+    text-align: center;
+}
 #breadpic {
     position: absolute;
     width: 100vw;
