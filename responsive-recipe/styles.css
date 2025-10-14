@@ -1,10 +1,10 @@
 /* mobile-first design for favorite recipe layout */
 
 body {
-    padding: 0;
-    margin: 0;
     background-color: ivory;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -12,7 +12,7 @@ header {
 }
 
 #breadTitle h1 {
-    font-family: Bradley Hand, cursive;
+    font-family: Bradley Han2.5d, cursive;
     font-size: 3em;
     text-align: center;
     padding: 0em;
@@ -54,4 +54,14 @@ header {
 #ingredients h2 {
     text-align: center;
     font-size: 1.25em;
+}
+
+#time {
+    float: left;
+    text-align: center;
+    padding: 0.5em;
+    margin: 1em;
+    width: calc(100vw*2/6);
+    Font-size: .8em;
+    border-style: solid;
 }
