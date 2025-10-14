@@ -37,9 +37,9 @@ header {
 }
 
 #author {
-    margin-left: calc(100vw*2/6)
+    margin-left: calc(100vw*2/6);
 }
 
 #date {
-    margin-left: calc(100vw*4/6)
+    margin-left: 3em;
 }
