@@ -27,8 +27,6 @@ header {
 #breadpic {
     position: absolute;
     width: 100vw;
-    height: 80vh;
+    height: auto;
     background-image: url("debbie-widjaja-H_PXix_4Bwc-unsplash.jpg");
-    background-size: cover;
-    background-position: center center;
 }
