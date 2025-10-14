@@ -58,18 +58,30 @@ header {
 
 #time {
     float: left;
-    text-align: center;
+    text-align: left;
     padding: 0.6em;
-    margin: 10vw;
-    width: 23vw;
-    Font-size: .3em;
+    margin-left: 1vw;
+    width: calc(100vw*2/6);
+    Font-size: .6em;
+    font-family: Courier New, monospace;
     border-style: solid;
 }
 
 #time #timeSection {
-    line-height: 1em;
+    line-height: 2em;
     border-style:dashed;
     border-width: 0.5px;
     margin-bottom: 0.5em;
     padding: 1px;
+}
+
+#time strong {
+    font-size: 1.2em;
+    
+}
+
+#time #yield {
+    font-family: Bradley Han2.5d, cursive;
+    font-size: 1.2em;
+    text-align: center;
 }
