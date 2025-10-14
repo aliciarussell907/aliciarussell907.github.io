@@ -59,16 +59,17 @@ header {
 #time {
     float: left;
     text-align: center;
-    padding: 0.5em;
-    margin: 1em;
-    width: calc(100vw*2/6);
-    Font-size: .8em;
+    padding: 0.6em;
+    margin: 10vw;
+    width: 23vw;
+    Font-size: .3em;
     border-style: solid;
 }
 
 #time #timeSection {
+    line-height: 1em;
     border-style:dashed;
     border-width: 0.5px;
     margin-bottom: 0.5em;
-
+    padding: 1px;
 }
