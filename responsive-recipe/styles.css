@@ -1,13 +1,10 @@
 /* mobile-first design for favorite recipe layout */
 
-* {
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS', Arial, sans-serif
-}
 
 body {
     padding: 0;
     margin: 0;
+    background-color: wheat;
 }
 
 header {
@@ -34,7 +31,4 @@ header {
     position: absolute;
     width: 100vw;
     height: auto;
-    background-image: url("debbie-widjaja-H_PXix_4Bwc-unsplash.jpg");
-    background-size: cover;
-    background-position: center center;
 }
