@@ -31,12 +31,6 @@ header {
 
 }
 
-#author {
-    font-size: 0.75em;
-    margin-left: calc(100vw*2/6)
-}
-
-#date {
-    font-size: 0.75em;
-    margin-left: calc(100vw*4/6)
+#authorDate{
+    font-size: 0.6em;    
 }
