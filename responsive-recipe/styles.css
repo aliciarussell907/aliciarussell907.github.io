@@ -18,14 +18,22 @@ header {
 #breadTitle {
     position: absolute;
     width: 100vw;
-    height: 75vh;
+    height: auto;
+    margin-bottom: 1em;
 }
 #breadTitle h1 {
     font-size: 2em;
     text-align: center;
 }
+#tagline {
+    font-size: 0.5em;
+    font-style: italic;
+}
 #breadpic {
     position: absolute;
     width: 100vw;
     height: auto;
+    background-image: url("debbie-widjaja-H_PXix_4Bwc-unsplash.jpg");
+    background-size: contain;
+    background-position: center center;
 }
