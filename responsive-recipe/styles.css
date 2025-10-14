@@ -1,10 +1,9 @@
 /* mobile-first design for favorite recipe layout */
 
-
 body {
     padding: 0;
     margin: 0;
-    background-color: floralwhite;
+    background-color: ivory;
 }
 
 header {
@@ -12,14 +11,15 @@ header {
 }
 
 #breadTitle h1 {
+    font-family: Brush Script MT, cursive;
     font-size: 3em;
     text-align: center;
     padding: 0em;
     margin: 0em;
 }
 #tagline {
+    font-family: Arial, sans-serif;
     font-size: 0.5em;
-    font-style: italic;
     text-align: left;
     max-width: calc(100vw*4/6);
     margin-left: 1em;
