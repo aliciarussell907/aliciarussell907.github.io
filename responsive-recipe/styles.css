@@ -127,3 +127,8 @@ header {
     text-align: center;
     
 }
+
+footer {
+    text-align: right;
+    font-size: 0.5em;
+}
