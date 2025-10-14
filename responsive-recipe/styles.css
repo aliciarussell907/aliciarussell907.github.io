@@ -2,13 +2,15 @@
 
 body {
     background-color: ivory;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
     width: 100vw;
+    background-color: #dae3ec;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 #breadTitle h1 {
@@ -17,6 +19,7 @@ header {
     text-align: center;
     padding: 0em;
     margin: 0em;
+    color: #4b484f;
 }
 #tagline {
     font-family: Arial, sans-serif;
@@ -25,6 +28,11 @@ header {
     max-width: calc(100vw*4/6);
     margin-left: 1em;
     margin-top: 0em;
+    color: #36393e;
+    border-right: dotted;
+    border-left: dotted;
+    padding-left: 1em;
+    border-width: 0.2em;
 }
 #breadpic {
     width: 100vw;
@@ -33,8 +41,12 @@ header {
 }
 
 #authorDate{
+    width: 100vw;
     font-size: 0.45em;
-    display: inline-flex;   
+    display: inline-flex;
+    color: #36393e;
+    border-bottom: outset;  
+    border-width: 0.3em;
 }
 
 #author {
@@ -46,14 +58,15 @@ header {
 }
 
 #ingredients {
-    width: 50vw;
+    width: 48vw;
     margin-left: 50vw;
-    line-height: 2em;
+    line-height: 1.5em;
+    border-left: dotted; 
 }
 
 #ingredients h2 {
     text-align: center;
-    font-size: 1.25em;
+    font-size: 2em;
 }
 
 #time {
@@ -81,7 +94,36 @@ header {
 }
 
 #time #yield {
-    font-family: Bradley Han2.5d, cursive;
     font-size: 1.2em;
     text-align: center;
+}
+
+#directions{
+    border-top: dotted;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
+#directions h2 {
+    font-size: 2.5em;
+}
+
+#directions li {
+    padding: 1em;
+    margin-left: 
+}
+
+#notes {
+    margin-left: calc(100vw/6);
+    margin-right: calc(100vw/6);
+    padding: 0em 1em 0em 1em;
+    border: solid;
+    line-height: 1 em;
+}
+
+#notes h2 {
+    font-size: 1.5em;
+    border-bottom: dotted;
+    text-align: center;
+    
 }
