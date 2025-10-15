@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     max-width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header {
@@ -25,6 +25,7 @@ header {
     padding-top: 0.3em;
     margin: 0;
 }
+
 #tagline {
     font-family: Arial, sans-serif;
     font-size: 0.2em;
@@ -36,12 +37,12 @@ header {
     width: 100vw;
 }
 
-#authorDate{
+#authorDate {
     width: 100vw;
     font-size: 0.1em;
     display: inline-flex;
     color: #36393e;
-    border-bottom: outset;  
+    border-bottom: outset;
     border-width: 0.3em;
 }
 
@@ -57,7 +58,7 @@ header {
     width: 48vw;
     margin-left: 50vw;
     line-height: 1.5em;
-    border-left: dotted; 
+    border-left: dotted;
 }
 
 #ingredients h2 {
@@ -78,7 +79,7 @@ header {
 
 #time #timeSection {
     line-height: 2em;
-    border-style:dashed;
+    border-style: dashed;
     border-width: 0.5px;
     margin-bottom: 0.5em;
     padding: 1px;
@@ -86,7 +87,7 @@ header {
 
 #time strong {
     font-size: 1.2em;
-    
+
 }
 
 #time #yield {
@@ -94,7 +95,7 @@ header {
     text-align: center;
 }
 
-#directions{
+#directions {
     border-top: dotted;
     line-height: 1.5em;
     font-size: 1.2em;
@@ -106,7 +107,7 @@ header {
 
 #directions li {
     padding: 1em;
-    margin-left: 
+    margin-left:
 }
 
 #notes {
@@ -121,7 +122,7 @@ header {
     font-size: 1.5em;
     border-bottom: dotted;
     text-align: center;
-    
+
 }
 
 footer {
@@ -133,120 +134,139 @@ footer {
 
 @media screen and (min-width: 1024px) {
 
-header {
-    display: grid;
-    grid-template-columns: repeat(6, calc(100vw/6) );
-    grid-template-rows: repeat(4, minmax(5vh, 8vh));
-    grid-template-areas:
-        'title title title p p p'
-        'ad ad . p p p'
-        't t . p p p'
-        '. . . . . .';
-    height: 35vh;
-}
+    header {
+        display: grid;
+        grid-template-columns: repeat(6, calc(100vw/6));
+        grid-template-rows: repeat(4, minmax(5vh, 8vh));
+        grid-template-areas:
+            'title title title p p p'
+            'ad ad . p p p'
+            't t . p p p'
+            '. . . . . .';
+        height: 35vh;
+    }
 
-/* assigning grid area names */
-#breadTitle { grid-area: title; }
-#tagline {grid-area: t; }
-#authorDate {grid-area: ad; }
-#breadpic {grid-area: p;}
-/* ************************ */
+    /* assigning grid area names */
+    #breadTitle {
+        grid-area: title;
+    }
 
-#breadTitle {
-    font-size: 2vw;
-    text-align: left;
-        }
-    
-#breadpic {
-    width: calc(100vw*4/6);
-    height: 80vh;
-    object-fit: cover;
-    object-position: center right; 
-}
-    
-#tagline {
-    font-size: 1.5vw;
-    width: calc(100vw*2/6);
-    margin: 0;
-    margin-left: 1vw;
-    border: none;
-    text-align: center;
-    line-height: 1.5em;
-        }
+    #tagline {
+        grid-area: t;
+    }
 
-#authorDate{
-    width: calc(100vw*2/6);
-    font-size: 0.6vw;
-    margin-left: 2vw;
-    margin-top: 5vh;
-    border: none;
-    max-height: 5vh;
-        }
+    #authorDate {
+        grid-area: ad;
+    }
 
-#author {
-    margin-left: 0;
-        }
-    
-#ingredients {
-    width: calc(100vw*2/6);
-    margin-left: calc(100vw/6);
-    line-height: 7.5vh;
-}
+    #breadpic {
+        grid-area: p;
+    }
 
-#ingredients h2 {
-    text-align: center;
-    font-size: 5vh;
-    text-align: left;
-    margin-left: 1vw;
-}
+    /* ************************ */
 
-#time {
-    float: left;
-    text-align: left;
-    padding: 0.6em;
-    margin-left: 1vw;
-    width: 13vw;
-    Font-size: 0.8vw;
-    font-family: Courier New, monospace;
-    border-style: solid;
-}
+    #breadTitle {
+        font-size: 2vw;
+        text-align: left;
+    }
 
-#time strong {
-    font-size: 1.2vw;
-    
-}
+    #breadpic {
+        width: calc(100vw*4/6);
+        height: 86vh;
+        object-fit: cover;
+        object-position: center right;
+    }
 
-#time #yield {
-    font-size: 1.5vw;
-    text-align: center;
-}
+    #tagline {
+        font-size: 1.5vw;
+        width: calc(100vw*2/6);
+        margin: 0;
+        margin-left: 1vw;
+        border: none;
+        text-align: center;
+        line-height: 1.5em;
+    }
 
-#desktopDirections {
-    display: flex;
-    align-items: center;
-}
+    #authorDate {
+        width: calc(100vw*2/6);
+        font-size: 0.6vw;
+        margin-left: 2vw;
+        margin-top: 5vh;
+        border: none;
+        max-height: 5vh;
+    }
 
-#directions{
-    width: 50vw;
-    margin-left:calc(100vw/6);
-    border: dotted;
-    line-height: 5vh;
-    font-size: 2vw;
-}
+    #author {
+        margin-left: 0;
+    }
 
-#directions h2 {
-    font-size: 6vw;
-    
-}
+    #ingredients {
+        width: 30vw;
+        margin-left: calc(100vw/6);
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        line-height: 7.5vh;
+        border: dotted;
+    }
 
-#directions li {
-    padding: 3vw;
-}
+    #ingredients h2 {
+        text-align: center;
+        font-size: 5vh;
+        text-align: left;
+        margin-left: 1vw;
+    }
 
-#notes {
-    width: 14vw;
-}
+    #time {
+        float: left;
+        text-align: left;
+        padding: 0.6em;
+        margin-left: 1vw;
+        width: 13vw;
+        Font-size: 0.8vw;
+        font-family: Courier New, monospace;
+        border-style: solid;
+    }
 
-}
-    
+    #time strong {
+        font-size: 1.2vw;
+
+    }
+
+    #time #yield {
+        font-size: 1.5vw;
+        text-align: center;
+    }
+
+    #desktopDirections {
+        display: flex;
+        align-items: center;
+    }
+
+    #directions {
+        width: 50vw;
+        margin-left: calc(100vw/6);
+        border: dotted;
+        line-height: 5vh;
+        font-size: 2vw;
+    }
+
+    #directions h2 {
+        font-size: 6vw;
+
+    }
+
+    #directions li {
+        padding: 3vw;
+    }
+
+    #notes {
+        margin: 0 1vw 0 1vw;
+        width: 28vw;
+    }
+
+    footer {
+        text-align: right;
+        font-size: 1vw;
+    }
+
 }
