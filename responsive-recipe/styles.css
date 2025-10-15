@@ -220,5 +220,33 @@ header {
     font-size: 1.5vw;
     text-align: center;
 }
+
+#desktopDirections {
+    display: flex;
+    align-items: center;
+}
+
+#directions{
+    width: 50vw;
+    margin-left:calc(100vw/6);
+    border: dotted;
+    line-height: 5vh;
+    font-size: 2vw;
+}
+
+#directions h2 {
+    font-size: 6vw;
+    
+}
+
+#directions li {
+    padding: 3vw;
+}
+
+#notes {
+    width: 14vw;
+}
+
+}
     
 }
