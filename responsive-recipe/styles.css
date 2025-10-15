@@ -34,7 +34,7 @@ header {
     color: #36393e;
     border-left: dotted;
     border-width: 0.2em;
-    width: 100vw;
+    width: calc(100vw*4/6);
 }
 
 #authorDate {
