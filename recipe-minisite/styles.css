@@ -160,7 +160,7 @@ footer {
 
 /* desktop layout for favorite recipe */
 
-@media screen and (min-width: 1024px) {
+@media screen and (orientation: landscape) {
 
     header {
         display: grid;
