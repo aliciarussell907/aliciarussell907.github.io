@@ -23,7 +23,6 @@ header {
 }
 
 #homePic {
-    position: absolute;
     width: 100vw;
     height: 90vh;
     background-size: cover;
@@ -304,11 +303,12 @@ footer {
 /* navigation css */
 
 /* define variables */
+/* define variables */
 :root {
     --nav-height: 3rem;
-    --nav-bkgd-color: gray;
-    --nav-text-color: white;
-    --nav-hover-bkgd-color: lightgray;
+    --nav-bkgd-color: antiquewhite;
+    --nav-text-color: #36393e;
+    --nav-hover-bkgd-color: ivory;
     --nav-hover-text-color: black;
 }
 
