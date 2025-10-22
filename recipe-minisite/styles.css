@@ -32,15 +32,19 @@ header {
 }
 
 #homeTitle {
+    font-family: Bradley Han2.5d, cursive;
+    color: #4b484f;
     position: absolute;
     width: 100vw;
-    height: 75vh;
+    margin-top: 20vh;
+    background-color:antiquewhite;
+    text-align:center;
 }
 
 #homeTagline {
-    position: absolute;
-    width: 100vw;
-    height: 75vh;
+    font-family: Arial, sans-serif;
+    color: #36393e;
+    font-style: italic;
 }
 
 /*bread recipe */
