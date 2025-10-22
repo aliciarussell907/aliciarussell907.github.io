@@ -34,7 +34,7 @@ header {
     position: absolute;
     width: 100vw;
     margin-top: 30vh;
-    background-color:antiquewhite;
+    background-color:#dae3ec;
     text-align:center;
 }
 
@@ -305,7 +305,7 @@ footer {
 /* define variables */
 :root {
     --nav-height: 3rem;
-    --nav-bkgd-color: antiquewhite;
+    --nav-bkgd-color: #dae3ec;
     --nav-text-color: #36393e;
     --nav-hover-bkgd-color: ivory;
     --nav-hover-text-color: black;
