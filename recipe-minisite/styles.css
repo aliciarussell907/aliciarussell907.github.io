@@ -31,6 +31,17 @@ header {
     background-position: center center;
 }
 
+#homeTitle {
+    position: absolute;
+    width: 100vw;
+    height: 75vh;
+}
+
+#homeTagline {
+    position: absolute;
+    width: 100vw;
+    height: 75vh;
+}
 
 /*bread recipe */
 
