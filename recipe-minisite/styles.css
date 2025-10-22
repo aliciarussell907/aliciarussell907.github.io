@@ -305,8 +305,8 @@ footer {
 /* define variables */
 :root {
     --nav-height: 3rem;
-    --nav-bkgd-color: #dae3ec;
-    --nav-text-color: #36393e;
+    --nav-bkgd-color: #36393e;
+    --nav-text-color: #dae3ec;
     --nav-hover-bkgd-color: ivory;
     --nav-hover-text-color: black;
 }
