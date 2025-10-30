@@ -16,10 +16,10 @@ header {
 }
 
 button {
-    width: calc(100vw/6);
-    height: 5vh;
-    font-size: 3vh;
-    margin-left: calc(100vw*4/6);
+    width: calc(100vw*2/6);
+    height: 4vh;
+    font-size: 2vh;
+    margin-left: calc(100vw*3/6);
     background-color: lightslategray;
     color: white;
     font-family: 'Trebuchet MS', Arial, sans-serif;
@@ -95,6 +95,13 @@ img {
         height: calc(100vw*2/6);
 
     }
+
+    button {
+    width: calc(100vw/6);
+    height: 5vh;
+    font-size: 3vh;
+    margin-left: calc(100vw*4/6);
+}
 
     #rhodieTitle {
         width: calc(100vw*2/6);
