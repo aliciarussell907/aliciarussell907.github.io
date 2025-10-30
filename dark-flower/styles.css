@@ -172,6 +172,18 @@ img {
 /* dark mode */
 
 body.darkMode {
-    background-color: darkgrey;
+    background-color: #2f3030;
     color: white;
+}
+
+body.darkMode h2 {
+    color: lightgrey;
+    background-color: darkslategray
+}
+
+body.darkMode button {
+    color: black;
+    background-color: darkslategrey;
+    border-color: lightslategrey;
+    border-style: inset;
 }
