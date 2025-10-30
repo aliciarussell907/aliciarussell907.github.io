@@ -1,0 +1,158 @@
+/* mobile-first design for Pacific Rhododendron layout */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', Arial, sans-serif
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: 80vh;
+}
+
+#rhodiePicture {
+    position: absolute;
+    width: 100vw;
+    height: 80vh;
+    background-image: url("Pacific\ Rhododendron\ 2\ -\ Gary\ Monroe-1.jpeg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#rhodieTitle {
+    position: absolute;
+    width: 100vw;
+    height: 75vh;
+}
+
+#rhodieTitle h1 {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    background-color: darkslategrey;
+    color: lightpink;
+    font-size: 2em;
+    text-align: center;
+    width: calc(100vw*2/3);
+
+}
+
+div {
+    overflow: hidden;
+
+}
+
+h2 {
+    color: darkslategray;
+    font-size: 1.5em;
+    background-color: lightgray;
+    width: calc(100vw*5/6);
+    padding: 0em 0em 0em 0.25em;
+}
+
+p {
+    margin-left: 1em;
+    max-width: 95vw;
+}
+
+ul {
+    margin-left: 3em;
+}
+
+img {
+    width: 95vw;
+    margin: 0.5em;
+}
+
+/* PUT THE REST OF THE MOBILE BASELINE LAYOUT HERE */
+
+
+@media screen and (orientation: landscape) {
+    header {
+        max-height: 35vw;
+    }
+
+    #rhodiePicture {
+        width: calc(100vw*4/6);
+        left: calc(100vw*2/6);
+        height: calc(100vw*2/6);
+
+    }
+
+    #rhodieTitle {
+        width: calc(100vw*2/6);
+        background-color: darkslategray;
+        height: calc(100vw*2/6);
+    }
+
+    #rhodieTitle h1 {
+        width: 100%;
+        font-size: 2.5em;
+        overflow-wrap: break-word;
+    }
+
+    #sizePhoto {
+        margin: 0em 1em 0em 0em;
+        float: left;
+        max-width: calc(100vw*2/6)
+    }
+
+    #climatePhoto {
+        margin: 0em 0em 1em 1em;
+        float: right;
+        max-width: calc(100vw*2/6)
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        max-height: 45vw;
+        margin-bottom: 5em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    ul {
+        font-size: 1.5em;
+    }
+
+    #rhodiePicture {
+        width: 100vw;
+        height: calc(100vw/3);
+        left: 0;
+
+    }
+
+    #rhodieTitle {
+        width: 100vw;
+        height: 10vw;
+        top: calc(100vw/3);
+    }
+
+    #rhodieTitle h1 {
+        font-size: 3em;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (orientation: portrait) {
+    #rhodiePicture {
+        height: 40vw;
+    }
+
+    #rhodieTitle {
+        width: 100vw;
+
+    }
+}
