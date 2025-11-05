@@ -82,3 +82,24 @@ section > .content {
     font-size: 2vh;
     padding: 2vh;
 }
+
+ @media screen and (orientation: landscape) {
+
+#Title { background-position: top center; }
+#section1 { background-position: center center;}
+#section2 { background-position: center center; }
+#section4 { background-position: top center; }
+#section5 { background-position: center center; }
+
+#Title h1 {
+	font-size: 20vh;
+}
+#Title h2 {
+    font-size: 4vh;
+	padding: 0;
+ }
+.borderOverlay {
+    border: 1rem solid rgb(0, 0, 0);
+}
+	 
+ }
