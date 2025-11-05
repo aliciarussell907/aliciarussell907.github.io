@@ -6,3 +6,25 @@ header {
     background-size: cover;
     background-position: center center;
 }
+
+#headerTitle {
+    color: white;
+    width: calc(100vw*4/6);
+    margin-left: calc(100vw/6);
+    margin-top: 60vh;
+    text-align: center;
+    font-family: Brush Script MT, cursive;
+    border-radius: 8px;
+}
+
+#headerTitle h1 {
+    font-size: 15vh;
+    padding: 0;
+    margin: 0;
+}
+
+#headerTitle h2 {
+    font-size: 2vh;
+    font-family: Garamond, serif;
+    padding: 2vh;
+}
