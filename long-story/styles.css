@@ -1,4 +1,4 @@
-#Title {
+#titleText {
     color: white;
     width: calc(100vw*4/6);
     margin-left: calc(100vw/6);
@@ -56,7 +56,7 @@ section {
 }
 
 /* apply background images to sections; section1 and section4 have the same background; note background styles in the section selector too */
-#Title { background-image: url('childbeingexcluded.jpg'); }
+#Title { background-image: url('personwalkingintunnel.jpg'); }
 #para1 { background-image: url('childbeingexcluded.jpg'); }
 #para2 { background-image: url('manaloneonbeach.jpg'); }
 #para3 { background-image: url('womanaloneinstorm.jpg'); }
