@@ -52,6 +52,18 @@ section {
 #section4 { background-image: url('fountainwithtreesinbackground.jpg'); }
 #section5 { background-image: url('omniouslightwithinstorm.jpg'); }
 
+section > .content {
+	position: absolute;
+	width: 100%;
+	top: 3rem;
+	left: 0;
+	padding: 1rem;
+	text-align: center;
+	color: white;
+	font-size: 3vh;
+	background-color: rgba(70, 130, 180, 0.55);
+}
+
 #titleText {
     color: white;
     width: 100%;
