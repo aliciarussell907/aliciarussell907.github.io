@@ -1,22 +1,11 @@
-#titleText {
-    color: white;
-    width: calc(100vw*4/6);
-    margin-left: calc(100vw/6);
-    margin-top: 60vh;
-    text-align: center;
-    border-radius: 8px;
-}
+/* Background Attachment Vertical */
 
-#Title h1 {
-    font-size: 15vh;
-    padding: 0;
-    margin: 0;
-}
+/* load font Titillium Web from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
 
-#Title h2 {
-    font-size: 2vh;
-    font-family: Garamond, serif;
-    padding: 2vh;
+* {
+	box-sizing: border-box;
+	font-family: "Grenze Gotisch", serif;
 }
 
 html {
@@ -56,8 +45,28 @@ section {
 
 /* apply background images to sections; section1 and section4 have the same background; note background styles in the section selector too */
 #Title { background-image: url('personwalkingintunnel.jpg'); }
-#section1 { background-image: url('childbeingexcluded.jpg'); }
+#section1 { background-image: url('childbeingexcluded.jpg');
+			background-position: left center}
 #section2 { background-image: url('manaloneonbeach.jpg'); }
 #section3 { background-image: url('womanaloneinstorm.jpg'); }
 #section4 { background-image: url('fountainwithtreesinbackground.jpg'); }
 #section5 { background-image: url('omniouslightwithinstorm.jpg'); }
+
+#titleText {
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+	padding-top: 60vh;
+}
+
+#Title h1 {
+    font-size: 15vh;
+    padding: 0;
+    margin: 0;
+}
+
+#Title h2 {
+    font-size: 2vh;
+    padding: 2vh;
+}
