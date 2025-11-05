@@ -56,22 +56,8 @@ section {
 
 /* apply background images to sections; section1 and section4 have the same background; note background styles in the section selector too */
 #Title { background-image: url('personwalkingintunnel.jpg'); }
-#para1 { background-image: url('childbeingexcluded.jpg'); }
-#para2 { background-image: url('manaloneonbeach.jpg'); }
-#para3 { background-image: url('womanaloneinstorm.jpg'); }
-#para4 { background-image: url('fountainwithtreesinbackground.jpg'); }
-#para5 { background-image: url('omniouslightwithinstorm.jpg'); }
-
-
-/* content divs within the sections are positioned absolutely to the top and right, almost half the page wide */
-section > .content {
-    position: absolute;
-    width: 100%;
-    bottom: 3rem;
-    left: 0;
-    padding: 1rem;
-    text-align: center;
-    color: darkblue;
-    font-size: 2rem;
-	background-color: rgba(176, 196, 222, 0.7);
-}
+#section1 { background-image: url('childbeingexcluded.jpg'); }
+#section2 { background-image: url('manaloneonbeach.jpg'); }
+#section3 { background-image: url('womanaloneinstorm.jpg'); }
+#section4 { background-image: url('fountainwithtreesinbackground.jpg'); }
+#section5 { background-image: url('omniouslightwithinstorm.jpg'); }
