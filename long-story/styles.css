@@ -70,6 +70,7 @@ section > .content {
     text-align: center;
     border-radius: 8px;
 	padding-top: 60vh;
+    background-color: none;
 }
 
 #Title h1 {
