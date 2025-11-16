@@ -14,14 +14,23 @@ body {
 /* header */
 header {
     width: 100vw;
-    height:100vh;
+    height: 80vh;
     background-image: url(3d\ printed\ house.jpg) ;
     background-position: center center;
     background-size: cover;
 }
 
 #title {
-    padding-top: 20vh;
+    padding-top: 10vh;
     text-align: center;
-    font-family: "Modern Antiqua", serif;
+    font-family: "Modern Antiqua", serif; 
+}
+
+#title h1 {
+    font-size: 12vw;   
+}
+
+#title h2 {
+    font-size: 5vw;
+    font-style:italic;
 }
