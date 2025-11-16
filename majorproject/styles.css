@@ -11,24 +11,13 @@ body {
 }
 
 /* navigation css */
-
-/* define variables */
 /* define variables */
 :root {
     --nav-height: 3rem;
-    --nav-bkgd-color: #36393e;
-    --nav-text-color: #dae3ec;
-    --nav-hover-bkgd-color: ivory;
-    --nav-hover-text-color: black;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: var(--nav-height) 0 0 0;
+    --nav-bkgd-color: #89B0AE;
+    --nav-text-color: #FAF9F9;
+    --nav-hover-bkgd-color: #BEE3DB;
+    --nav-hover-text-color: #555B6E;
 }
 
 nav {
