@@ -176,3 +176,11 @@ header.homepage {
     font-size: 5vw;
     font-style:italic;
 }
+
+/* standard page header */
+header {
+    width:100vw;
+    height: 20vh;
+    padding-top: 3rem;
+    background-color: #89B0AE;
+}
