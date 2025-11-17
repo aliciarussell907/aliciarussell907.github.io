@@ -157,7 +157,7 @@ nav>ul>li>ul>li:hover a {
 header.homepage {
     width: 100vw;
     height: 80vh;
-    background-image: url(3d\ printed\ house.jpg) ;
+    background-image: url(images/3d\ printed\ house.jpg) ;
     background-position: center center;
     background-size: cover;
 }
