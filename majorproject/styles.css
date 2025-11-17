@@ -178,9 +178,9 @@ header.homepage {
 }
 
 /* standard page header */
-header {
-    width:100vw;
-    height: 15vh;
+header.standard {
+    width: 100vw;
+    height: 20vh;
     padding: 3rem 0 0 0;
     background-color: #89B0AE;
     display: flex;
