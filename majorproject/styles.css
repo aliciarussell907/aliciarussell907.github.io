@@ -265,3 +265,8 @@ header.standard {
 #comingSoon img {
     width:100%;
 }
+
+/* Meet The Team */
+#MeetTheTeam img {
+    max-width: 100vw;
+}
