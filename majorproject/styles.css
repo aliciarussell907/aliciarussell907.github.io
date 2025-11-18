@@ -267,6 +267,11 @@ header.standard {
 }
 
 /* Meet The Team */
+#MeetTheTeam h2 {
+    text-align: center;
+    font-family: "Modern Antiqua", serif;
+}
+
 #MeetTheTeam img {
     width: 100vw;
     height: 50vh;
