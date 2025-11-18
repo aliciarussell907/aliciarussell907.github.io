@@ -54,6 +54,7 @@ nav>ul {
 
 nav.clicked>ul {
     max-height: 90vh;
+    z-index: 1000;
 }
 
 nav>ul>li {
