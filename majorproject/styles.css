@@ -212,3 +212,32 @@ header.standard {
     object-fit: cover;
     overflow: hidden;
 }
+
+/* product blocks */
+.productBlock {
+    padding: 1vh;
+    width: 100vw;
+}
+
+.productBlock h2{
+    font-family: "Modern Antiqua", serif;
+    background-color: #BEE3DB;;
+}
+
+.productBlock h3{
+    font-family: "Modern Antiqua", serif;
+    font-size: 5vw;
+    padding: 0;
+    margin: 0;
+}
+
+.productBlock p {
+    font-size: 3vw;
+    padding: 0;
+    margin: 0;
+}
+
+.mySlides1, .mySlides2, .mySlides3 {
+    height: 40vh;
+    object-fit:cover;
+}
