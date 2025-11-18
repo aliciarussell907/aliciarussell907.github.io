@@ -184,8 +184,7 @@ header.standard {
     padding: 3rem 0 0 0;
     background-color: #89B0AE;
     display: flex;
-    justify-content:center;
-    font-family: "Modern Antiqua", serif; 
+    justify-content:center; 
     }
 
 #headertitle {
@@ -193,12 +192,14 @@ header.standard {
 }
 
 #headertitle h1 {
+    font-family: "Modern Antiqua", serif;
     font-size: 10vw;
     margin: 7vw 0 0vw 1vw;
     color: #FAF9F9;
 }
 
 #headertitle p {
+    font-family: "Modern Antiqua", serif;
     font-size: 2vw;
     text-align: center; 
     padding: 0;
@@ -221,7 +222,8 @@ header.standard {
 
 .productBlock h2{
     font-family: "Modern Antiqua", serif;
-    background-color: #BEE3DB;;
+    background-color: #BEE3DB;
+    text-align: center;
 }
 
 .productBlock h3{
@@ -236,9 +238,29 @@ header.standard {
     padding: 0;
     margin: 0;
     color: #555B6E;
+    margin: 0;
 }
 
 .mySlides1, .mySlides2, .mySlides3 {
     height: 40vh;
     object-fit:cover;
+}
+
+#comingSoon {
+    background-color: #BEE3DB;
+    padding: 1vh;
+}
+
+#comingSoon h2{
+    font-family: "Modern Antiqua", serif;
+     text-align: center;
+    background-color: #89B0AE;
+}
+
+#comingSoon p{
+    text-align: center;
+}
+
+#comingSoon img {
+    width:100%;
 }
