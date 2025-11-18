@@ -13,92 +13,41 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 
     <style>
-        .planterSS {
-            display: none
-        }
 
-        .snakeSS {
-            display: none
-        }
-
-        .vaseSS {
-            display: none
-        }
-
-        .w3-left,
-        .w3-right,
-        .w3-badge {
-            cursor: pointer
-        }
-
-        .w3-badge {
-            height: 13px;
-            width: 13px;
-            padding: 0
-        }
     </style>
 
     <!-- external and internal JavaScript -->
     <script src="scripts.js" defer></script>
     <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
+        let slideIndex = {};
 
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
+        function showSlides(n, group) {
+            const slides = document.querySelectorAll(".show" + group);
+            const dots = document.querySelectorAll(".dot.show" + group);
+
+            if (!slideIndex[group]) slideIndex[group] = 1;
+
+            if (n > slides.length) slideIndex[group] = 1;
+            if (n < 1) slideIndex[group] = slides.length;
+
+            slides.forEach(s => s.style.display = "none");
+            dots.forEach(d => d.classList.remove("w3-white"));
+
+            slides[slideIndex[group] - 1].style.display = "block";
+            dots[slideIndex[group] - 1].classList.add("w3-white");
         }
 
-        function currentDiv(n) {
-            showDivs(slideIndex = n);
+        function setSlide(n, group) {
+            slideIndex[group] = n;
+            showSlides(n, group);
         }
 
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("planterSS");
-            var dots = document.getElementsByClassName("ps");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-white", "");
-            }
-            x[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " w3-white";
-        }
-
-           function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("snakeSS");
-            var dots = document.getElementsByClassName("ss");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-white", "");
-            }
-            x[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " w3-white";
-        }
-
-           function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("vaseSS");
-            var dots = document.getElementsByClassName("vs");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-white", "");
-            }
-            x[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " w3-white";
-        }
+        /* Initialize all slideshows automatically */
+        document.querySelectorAll("img[class^='show']").forEach(img => {
+            const cls = [...img.classList].find(c => c.startsWith("show"));
+            const group = cls.replace("show", "");
+            if (!slideIndex[group]) showSlides(1, group);
+        });
     </script>
 
 </head>
@@ -142,18 +91,24 @@
     <section id="products">
         <div class="productBlock" id="planter">
             <h2>Jack-O-Lantern Planter</h2>
-            <div class="w3-content w3-display-container" style="max-width:800px">
-                <img class="planterSS" src="images/pumpkinplanter-with-plant.jpg" style="width:100%">
-                <img class="planterSS" src="images/pumpkinplanter-forward.jpg" style="width:100%">
-                <img class="planterSS" src="images/pumpkinplanter-side.jpg" style="width:100%">
-                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
-                    style="width:100%">
-                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                    <span class="w3-badge ps w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                    <span class="w3-badge ps w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                    <span class="w3-badge ps w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            <div class="w3-content w3-display-container" style="max-width:600px">
+
+                <img class="show1 w3-animate-opacity" src="images/pumpkinplanter-with-plant.jpg"
+                    style="width:100%;display:none">
+                <img class="show1 w3-animate-opacity" src="images/pumpkinplanter-forward.jpg"
+                    style="width:100%;display:none">
+                <img class="show1 w3-animate-opacity" src="images/pumpkinplanter-side.jpg"
+                    style="width:100%;display:none">
+
+                <div class="w3-center w3-container w3-section w3-large w3-text-white">
+                    <span class="w3-badge dot show1 w3-border w3-transparent w3-hover-white"
+                        onclick="setSlide(1,1)"></span>
+                    <span class="w3-badge dot show1 w3-border w3-transparent w3-hover-white"
+                        onclick="setSlide(2,1)"></span>
+                    <span class="w3-badge dot show1 w3-border w3-transparent w3-hover-white"
+                        onclick="setSlide(3,1)"></span>
                 </div>
+
             </div>
             <h3>Description:</h3>
             <p>describe item here</p>
@@ -161,37 +116,39 @@
 
         <div class="productBlock" id="snake">
             <h2>Cobra Figurine</h2>
-            <div class="w3-content w3-display-container" style="max-width:800px">
-                <img class="snakeSS" src="images/snake-forward.jpg" style="width:100%">
-                <img class="snakeSS" src="images/snake-side.jpg" style="width:100%">
-                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
-                    style="width:100%">
-                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                    <span class="w3-badge ss w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                    <span class="w3-badge ss w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <div class="w3-content w3-display-container" style="max-width:600px">
+
+                <img class="show2 w3-animate-right" src="images/snake-forward.jpg" style="width:100%;display:none">
+                <img class="show2 w3-animate-right" src="images/snake-side.jpg" style="width:100%;display:none">
+
+                <div class="w3-center w3-container w3-section w3-large w3-text-white">
+                    <span class="w3-badge dot show2 w3-border w3-transparent w3-hover-white"
+                        onclick="setSlide(1,2)"></span>
+                    <span class="w3-badge dot show2 w3-border w3-transparent w3-hover-white"
+                        onclick="setSlide(2,2)"></span>
                 </div>
+
             </div>
             <h3>Description:</h3>
             <p>describe item here</p>
         </div>
 
-           <div class="productBlock" id="vase">
+        <div class="productBlock" id="vase">
             <h2>Rose in a Vase</h2>
-            <div class="w3-content w3-display-container" style="max-width:800px">
-                <img class="vaseSS" src="images/rosevase.jpg" style="width:100%">
-                <img class="vaseSS" src="images/rose-closeup.jpg" style="width:100%">
-                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
-                    style="width:100%">
-                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                    <span class="w3-badge vs w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                    <span class="w3-badge vs w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <div class="w3-content w3-display-container" style="max-width:600px">
+
+                <img class="show3 w3-animate-right" src="images/rosevase.jpg" style="width:100%;display:none">
+                <img class="show3 w3-animate-right" src="images/rose-closeup.jpg" style="width:100%;display:none">
+
+                <div class="w3-center w3-container w3-section w3-large w3-text-white">
+                    <span class="w3-badge dot show2 w3-border w3-transparent w3-hover-white"
+                        onclick="setSlide(1,3)"></span>
+                    <span class="w3-badge dot show2 w3-border w3-transparent w3-hover-white"
+                        onclick="setSlide(2,3)"></span>
                 </div>
+                <h3>Description:</h3>
+                <p>describe item here</p>
             </div>
-            <h3>Description:</h3>
-            <p>describe item here</p>
-        </div>
     </section>
 </body>
 
