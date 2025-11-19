@@ -1,12 +1,12 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-	
+
 	<!-- meta tags and title -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Page Title</title>
+	<title>Contact Us</title>
 
 	<!-- external and internal CSS -->
 	<link rel="stylesheet" href="styles.css" media="all">
@@ -21,9 +21,67 @@
 	</script>
 
 </head>
-<body>
 
-	<!-- HTML elements here -->
+<body>
+	<nav>
+		<a id="navBurger">&#9776;</a>
+
+		<ul>
+			<li><a href="index.html">Home</a></li>
+
+			<li><a href="#">Products</a>
+				<ul>
+					<li><a href="products.html">Browse All</a></li>
+					<li><a href="#">Jack-O-Lantern Planter</a></li>
+					<li><a href="#">Cobra Figurine</a></li>
+					<li><a href="#">Rose in a Vase</a></li>
+				</ul>
+			</li>
+
+			<li><a href="order-request.html">Order Request</a></li>
+
+			<li><a href="#">About Us</a>
+				<ul>
+					<li><a href="about-us.html">Meet The Team</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="history.html">History</a></li>
+				</ul>
+			</li>
+
+			<li><a href="contact-us.html">Contact Us</a></li>
+		</ul>
+	</nav>
+
+	<header class="standard">
+		<div id="headertitle">
+			<h1>Contact Us</h1>
+			<p>NestCraft 3D</p>
+		</div>
+	</header>
+
+	<form id="ContactForm">
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname"><br>
+		<label for="lname">Last name:</label><br>
+		<input type="text" id="lname" name="lname"><br>
+		<label for="email">Your email:</label>
+		<input type="email" id="email" name="email" placeholder="youremail@youremail.com">
+		<label for="phone">Your phone number:</label>
+		<input type="tel" id="phone" name="phone" placeholder="555-123-4567">
+		<label for="department">Select a department relevant to your request:</label>
+		<select id="department" name="department">
+			<option value="operations">Operations</option>
+			<option value="design">Design</option>
+			<option value="admin">Administration</option>
+			<option value="other">Something else/I'm not sure</option>
+		</select>
+		<textarea name="message" rows="10" cols="30">Type your message here.</textarea><br><br>
+		<input type="submit">
+
+	</form>
+
+	<section class="Socials"></section>
 
 </body>
+
 </html>
