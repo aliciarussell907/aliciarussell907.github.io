@@ -12,6 +12,16 @@
 	<link rel="stylesheet" href="styles.css" media="all">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 	<style>
+		#MeetTheTeam img {
+			width: 100vw;
+			height: 50vh;
+			object-fit: cover;
+		}
+
+		#MeetTheTeam #admin img {
+			object-position: top center;
+		}
+
 		.mySlides {
 			display: none
 		}
@@ -39,33 +49,33 @@
 
 <body>
 	<nav>
-        <a id="navBurger">&#9776;</a>
+		<a id="navBurger">&#9776;</a>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
+		<ul>
+			<li><a href="index.html">Home</a></li>
 
-            <li><a href="#">Products</a>
-                <ul>
-                    <li><a href="products.html">Browse All</a></li>
-                    <li><a href="#">Jack-O-Lantern Planter</a></li>
-                    <li><a href="#">Cobra Figurine</a></li>
-                    <li><a href="#">Rose in a Vase</a></li>
-                </ul>
-            </li>
+			<li><a href="#">Products</a>
+				<ul>
+					<li><a href="products.html">Browse All</a></li>
+					<li><a href="#">Jack-O-Lantern Planter</a></li>
+					<li><a href="#">Cobra Figurine</a></li>
+					<li><a href="#">Rose in a Vase</a></li>
+				</ul>
+			</li>
 
-            <li><a href="order-request.html">Order Request</a></li>
+			<li><a href="order-request.html">Order Request</a></li>
 
-            <li><a href="#">About Us</a>
-                <ul>
-                    <li><a href="about-us.html">Meet The Team</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="history.html">History</a></li>
-                </ul>
-            </li>
+			<li><a href="#">About Us</a>
+				<ul>
+					<li><a href="about-us.html">Meet The Team</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="history.html">History</a></li>
+				</ul>
+			</li>
 
-            <li><a href="contact-us.html">Contact Us</a></li>
-        </ul>
-    </nav>
+			<li><a href="contact-us.html">Contact Us</a></li>
+		</ul>
+	</nav>
 
 	<header class="standard">
 		<div id="headertitle">
@@ -78,7 +88,7 @@
 		<h2>Meet The Team</h2>
 		<div class="w3-content w3-display-container" style="max-width:100vw">
 			<div class="mySlides" id="founder">
-				<img src="images/RileyHartman.jpg">
+				<img src="images/RileyHartman.jpg" style="width:100vw; height:50vh; object-fit:cover;">
 				<h3> Riley Hartman</h3>
 				<p>Riley Hartman, founder of NestCraft 3D, launched this boutique 3D-printing studio dedicated to
 					creating
@@ -99,7 +109,7 @@
 				</p>
 			</div>
 			<div class="mySlides" id="designer">
-				<img src="images/JordanMaseko.jpg">
+				<img src="images/JordanMaseko.jpg" style="width:100vw; height:50vh; object-fit:cover;">
 				<h3>Jordan Maseko</h3>
 				<p>Jordan Maseko is the Design Specialist at NestCraft 3D, where he brings a sharp eye for modern
 					functional
@@ -121,7 +131,7 @@
 			</div>
 
 			<div class="mySlides" id="admin">
-				<img src="images/LenaZhou.jpg">
+				<img src="images/LenaZhou.jpg" style="width:100vw; height:50vh; object-fit:cover;">
 				<h3>Lena Zhou</h3>
 				<p>Lena Zhou is the Administrative Specialist at NestCraft 3D, where she keeps the company’s operations
 					organized, efficient, and running smoothly behind the scenes. With a strong background in office
@@ -151,7 +161,8 @@
 
 	<section id="LearnMore">
 		<h2>Learn More</h2>
-		<p>Be sure to check out our <a href="history.html">history</a> to learn more about our amazing start up story. Still have
+		<p>Be sure to check out our <a href="history.html">history</a> to learn more about our amazing start up story.
+			Still have
 			questions? Head on over to our <a href="faq.html">FAQs</a> or <a href="contact-us.html">reach out to us
 				directly.</a></p>
 	</section>
