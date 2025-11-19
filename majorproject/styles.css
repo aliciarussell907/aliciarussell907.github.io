@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
 
 * {
-     box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -159,7 +159,7 @@ nav>ul>li>ul>li:hover a {
 header.homepage {
     width: 100vw;
     height: 80vh;
-    background-image: url(images/3d\ printed\ house.jpg) ;
+    background-image: url(images/3d\ printed\ house.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -167,16 +167,16 @@ header.homepage {
 #homepagetitle {
     padding-top: 10vh;
     text-align: center;
-    font-family: "Modern Antiqua", serif; 
+    font-family: "Modern Antiqua", serif;
 }
 
 #homepagetitle h1 {
-    font-size: 12vw;   
+    font-size: 12vw;
 }
 
 #homepagetitle h2 {
     font-size: 5vw;
-    font-style:italic;
+    font-style: italic;
 }
 
 /* standard page header ----------------------------------------------------------------------------------- */
@@ -185,13 +185,13 @@ header.standard {
     height: 32vh;
     display: flex;
     background-image: url(images/leaves-background.jpg);
-    background-size:cover;
+    background-size: cover;
 }
 
 #headertitle {
     margin: 9vh;
 }
-    
+
 #headertitle h1 {
     font-size: 10vw;
     color: #FAF9F9;
@@ -202,12 +202,12 @@ header.standard {
 
 #headertitle p {
     font-size: 2vw;
-    text-align: center; 
+    text-align: center;
     padding: 0;
     margin: 0;
     font-style: italic;
     color: #555B6E;
-    
+
 }
 
 /* product blocks ----------------------------------------------------------------------------------- */
@@ -216,13 +216,13 @@ header.standard {
     width: 100vw;
 }
 
-.productBlock h2{
+.productBlock h2 {
     font-family: "Modern Antiqua", serif;
     background-color: #BEE3DB;
     text-align: center;
 }
 
-.productBlock h3{
+.productBlock h3 {
     font-family: "Modern Antiqua", serif;
     font-size: 5vw;
     padding: 0;
@@ -237,9 +237,11 @@ header.standard {
     margin: 0;
 }
 
-.mySlides1, .mySlides2, .mySlides3 {
+.mySlides1,
+.mySlides2,
+.mySlides3 {
     height: 40vh;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 #comingSoon {
@@ -247,18 +249,23 @@ header.standard {
     padding: 1vh;
 }
 
-#comingSoon h2{
+#comingSoon h2 {
     font-family: "Modern Antiqua", serif;
-     text-align: center;
+    text-align: center;
     background-color: #89B0AE;
 }
 
-#comingSoon p{
+#comingSoon p {
     text-align: center;
 }
 
 #comingSoon img {
-    width:100%;
+    width: 100%;
+}
+
+/* Product details ----------------------------------------------------------------------------------- */
+.productDetails {
+    margin-top: 3rem
 }
 
 /* Meet The Team -----------------------------------------------------------------------------------*/
@@ -274,7 +281,7 @@ header.standard {
 }
 
 #MeetTheTeam p {
- padding: 5vw;   
+    padding: 5vw;
 }
 
 #MeetTheTeam #admin img {
@@ -284,7 +291,7 @@ header.standard {
 #LearnMore h2 {
     text-align: center;
     font-size: 1.7rem;
-    background-color:  #89B0AE;
+    background-color: #89B0AE;
     color: white;
     margin: 0 15vw;
 }
@@ -300,11 +307,11 @@ header.standard {
     text-align: center;
     margin: 5vw;
     padding: 0.5vh;
-  
+
 }
 
-div.ContactForm{
-      border-style: solid;
+div.ContactForm {
+    border-style: solid;
     border-color: #BEE3DB;
 }
 
@@ -346,7 +353,7 @@ p.ContactForm {
     padding: 3%;
 }
 
-#ThankYouMessage h2{
+#ThankYouMessage h2 {
     text-align: center;
     border-bottom-style: solid;
     padding-bottom: 1rem;
