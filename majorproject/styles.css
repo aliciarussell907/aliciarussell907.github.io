@@ -183,10 +183,7 @@ header.homepage {
 header.standard {
     width: 100vw;
     height: 20vh;
-    background-image: url(images/leaves-background.jpg)
-    padding: 3rem 0 0 0;
-    justify-content:center; 
-    }
+    background-image: url(images/leaves-background.jpg);
 
 #headertitle {
     width: 60%;
