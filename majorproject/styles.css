@@ -272,6 +272,11 @@ header.standard {
     font-family: "Modern Antiqua", serif;
 }
 
+#MeetTheTeam h3 {
+    font-family: "Modern Antiqua", serif;
+    text-align: center;
+}
+
 #MeetTheTeam img {
     width: 100vw;
     height: 50vh;
