@@ -308,3 +308,29 @@ header.standard {
 }
 
 /* Contact Us */
+
+.ContactForm {
+    background-color: #89B0AE;
+    text-align: center;
+    font-family: "Modern Antiqua", serif;
+    margin: 5vw;
+    padding: 0.5vh;
+  
+}
+
+div.ContactForm{
+      border-style: solid;
+    border-color: #BEE3DB;
+}
+
+h2.ContactForm {
+    border-bottom: dotted;
+    border-color: white;
+    margin: 1vh 10vw;
+}
+
+form.ContactForm {
+    line-height: 2.5vh;
+    padding: 0;
+    margin: 0 0 2vh 0;
+}
