@@ -10,14 +10,19 @@ body {
     padding: 0;
     font-family: "Modern Antiqua", serif;
 }
-body h1,ul,p {
-    font-family: "Modern Antiqua", serif; 
-}
-body h2{
+
+body h1,
+ul,
+p {
     font-family: "Modern Antiqua", serif;
 }
-body h3{
-    font-family: "Modern Antiqua", serif; 
+
+body h2 {
+    font-family: "Modern Antiqua", serif;
+}
+
+body h3 {
+    font-family: "Modern Antiqua", serif;
 }
 
 /* navigation css ----------------------------------------------------------------------------------- */
@@ -268,10 +273,11 @@ header.standard {
     width: 100%;
 }
 
-/* Product details ----------------------------------------------------------------------------------- */
+/* product details ----------------------------------------------------------------------------------- */
 .productDetails h2 {
     text-align: center;
 }
+
 #productTagline {
     font-size: 3vw;
     margin: 0 16vw 1vh;
@@ -281,9 +287,11 @@ header.standard {
     border-style: dashed;
     border-color: white;
 }
+
 #priceTag {
-        text-align: center;
-    }
+    text-align: center;
+}
+
 #productDescription {
     margin: 0 5vw;
 }
@@ -291,9 +299,9 @@ header.standard {
 #productNote {
     text-align: center;
     font-style: italic;
-    font-size: 3vw;
+    font-size: 2.7vw;
     background-color: #F5275740;
-    margin: 0 calc(100vw*2/6)
+    margin: 1vh calc(100vw*2/6)
 }
 
 /* Meet The Team -----------------------------------------------------------------------------------*/
