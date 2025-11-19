@@ -10,8 +10,20 @@
 
 	<!-- external and internal CSS -->
 	<link rel="stylesheet" href="styles.css" media="all">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
-		/* in-file CSS here */
+		.fa {
+			padding: 20px;
+			font-size: 30px;
+			width: 50px;
+			text-align: center;
+			text-decoration: none;
+			margin: 5px 2px;
+		}
+
+		.fa:hover {
+			opacity: 0.7;
+		}
 	</style>
 
 	<!-- external and internal JavaScript -->
@@ -60,29 +72,36 @@
 	</header>
 
 	<div class="ContactForm">
-	<h2 class="ContactForm"> Contact Us Form</h2>
-	<form class="ContactForm">
-		<label for="fname">First name:</label><br>
-		<input type="text" id="fname" name="fname"><br>
-		<label for="lname">Last name:</label><br>
-		<input type="text" id="lname" name="lname"><br>
-		<label for="email">Your email:</label><br>
-		<input type="email" id="email" name="email" placeholder="youremail@youremail.com"><br>
-		<label for="phone">Your phone number:</label><br>
-		<input type="tel" id="phone" name="phone" placeholder="555-123-4567"><br>
-		<label for="department">Select a department relevant to your request:</label><br>
-		<select id="department" name="department">
-			<option value="operations">Operations</option>
-			<option value="design">Design</option>
-			<option value="admin">Administration</option>
-			<option value="other">Something else/I'm not sure</option>
-		</select><br>
-		<label for="message">Your message:</label><br>
-		<textarea name="message" placeholder="Type your message here..." rows="10" cols="30"></textarea><br><br>
-		<input type="submit">
-	</form>
-</div>
-	<section class="Socials"></section>
+		<h2 class="ContactForm"> Contact Us Form</h2>
+		<form class="ContactForm">
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname"><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname"><br>
+			<label for="email">Your email:</label><br>
+			<input type="email" id="email" name="email" placeholder="youremail@youremail.com"><br>
+			<label for="phone">Your phone number:</label><br>
+			<input type="tel" id="phone" name="phone" placeholder="555-123-4567"><br>
+			<label for="department">Select a department relevant to your request:</label><br>
+			<select id="department" name="department">
+				<option value="operations">Operations</option>
+				<option value="design">Design</option>
+				<option value="admin">Administration</option>
+				<option value="other">Something else/I'm not sure</option>
+			</select><br>
+			<label for="message">Your message:</label><br>
+			<textarea name="message" placeholder="Type your message here..." rows="10" cols="30"></textarea><br><br>
+			<input type="submit">
+		</form>
+	</div>
+	<section class="Socials">
+		<h2>Find Us on Social Media</h2>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-youtube"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<a href="#" class="fa fa-pinterest"></a>
+		<a href="#" class="fa fa-snapchat-ghost"></a>
+	</section>
 
 </body>
 
