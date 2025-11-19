@@ -101,11 +101,11 @@
 		<h2 class="ContactForm"> Contact Us Form</h2>
 		<form action="thank-you.html" method="get" name="contactus">
 			<label for="fname">First name:</label><br>
-			<input type="text" id="fname" name="fname"><br>
+			<input type="text" id="fname" name="fname" value="" required><br>
 			<label for="lname">Last name:</label><br>
-			<input type="text" id="lname" name="lname"><br>
+			<input type="text" id="lname" name="lname" value="" required><br>
 			<label for="email">Your email:</label><br>
-			<input type="email" id="email" name="email" placeholder="youremail@youremail.com"><br>
+			<input type="email" id="email" name="email" placeholder="youremail@youremail.com" value="" required><br>
 			<label for="phone">Your phone number:</label><br>
 			<input type="tel" id="phone" name="phone" placeholder="555-123-4567"><br>
 			<label for="department">Select a department relevant to your request:</label><br>
@@ -116,7 +116,7 @@
 				<option value="other">Something else/I'm not sure</option>
 			</select><br>
 			<label for="message">Your message:</label><br>
-			<textarea name="message" placeholder="Type your message here..." rows="10" cols="30"></textarea><br><br>
+			<textarea name="message" placeholder="Type your message here..." rows="10" cols="30" value="" required></textarea><br><br>
 			<input type="submit">
 		</form>
 	</div>
