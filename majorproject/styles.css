@@ -336,6 +336,12 @@ form.ContactForm {
     margin: 0 0 2vh 0;
 }
 
+button.ContactForm {
+    background-color: white;
+    padding: 2vw;
+    margin: 0 0 1vh 0;
+}
+
 .Socials {
     text-align: center;
 }
