@@ -186,6 +186,7 @@ header.standard {
     display: flex;
     background-image: url(images/leaves-background.jpg);
     background-size:cover;
+}
 
 #headertitle {
     margin: 9vh;
