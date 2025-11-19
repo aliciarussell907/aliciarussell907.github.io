@@ -182,17 +182,21 @@ header.homepage {
 /* standard page header */
 header.standard {
     width: 100vw;
-    height: 20vh;
+    height: 30vh;
+    display: flex;
     background-image: url(images/leaves-background.jpg);
+    background-size:cover;
 
 #headertitle {
-    width: 60%;
+    margin: 9vh;
 }
-
+    
 #headertitle h1 {
     font-size: 10vw;
-    margin: 7vw 0 0vw 1vw;
     color: #FAF9F9;
+    text-align: center;
+    padding: 2vh;
+    background-color: #89B0AE90;
 }
 
 #headertitle p {
@@ -203,11 +207,6 @@ header.standard {
     font-style: italic;
     color: #555B6E;
     
-}
-
-#headerimg {
-    object-fit: cover;
-    overflow: hidden;
 }
 
 /* product blocks */
