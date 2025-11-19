@@ -336,3 +336,18 @@ p.ContactForm {
 .Socials {
     text-align: center;
 }
+
+/* Thank You Message */
+
+#ThankYouMessage {
+    width: 66vw;
+    margin: 5vh 10vw;
+    border-style: dashed;
+    padding: 3%;
+}
+
+#ThankYouMessage h2{
+    text-align: center;
+    border-bottom-style: solid;
+    padding-bottom: 1rem;
+}
