@@ -342,6 +342,13 @@ button.ContactForm {
     margin: 0 0 1vh 0;
 }
 
+p.ContactForm {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5vh;
+    font-style: italic;
+}
+
 .Socials {
     text-align: center;
 }
