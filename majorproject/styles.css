@@ -11,7 +11,7 @@ body {
     font-family: "Modern Antiqua", serif;
 }
 
-/* navigation css */
+/* navigation css ----------------------------------------------------------------------------------- */
 /* define variables */
 :root {
     --nav-height: 3rem;
@@ -155,7 +155,7 @@ nav>ul>li>ul>li:hover a {
 }
 
 
-/* homepage header */
+/* homepage header ----------------------------------------------------------------------------------- */
 header.homepage {
     width: 100vw;
     height: 80vh;
@@ -179,7 +179,7 @@ header.homepage {
     font-style:italic;
 }
 
-/* standard page header */
+/* standard page header ----------------------------------------------------------------------------------- */
 header.standard {
     width: 100vw;
     height: 32vh;
@@ -210,7 +210,7 @@ header.standard {
     
 }
 
-/* product blocks */
+/* product blocks ----------------------------------------------------------------------------------- */
 .productBlock {
     padding: 1vh;
     width: 100vw;
@@ -261,7 +261,7 @@ header.standard {
     width:100%;
 }
 
-/* Meet The Team */
+/* Meet The Team -----------------------------------------------------------------------------------*/
 #MeetTheTeam h2 {
     text-align: center;
 }
@@ -293,7 +293,7 @@ header.standard {
     padding: 2vw;
 }
 
-/* Contact Us */
+/* Contact Us ----------------------------------------------------------------------------------- */
 
 .ContactForm {
     background-color: #89B0AE;
@@ -337,7 +337,7 @@ p.ContactForm {
     text-align: center;
 }
 
-/* Thank You Message */
+/* Thank You Message ----------------------------------------------------------------------------------- */
 
 #ThankYouMessage {
     width: 66vw;
