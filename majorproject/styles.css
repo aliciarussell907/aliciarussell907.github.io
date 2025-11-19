@@ -263,11 +263,9 @@ header.standard {
 /* Meet The Team */
 #MeetTheTeam h2 {
     text-align: center;
-    font-family: "Modern Antiqua", serif;
 }
 
 #MeetTheTeam h3 {
-    font-family: "Modern Antiqua", serif;
     text-align: center;
     background-color: #89B0AE;
     color: white;
@@ -278,18 +276,11 @@ header.standard {
  padding: 5vw;   
 }
 
-#MeetTheTeam img {
-    width: 100vw;
-    height: 50vh;
-    object-fit: cover;
-}
-
 #MeetTheTeam #admin img {
     object-position: top center;
 }
 
 #LearnMore h2 {
-    font-family: "Modern Antiqua", serif;
     text-align: center;
     font-size: 1.7rem;
     background-color:  #89B0AE;
@@ -306,7 +297,6 @@ header.standard {
 .ContactForm {
     background-color: #89B0AE;
     text-align: center;
-    font-family: "Modern Antiqua", serif;
     margin: 5vw;
     padding: 0.5vh;
   
