@@ -182,7 +182,7 @@ header.homepage {
 /* standard page header */
 header.standard {
     width: 100vw;
-    height: 30vh;
+    height: 32vh;
     display: flex;
     background-image: url(images/leaves-background.jpg);
     background-size:cover;
