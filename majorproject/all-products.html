@@ -47,7 +47,7 @@
 </head>
 
 <body>
-  <nav>
+    <nav>
         <a id="navBurger">&#9776;</a>
 
         <ul>
@@ -76,11 +76,11 @@
         </ul>
     </nav>
     <header class="standard">
-		<div id="headertitle">
-			<h1>All Products</h1>
-			<p>Printed Pieces for a Cozier Nest.</p>
-		</div>
-	</header>
+        <div id="headertitle">
+            <h1>All Products</h1>
+            <p>Printed Pieces for a Cozier Nest.</p>
+        </div>
+    </header>
 
     <section id="products">
         <div class="productBlock" id="planter">
@@ -92,8 +92,12 @@
                 <button class="w3-button w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
                 <button class="w3-button w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
             </div>
-        <h3>Description:</h3>
-        <p>describe item here</p>
+            <p class="price">Starting at $25</p>
+            <h3>Description:</h3>
+            <p>Bring personality and seasonal spirit to your home with this adorable pumpkin
+                companion—equal parts spooky
+                and cute!</p>
+            
         </div>
 
         <div class="productBlock" id="snake">
@@ -104,8 +108,10 @@
                 <button class="w3-button w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
                 <button class="w3-button w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
             </div>
+            <p class="price">Starting at $30</p>
             <h3>Description:</h3>
-            <p>describe item here</p>
+            <p>Add a bold, stylish touch to your décor with this sculptural cobra centerpiece.</p>
+            
         </div>
 
         <div class="productBlock" id="vase">
@@ -116,8 +122,9 @@
                 <button class="w3-button w3-display-left" onclick="plusDivs(-1, 2)">&#10094;</button>
                 <button class="w3-button w3-display-right" onclick="plusDivs(1, 2)">&#10095;</button>
             </div>
+            <p class="price">Starting at $50</p>
             <h3>Description:</h3>
-            <p>describe item here</p>
+            <p>Add a touch of modern elegance and color to any space with this charming decorative set.</p>
         </div>
     </section>
 
@@ -126,9 +133,9 @@
         <img src="images/holidaycollection.jpg">
         <p>New holiday prints!</p>
     </section>
-    
- <!-- javascript for slideshows -->
-<script>
+
+    <!-- javascript for slideshows -->
+    <script>
         var slideIndex = [1, 1, 1];
         var slideId = ["mySlides1", "mySlides2", "mySlides3"]
         showDivs(1, 0);
