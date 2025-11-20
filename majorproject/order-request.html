@@ -94,6 +94,8 @@
                 href="contact-us.html">contact us
                 form.</a></p>
         <form action="order-received.html" method="get" name="orderRequest">
+
+            <!-- contact info -->
             <div id=contactInfo>
                 <h3>Contact Information</h3>
                 <label for="fname">* First name:</label><br>
@@ -109,6 +111,7 @@
                 <input type="tel" id="phone" name="phone" placeholder="555-123-4567" value="" required><br>
             </div>
 
+            <!-- product selection -->
             <div id="productSelect">
                 <label for="product">* Please select which products you would like to request:</label><br>
                 <input type="checkbox" id="product" name="product2" value="Planter" button
@@ -119,6 +122,8 @@
                 <input type="checkbox" id="product" name="product3" value="Vase" onclick="ShowVaseOptions()">
                 <label for="product3">Rose in a Vase</label>
 
+                <!-- customization options & quantity -->
+                <!-- planter -->
                 <div id="PlanterOptions" style="display: none;">
                     <h3>Options for Jack-O-Lantern Planter</h3>
                     <label for="planterCustomized">Customized?</label>
@@ -131,6 +136,8 @@
                     <label for="planterQuantity">Quantity? (max of 5 per order)</label>
                     <input type="number" id="planterQuantity" name="planterQuantity" min="1" max="5" value="">
                 </div>
+
+                <!-- snake -->
                 <div id="SnakeOptions" style="display: none;">
                     <h3>Options for Cobra Figurine</h3>
                     <label for="snakeCustomized">Customized?</label>
@@ -143,6 +150,8 @@
                     <label for="snakeQuantity">Quantity? (max of 5 per order)</label>
                     <input type="number" id="snakeQuantity" name="snakeQuantity" min="1" max="5" value="">
                 </div>
+
+                <!-- vase -->
                 <div id="VaseOptions" style="display: none;">
                     <h3>Options for Rose in a Vase</h3>
                     <label for="vaseCustomized">Customized?</label>
@@ -157,12 +166,16 @@
                 </div>
             </div>
             <br>
+
+            <!-- delivery method -->
             <label for="deliverymethod">* Pick-up or Ship-to-Home?</label><br>
             <input type="radio" id="deliverymethod" name="deliverymethod" value="pickUp" required>
             <label for="pickUp">Pick-up</label><br>
             <input type="radio" id="deliverymethod" name="deliverymethod" value="ship" onclick="ShowAddress()">
             <label for="ship">Ship-to-Home</label><br>
+            <br>
 
+            <!-- address input -->
             <div id="Address" style="display: none;">
                 <label for="street">Street Address</label><br>
                 <input type="text" id="street" name="street" value="" placeholder="123 Main St"><br>
