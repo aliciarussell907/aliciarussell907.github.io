@@ -17,8 +17,24 @@
     <!-- external and internal JavaScript -->
     <script src="scripts.js" defer></script>
     <script>
-        function myFunction() {
+        function ShowPlanterOptions() {
             var x = document.getElementById("PlanterOptions");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+         function ShowSnakeOptions() {
+            var x = document.getElementById("SnakeOptions");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+         function ShowVaseOptions() {
+            var x = document.getElementById("VaseOptions");
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {
@@ -84,7 +100,7 @@
 
             <label for="product">* Please select which products you would like to request:</label><br>
             <input type="checkbox" id="product" name="product2" value="Planter" button
-                onclick="myFunction()">
+                onclick="ShowPlanterOptions()">
             <label for="product1"> Jack-O-Lantern Planter</label><br>
             <input type="checkbox" id="product" name="product2" value="Snake" onclick="ShowSnakeOptions()">
             <label for="product2">Cobra Figuirine</label><br>
