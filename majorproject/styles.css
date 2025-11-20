@@ -255,6 +255,20 @@ header.standard {
     object-fit: cover;
 }
 
+p.price {
+    font-size: 5vw;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+button.moreDetails {
+    background-color: #BEE3DB;
+    border-color: #89B0AE;
+    font-family: "Modern Antiqua", serif;
+    margin: 1vh 30% 0 30%
+}
+
 #comingSoon {
     background-color: #BEE3DB;
     padding: 1vh;
