@@ -401,8 +401,23 @@ p.ContactForm {
 }
 
 /* Order Form ----------------------------------------------------------------------------------- */
+
+#ThankYouMessage {
+    width: 66vw;
+    margin: 5vh 10vw;
+    border-style: dashed;
+    padding: 3%;
+}
+
+#ThankYouMessage h2 {
+    text-align: center;
+    border-bottom-style: solid;
+    padding-bottom: 1rem;
+}
+
+/* Order Form ----------------------------------------------------------------------------------- */
     .OrderRequestForm{
-        margin: 0 5vw;
+        margin: 2vh 5vw;
         border-style: solid;
     }
 
@@ -411,4 +426,11 @@ p.ContactForm {
         line-height: 1.8rem;
         padding-bottom: 1rem;
         border-style: dotted none;
+    }
+
+    #PlanterOptions, #SnakeOptions, #VaseOptions {
+        line-height: 1.8rem;
+        font-size: 3vw;
+        border-bottom-style:dotted;
+        padding: 2vh;
     }
