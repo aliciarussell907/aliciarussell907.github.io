@@ -434,13 +434,13 @@ p.ContactForm {
     }
 
     #contactInfo {
-        text-align: center;
         line-height: 1.8rem;
         padding-bottom: 1rem;
         border-style: dotted none;
     }
 
     #contactInfo h3{
+        text-align: center;
         padding: 0;
         margin: 0;
         background-color: #89B0AE70;
@@ -449,6 +449,7 @@ p.ContactForm {
     #productSelect {
         line-height: 1.8rem;
         padding-bottom: 1rem;
+        border-bottom-style:dotted;
     }
 
     #productSelect h3{
@@ -464,6 +465,19 @@ p.ContactForm {
         border-bottom-style:dotted;
         padding: 2vh;
     }
+
+    #delivery h3{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        background-color: #89B0AE70;
+    }
+
+   #addressInput {
+        line-height: 1.8rem;
+        padding-left: 3vw;
+    }
+
 
      select {
         border-width: 0.1rem;
