@@ -34,6 +34,18 @@
             overflow: hidden;
             background-color: #f1f1f1;
         }
+
+        .collapsible:after {
+            content: '\27A4';
+            font-size: 13px;
+            color: white;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2B9F";
+        }
     </style>
 
     <!-- external and internal JavaScript -->
@@ -73,19 +85,42 @@
             <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
     </nav>
-    <button type="button" class="collapsible">Open Section 1</button>
+    <header class="standard">
+        <div id="headertitle">
+            <h1>Frequently Asked Questions</h1>
+            <p>NestCraft 3D</p>
+        </div>
+    </header>
+
+    <button type="button" class="collapsible">Question 1</button>
     <div class="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.</p>
     </div>
-    <button type="button" class="collapsible">Open Section 2</button>
+
+    <button type="button" class="collapsible">Question 2</button>
     <div class="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.</p>
     </div>
-    <button type="button" class="collapsible">Open Section 3</button>
+
+    <button type="button" class="collapsible">Question 3</button>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
+    </div>
+
+    <button type="button" class="collapsible">Question 4</button>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
+    </div>
+
+    <button type="button" class="collapsible">Question 5</button>
     <div class="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
