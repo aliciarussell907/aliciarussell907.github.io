@@ -1,28 +1,72 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-	
-	<!-- meta tags and title -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Page Title</title>
 
-	<!-- external and internal CSS -->
-	<link rel="stylesheet" href="styles.css" media="all">
-	<style>
-		/* in-file CSS here */
-	</style>
+    <!-- meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
 
-	<!-- external and internal JavaScript -->
-	<script src="scripts.js" defer></script>
-	<script>
-		// in-page JavaScript here
-	</script>
+    <!-- external and internal CSS -->
+    <link rel="stylesheet" href="styles.css" media="all">
+    <style>
+        /* in-file CSS here */
+    </style>
+
+    <!-- external and internal JavaScript -->
+    <script src="scripts.js" defer></script>
+    <script>
+        function ShowAnswer1() {
+            var x = document.getElementById("answer1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ShowAnswer2() {
+            var x = document.getElementById("answer2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function ShowAnswer3() {
+            var x = document.getElementById("answer3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ShowAnswer4() {
+            var x = document.getElementById("answer4");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ShowAnswer5() {
+            var x = document.getElementById("answer5");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+    </script>
 
 </head>
+
 <body>
-  <nav>
+    <nav>
         <a id="navBurger">&#9776;</a>
 
         <ul>
@@ -50,5 +94,50 @@
             <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
     </nav>
+
+    <header class="standard">
+        <div id="headertitle">
+            <h1>Frequently Asked Questions</h1>
+            <p>NestCraft 3D</p>
+        </div>
+    </header>
+
+    <div id="faq1" class="faq" onclick="ShowAnswer1()">
+        <h2>Question 1</h2>
+    </div>
+    <div id="answer1" style="display: none;">
+        <p></p>
+    </div>
+
+    <div id="faq2" class="faq" onclick="ShowAnswer2()">
+        <h2>Question 2 &#10148;</h2>
+    </div>
+    <div id="answer2" style="display: none;">
+        <p></p>
+    </div>
+
+    <div id="faq3" class="faq" onclick="ShowAnswer3()">
+        <h2>Question 3 &#10148;</h2>
+    </div>
+    <div id="answer3" style="display: none;">
+        <p></p>
+    </div>
+
+    <div id="faq4" class="faq" onclick="ShowAnswer4()">
+        <h2>Question 4 &#10148;</h2>
+    </div>
+    <div id="answer4" style="display: none;">
+        <p></p>
+    </div>
+
+    <div id="faq5" class="faq" onclick="ShowAnswer5()">
+        <h2>Question 5 &#10148;</h2>
+    </div>
+    <div id="answer5" style="display: none;">
+        <p></p>
+    </div>
+
+
 </body>
+
 </html>
