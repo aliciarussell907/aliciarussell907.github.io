@@ -117,6 +117,8 @@
                     <option value="Yes2">Yes, option 2</option>
                     <option value="Yes3">Yes, option 3</option>
                 </select>
+                <label for="planterQuantity">Quantity? (max of 5 per order)</label>
+                <input type="number" id="planterQuantity" name="planterQuantity" min="1" max="5" value="">
             </div>
             <div id="SnakeOptions" style="display: none;">
                 <h3>Options for Cobra Figurine</h3>
@@ -127,6 +129,8 @@
                     <option value="Yes2">Yes, option 2</option>
                     <option value="Yes3">Yes, option 3</option>
                 </select>
+                <label for="snakeQuantity">Quantity? (max of 5 per order)</label>
+                <input type="number" id="snakeQuantity" name="snakeQuantity" min="1" max="5" value="">
             </div>
             <div id="VaseOptions" style="display: none;">
                 <h3>Options for Rose in a Vase</h3>
@@ -137,9 +141,11 @@
                     <option value="Yes2">Yes, option 2</option>
                     <option value="Yes3">Yes, option 3</option>
                 </select>
+                <label for="vaseQuantity">Quantity? (max of 5 per order)</label>
+                <input type="number" id="vaseQuantity" name="vaseQuantity" min="1" max="5" value="">
             </div>
 
-            <h3>* Pick-up or Ship-to-Home?</h3><br>
+            <h3>* Pick-up or Ship-to-Home?</h3>
             <input type="radio" id="deliverymethod" name="deliverymethod" value="pickUp" required>
             <label for="pickUp">Pick-up</label><br>
             <input type="radio" id="deliverymethod" name="deliverymethod" value="ship">
