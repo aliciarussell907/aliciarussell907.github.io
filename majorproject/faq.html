@@ -40,7 +40,7 @@
             content: "\2B9F";
         }
 
-        .faqAnswer {
+        .content {
             padding: 0 18px;
             max-height: 0;
             overflow: hidden;
@@ -50,7 +50,6 @@
     </style>
 
     <!-- external and internal JavaScript -->
-    <script src="scripts.js" defer></script>
     <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;
@@ -58,11 +57,11 @@
         for (i = 0; i < coll.length; i++) {
             coll[i].addEventListener("click", function () {
                 this.classList.toggle("active");
-                var faqAnswer = this.nextElementSibling;
-                if (faqAnswer.style.display === "block") {
-                    faqAnswer.style.display = "none";
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
                 } else {
-                    faqAnswer.style.display = "block";
+                    content.style.maxHeight = content.scrollHeight + "px";
                 }
             });
         }
@@ -107,19 +106,19 @@
         </div>
     </header>
     <button type="button" class="collapsible">Open Section 1</button>
-    <div class="faqAnswer">
+    <div class="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.</p>
     </div>
     <button type="button" class="collapsible">Open Section 2</button>
-    <div class="faqAnswer">
+    <div class="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.</p>
     </div>
     <button type="button" class="collapsible">Open Section 3</button>
-    <div class="faqAnswer">
+    <div class="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.</p>
