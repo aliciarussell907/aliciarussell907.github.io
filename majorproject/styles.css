@@ -283,6 +283,7 @@ header.standard {
 }
 
 #productTagline {
+    text-align:center;
     font-size: 3vw;
     margin: 0 16vw 1vh;
     padding: 1rem;
