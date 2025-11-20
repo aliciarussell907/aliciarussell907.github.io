@@ -401,21 +401,6 @@ p.ContactForm {
 }
 
 /* Order Form ----------------------------------------------------------------------------------- */
-
-#ThankYouMessage {
-    width: 66vw;
-    margin: 5vh 10vw;
-    border-style: dashed;
-    padding: 3%;
-}
-
-#ThankYouMessage h2 {
-    text-align: center;
-    border-bottom-style: solid;
-    padding-bottom: 1rem;
-}
-
-/* Order Form ----------------------------------------------------------------------------------- */
     .OrderRequestForm{
         margin: 2vh 5vw;
         border-style: solid;
@@ -441,9 +426,10 @@ p.ContactForm {
 
     #contactInfo h3{
         text-align: center;
-        padding: 0;
+        padding: 0vh;
         margin: 0;
         background-color: #89B0AE70;
+        height: 3vh;
     }
 
     #productSelect {
@@ -454,9 +440,10 @@ p.ContactForm {
 
     #productSelect h3{
         text-align: center;
-        padding: 0;
+        padding: 0vh;
         margin: 0;
         background-color: #89B0AE70;
+        height: 3vh;
     }
 
     #PlanterOptions, #SnakeOptions, #VaseOptions {
@@ -468,17 +455,32 @@ p.ContactForm {
 
     #delivery h3{
         text-align: center;
-        padding: 0;
+        padding: 0vh;
         margin: 0;
         background-color: #89B0AE70;
+        height: 3vh;
     }
 
    #addressInput {
         line-height: 1.8rem;
         padding-left: 3vw;
+       margin-top: 1vh;
+    }
+    #addressInput h3{
+        margin: 0 40vw 0 0;
+        background-color: #89B0AE70;
+        text-align: center;
+        font-size: 1rem;
     }
 
-
+    button.OrderRequestForm {
+        margin: 2vh 40%;
+        scale: 150%;
+        background-color: #89B0AE70;
+        border-color: #89B0AE;
+        font-family: "Modern Antiqua", serif;
+    }
+ 
      select {
         border-width: 0.1rem;
     }
