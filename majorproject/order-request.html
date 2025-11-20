@@ -18,29 +18,26 @@
     <script src="scripts.js" defer></script>
     <script>
         function ShowPlanterOptions() {
-            var x = document.getElementById("PlanterOptions");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
+            const element = document.getElementById(PlanterOptions);
+            if (element) {
+                element.style.display = inline
         }
-           function ShowSnakeOptions() {
-            var x = document.getElementById("SnakeOptions");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
+            function ShowSnakeOptions() {
+                var x = document.getElementById("SnakeOptions");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
             }
-        }
-           function ShowVaseOptions() {
-            var x = document.getElementById("VaseOptions");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
+            function ShowVaseOptions() {
+                var x = document.getElementById("VaseOptions");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
             }
-        }
     </script>
 
 </head>
@@ -106,9 +103,9 @@
             <input type="checkbox" id="product" name="product3" value="Vase" onclick="ShowVaseOptions()">
             <label for="product3">Rose in a Vase</label>
 
-            <div id="PlanterOptions">show me the planter options</div>
-            <div id="SnakeOptions">show me the snake options</div>
-            <div id="VaseOptions">show me the vase options</div>
+            <div id="PlanterOptions" style="display: none;">show me the planter options</div>
+            <div id="SnakeOptions" style="display: none;">show me the snake options</div>
+            <div id="VaseOptions" style="display: none;">show me the vase options</div>
 
 
             <p class="OrderRequestForm">* indicates required field
