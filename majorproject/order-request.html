@@ -41,6 +41,14 @@
                 x.style.display = "none";
             }
         }
+        function ShowAddress() {
+            var x = document.getElementById("Address");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
     </script>
 
 </head>
@@ -148,12 +156,22 @@
             <label for="deliverymethod">* Pick-up or Ship-to-Home?</label><br>
             <input type="radio" id="deliverymethod" name="deliverymethod" value="pickUp" required>
             <label for="pickUp">Pick-up</label><br>
-            <input type="radio" id="deliverymethod" name="deliverymethod" value="ship">
+            <input type="radio" id="deliverymethod" name="deliverymethod" value="ship" onclick="ShowAddress()">
             <label for="ship">Ship-to-Home</label><br>
 
-            <p class="OrderRequestForm">* indicates required field
-            </p><br>
-            <button type="submit" class="ContactForm">Submit</button>
+            <div id="Address" style="display: none;">
+                <label for="street">Street Address</label><br>
+                <input type="text" id="street" name="street" value="" placeholder="123 Main St"><br>
+                <label for="city">City</label><br>
+                <input type="text" id="city" name="city" value="" placeholder="Anytown"><br>
+                <label for="street">State</label><br>
+                <input type="text" id="state" name="state" value="" maxlength="2" placeholder="ST"><br>
+                <input type="number" id="zip" name="zip" value="" maxlength="5" placeholder="12345"><br>
+                <p id="orderNote">Note: We only ship within the United States.
+                </p>
+                <p class="OrderRequestForm">* indicates required field
+                </p><br>
+                <button type="submit" class="ContactForm">Submit</button>
         </form>
     </div>
 </body>
