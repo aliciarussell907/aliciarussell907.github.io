@@ -230,7 +230,7 @@ header.standard {
     line-height: 1.5rem;
 }
 
-#homeIntro h2{
+#homeIntro h2 {
     background-color: #BEE3DB;
     padding: 1rem;
     border-radius: 5px;
@@ -250,7 +250,6 @@ header.standard {
     border-color: #89B0AE;
     font-family: "Modern Antiqua", serif;
     border-radius: 50%
-    
 }
 
 /* product blocks ----------------------------------------------------------------------------------- */
@@ -550,4 +549,41 @@ input {
     text-align: center;
     border-bottom-style: solid;
     padding-bottom: 1rem;
+}
+
+/* FAQ ----------------------------------------------------------------------------------- */
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.collapsible:after {
+    content: '\27A4';
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2B9F";
 }
