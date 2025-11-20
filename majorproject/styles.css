@@ -223,6 +223,19 @@ header.standard {
 
 }
 
+#homeIntro {
+    width: 90vw;
+    margin: 1rem auto;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+#homeIntro h2{
+    background-color: #BEE3DB;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
 /* product blocks ----------------------------------------------------------------------------------- */
 .productBlock {
     padding: 1vh;
