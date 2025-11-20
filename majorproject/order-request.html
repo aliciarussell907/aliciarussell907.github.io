@@ -108,49 +108,53 @@
                 <label for="phone">* Your phone number:</label><br>
                 <input type="tel" id="phone" name="phone" placeholder="555-123-4567" value="" required><br>
             </div>
-            <label for="product">* Please select which products you would like to request:</label><br>
-            <input type="checkbox" id="product" name="product2" value="Planter" button onclick="ShowPlanterOptions()">
-            <label for="product1"> Jack-O-Lantern Planter</label><br>
-            <input type="checkbox" id="product" name="product2" value="Snake" onclick="ShowSnakeOptions()">
-            <label for="product2">Cobra Figurine</label><br>
-            <input type="checkbox" id="product" name="product3" value="Vase" onclick="ShowVaseOptions()">
-            <label for="product3">Rose in a Vase</label>
 
-            <div id="PlanterOptions" style="display: none;">
-                <h3>Options for Jack-O-Lantern Planter</h3>
-                <label for="planterCustomized">Customized?</label>
-                <select id="planterCustomized" name="planterCustomized">
-                    <option value="No">No, standard color option</option>
-                    <option value="Yes1">Yes, option 1</option>
-                    <option value="Yes2">Yes, option 2</option>
-                    <option value="Yes3">Yes, option 3</option>
-                </select><br>
-                <label for="planterQuantity">Quantity? (max of 5 per order)</label>
-                <input type="number" id="planterQuantity" name="planterQuantity" min="1" max="5" value="">
-            </div>
-            <div id="SnakeOptions" style="display: none;">
-                <h3>Options for Cobra Figurine</h3>
-                <label for="snakeCustomized">Customized?</label>
-                <select id="snakeCustomized" name="snakeCustomized">
-                    <option value="No">No, standard color option</option>
-                    <option value="Yes1">Yes, option 1</option>
-                    <option value="Yes2">Yes, option 2</option>
-                    <option value="Yes3">Yes, option 3</option>
-                </select><br>
-                <label for="snakeQuantity">Quantity? (max of 5 per order)</label>
-                <input type="number" id="snakeQuantity" name="snakeQuantity" min="1" max="5" value="">
-            </div>
-            <div id="VaseOptions" style="display: none;">
-                <h3>Options for Rose in a Vase</h3>
-                <label for="vaseCustomized">Customized?</label>
-                <select id="vaseCustomized" name="vaseCustomized">
-                    <option value="No">No, standard color option</option>
-                    <option value="Yes1">Yes, option 1</option>
-                    <option value="Yes2">Yes, option 2</option>
-                    <option value="Yes3">Yes, option 3</option>
-                </select><br>
-                <label for="vaseQuantity">Quantity? (max of 5 per order)</label>
-                <input type="number" id="vaseQuantity" name="vaseQuantity" min="1" max="5" value="">
+            <div id="productSelect">
+                <label for="product">* Please select which products you would like to request:</label><br>
+                <input type="checkbox" id="product" name="product2" value="Planter" button
+                    onclick="ShowPlanterOptions()">
+                <label for="product1"> Jack-O-Lantern Planter</label><br>
+                <input type="checkbox" id="product" name="product2" value="Snake" onclick="ShowSnakeOptions()">
+                <label for="product2">Cobra Figurine</label><br>
+                <input type="checkbox" id="product" name="product3" value="Vase" onclick="ShowVaseOptions()">
+                <label for="product3">Rose in a Vase</label>
+
+                <div id="PlanterOptions" style="display: none;">
+                    <h3>Options for Jack-O-Lantern Planter</h3>
+                    <label for="planterCustomized">Customized?</label>
+                    <select id="planterCustomized" name="planterCustomized">
+                        <option value="No">No, standard color option</option>
+                        <option value="Yes1">Yes, option 1</option>
+                        <option value="Yes2">Yes, option 2</option>
+                        <option value="Yes3">Yes, option 3</option>
+                    </select><br>
+                    <label for="planterQuantity">Quantity? (max of 5 per order)</label>
+                    <input type="number" id="planterQuantity" name="planterQuantity" min="1" max="5" value="">
+                </div>
+                <div id="SnakeOptions" style="display: none;">
+                    <h3>Options for Cobra Figurine</h3>
+                    <label for="snakeCustomized">Customized?</label>
+                    <select id="snakeCustomized" name="snakeCustomized">
+                        <option value="No">No, standard color option</option>
+                        <option value="Yes1">Yes, option 1</option>
+                        <option value="Yes2">Yes, option 2</option>
+                        <option value="Yes3">Yes, option 3</option>
+                    </select><br>
+                    <label for="snakeQuantity">Quantity? (max of 5 per order)</label>
+                    <input type="number" id="snakeQuantity" name="snakeQuantity" min="1" max="5" value="">
+                </div>
+                <div id="VaseOptions" style="display: none;">
+                    <h3>Options for Rose in a Vase</h3>
+                    <label for="vaseCustomized">Customized?</label>
+                    <select id="vaseCustomized" name="vaseCustomized">
+                        <option value="No">No, standard color option</option>
+                        <option value="Yes1">Yes, option 1</option>
+                        <option value="Yes2">Yes, option 2</option>
+                        <option value="Yes3">Yes, option 3</option>
+                    </select><br>
+                    <label for="vaseQuantity">Quantity? (max of 5 per order)</label>
+                    <input type="number" id="vaseQuantity" name="vaseQuantity" min="1" max="5" value="">
+                </div>
             </div>
             <br>
             <label for="deliverymethod">* Pick-up or Ship-to-Home?</label><br>

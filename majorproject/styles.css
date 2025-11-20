@@ -399,3 +399,16 @@ p.ContactForm {
     border-bottom-style: solid;
     padding-bottom: 1rem;
 }
+
+/* Order Form ----------------------------------------------------------------------------------- */
+    .OrderRequestForm{
+        margin: 0 5vw;
+        border-style: solid;
+    }
+
+    #contactInfo {
+        text-align: center;
+        line-height: 1.8rem;
+        padding-bottom: 1rem;
+        border-style: dotted none;
+    }
