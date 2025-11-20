@@ -464,3 +464,11 @@ p.ContactForm {
         border-bottom-style:dotted;
         padding: 2vh;
     }
+
+     select {
+        border-width: 0.1rem;
+    }
+
+    input {
+        border-width: 0.1rem;
+    }
