@@ -11,51 +11,124 @@
 	<!-- external and internal CSS -->
 	<link rel="stylesheet" href="styles.css" media="all">
 	<style>
-		/* in-file CSS here */
+		* {
+			font-family: arial, sans-serif;
+		}
+
+		body {
+			background-image: url(https://images.unsplash.com/photo-1523293836414-f04e712e1f3b?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+			background-size: cover;
+			background-position: center;
+			color: mediumvioletred;
+			width: 100vw;
+			height: auto;
+		}
+
+		.content {
+			display: flex;
+			justify-content: space-evenly;
+			padding-bottom: 5rem;
+		}
+
+		ul {
+			line-height: 2rem;
+		}
+
+		a:link {
+			color: deeppink;
+		}
+
+		a:visited {
+			color: mediumorchid;
+		}
+
+		a:hover {
+			color: mediumvioletred;
+		}
+
+		#intro {
+			width: 30vw;
+			margin: 0 auto 2rem;
+			text-align: center;
+			background-color: #FFE4E1;
+			padding: 1rem;
+			border-radius: 50px;
+		}
+
+		#intro p {
+			font-style: italic;
+		}
+
+		#activities,
+		#tinyProjects,
+		#majorProject {
+			width: 20vw;
+			border: outset;
+			padding: 2rem;
+			background-color: #FFE4E1;
+			border-color: palevioletred;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		#majorProject {
+			text-align: center;
+		}
 	</style>
 
 </head>
 
 <body>
+	<br>
+	<div id="intro">
+		<h1>Alicia</h1>
+		<p>Spellbound by stories, mastering every craft.</p>
 
-	<h1>Alicia</h1>
+		<p><a href="https://github.com/aliciarussell907/aliciarussell907.github.io">Github Repository</a></p>
 
-	<p>Spellbound by stories, mastering every craft.</p>
+	</div>
+	<div class="content">
+		<div id="activities">
+			<h2>Activities</h2>
+			<ul>
+				<li><a href="https://aliciarussell907.github.io/codelogs/log1.html">Code Log 1: HTML Semantic Tags</a>
+				</li>
+				<li><a href="https://aliciarussell907.github.io/codelogs/log2.html">Code Log 2: CSS Measuring Units</a>
+				</li>
+				<li><a href="codelogs/log3.html">Code Log 3: CSS Media Queries</a></li>
+				<li><a href="codelogs/log4.html">Code Log 4: CSS Color</a> </li>
+				<li><a href="codelogs/log5.html">Code Log 5: Images</a></li>
+				<li><a href="codelogs/log6.html">Code Log 6: References</a></li>
+			</ul>
 
-	<p><a href="https://github.com/aliciarussell907/aliciarussell907.github.io">Github Repository</a></p>
+		</div>
 
-	<hr>
+		<div id="tinyProjects">
+			<h2>Tiny Projects</h2>
+			<ul>
+				<li><a href="https://aliciarussell907.github.io/favorite-recipe/index.html"> Tiny Project 2: Favorite
+						Recipe</a>
+				</li>
+				<li><a href="https://aliciarussell907.github.io/anni-albers/index.html"> Tiny Project 3: Design Quote
+						Layout 1</a>
+				</li>
+				<li><a href="https://aliciarussell907.github.io/anni-albers/index2.html"> Tiny Project 3: Design Quote
+						Layout 2</a>
+				</li>
+				<li><a href="rhododendron/index.html"> Tiny Project 4: Pacific Rhododendron </a></li>
+				<li><a href="responsive-recipe/index.html"> Tiny Project 6: Responsive Recipe </a></li>
+				<li><a href="recipe-minisite/index.html"> Tiny Project 7: Recipe Mini-Site </a></li>
+				<li><a href="dark-flower/index.html"> Tiny Project 8: Dark Flower </a></li>
+			</ul>
+		</div>
 
-	<h2>Activities</h2>
-	<ul>
-		<li><a href="https://aliciarussell907.github.io/codelogs/log1.html">Code Log 1: HTML Semantic Tags</a></li>
-		<li><a href="https://aliciarussell907.github.io/codelogs/log2.html">Code Log 2: CSS Measuring Units</a></li>
-		<li><a href="codelogs/log3.html">Code Log 3: CSS Media Queries</a></li>
-		<li><a href="codelogs/log4.html">Code Log 4: CSS Color</a> </li>
-		<li><a href="codelogs/log5.html">Code Log 5: Images</a></li>
-		<li><a href="codelogs/log6.html">Code Log 6: References</a></li>
-	</ul>
-
-	<hr>
-
-	<h2>Tiny Projects</h2>
-	<ul>
-		<li><a href="https://aliciarussell907.github.io/favorite-recipe/index.html"> Tiny Project 2: Favorite Recipe</a>
-		</li>
-		<li><a href="https://aliciarussell907.github.io/anni-albers/index.html"> Tiny Project 3: Design Quote Layout 1</a>
-		</li>
-		<li><a href="https://aliciarussell907.github.io/anni-albers/index2.html"> Tiny Project 3: Design Quote Layout 2</a>
-		</li>
-		<li><a href="rhododendron/index.html"> Tiny Project 4: Pacific Rhododendron </a></li>
-		<li><a href="responsive-recipe/index.html"> Tiny Project 6: Responsive Recipe </a></li>
-		<li><a href="recipe-minisite/index.html"> Tiny Project 7: Recipe Mini-Site </a></li>
-		<li><a href="dark-flower/index.html"> Tiny Project 8: Dark Flower </a></li>
-	</ul>
-
-	<hr>
-
-	<h2>Major Project</h2>
-	<p><a href="majorproject/index.html">NestCraft 3D (under construction)</a></p>
+		<div id="majorProject">
+			<h2>Major Project</h2>
+			<p><a href="majorproject/index.html">NestCraft 3D (under construction)</a></p>
+		</div>
+	</div>
 </body>
 
 </html>
