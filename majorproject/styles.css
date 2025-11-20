@@ -416,9 +416,14 @@ p.ContactForm {
 }
 
 /* Order Form ----------------------------------------------------------------------------------- */
-    .OrderRequestForm{
+.OrderRequestForm{
         margin: 2vh 5vw;
         border-style: solid;
+    }
+
+    .OrderRequestForm h2{
+        border-style: none none dashed;
+        text-align:center;
     }
 
     #contactInfo {
@@ -426,6 +431,24 @@ p.ContactForm {
         line-height: 1.8rem;
         padding-bottom: 1rem;
         border-style: dotted none;
+    }
+
+    #contactInfo h3{
+        padding: 0;
+        margin: 0;
+        background-color: #89B0AE70;
+    }
+
+    #productSelect {
+        line-height: 1.8rem;
+        padding-bottom: 1rem;
+    }
+
+    #productSelect h3{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        background-color: #89B0AE70;
     }
 
     #PlanterOptions, #SnakeOptions, #VaseOptions {
