@@ -416,14 +416,21 @@ p.ContactForm {
 }
 
 /* Order Form ----------------------------------------------------------------------------------- */
-.OrderRequestForm{
+    .OrderRequestForm{
         margin: 2vh 5vw;
         border-style: solid;
     }
 
-    .OrderRequestForm h2{
+    h2.OrderRequestForm{
         border-style: none none dashed;
         text-align:center;
+    }
+    p.OrderRequestForm {
+        border:none;
+        padding: 0;
+        margin: 0;
+        font-size: 1.5vh;
+        font-style: italic;
     }
 
     #contactInfo {
