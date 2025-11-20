@@ -553,7 +553,7 @@ input {
 
 /* FAQ ----------------------------------------------------------------------------------- */
 .collapsible {
-    background-color: #777;
+    background-color: #89B0AE;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -566,14 +566,18 @@ input {
 
 .active,
 .collapsible:hover {
-    background-color: #555;
+    background-color: #89B0AE70;
+}
+
+.active{
+    color:black;
 }
 
 .content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #FAF9F9;
 }
 
 .collapsible:after {
