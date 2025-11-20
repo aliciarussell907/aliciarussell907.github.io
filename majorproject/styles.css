@@ -236,6 +236,22 @@ header.standard {
     border-radius: 5px;
 }
 
+.homeNav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+.homeNavButton {
+    height: 9vh;
+    width: 9vh;
+    background-color: #BEE3DB;
+    border-color: #89B0AE;
+    font-family: "Modern Antiqua", serif;
+    border-radius: 50%
+    
+}
+
 /* product blocks ----------------------------------------------------------------------------------- */
 .productBlock {
     padding: 1vh;
