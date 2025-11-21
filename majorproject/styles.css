@@ -552,38 +552,42 @@ input {
 }
 
 /* FAQ ----------------------------------------------------------------------------------- */
- .collapsible {
-            background-color: #777;
-            color: white;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-        }
+.collapsible {
+    background-color: #89B0AE;
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 5vw;
+    font-family: "Modern Antiqua", serif;
+    padding-right: 9vw;
+}
 
-        .active,
-        .collapsible:hover {
-            background-color: #555;
-        }
+.active,
+.collapsible:hover {
+    background-color: #89B0AE70;
+    color: black;
+}
 
-        .content {
-            padding: 0 18px;
-            display: none;
-            overflow: hidden;
-            background-color: #f1f1f1;
-        }
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    font-size: 5vw;
+}
 
-        .collapsible:after {
-            content: '\27A4';
-            font-size: 13px;
-            color: white;
-            float: right;
-            margin-left: 5px;
-        }
+.collapsible:after {
+    content: '\27A4';
+    font-size: 5vw;
+    color: white;
+    float: right;
+}
 
-        .active:after {
-            content: "\2B9F";
-        }
+.active:after {
+    content: "\2B9F";
+    color: black;
+}
