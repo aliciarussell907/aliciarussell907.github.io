@@ -595,16 +595,16 @@ input {
 
 /* History ----------------------------------------------------------------------------------- */
 #ourStart {
-    background-image: url(images/3d\ printed\ spaceship\ and\ mushroom.jpg);
+    background-image: url(images/blankpage.jpg));
 }
 
 #teamGrows {
-    background-image: url(images/3d\ printed\ house.jpg);
+    background-image: url(images/eggsinanest.jpg);
     background-position: left center;
 }
 
 #launchSite {
-    background-image: url(images/blueshoppingbag.jpg);
+    background-image: url(images/openlaptop-blankscreen.jpg);
 }
 
 #historyStart, #historyTeam, #historySite {
