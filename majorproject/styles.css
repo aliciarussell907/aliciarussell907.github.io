@@ -595,12 +595,11 @@ input {
 
 /* History ----------------------------------------------------------------------------------- */
 #ourStart {
-    background-image: url(images/blankpage.jpg));
+    background-image: url(images/blueshoppingbag.jpg);
 }
 
 #teamGrows {
     background-image: url(images/eggsinanest.jpg);
-    background-position: left center;
 }
 
 #launchSite {
@@ -608,8 +607,10 @@ input {
 }
 
 #historyStart, #historyTeam, #historySite {
-    background-color: #FFFFFF90;
+    background-color: #FFFFFF95;
     padding-left: 5vw;
+    font-size: 5vw;
+    padding: 3vh 6vw
 }
 .borderOverlay {
     position: absolute;
@@ -618,6 +619,6 @@ input {
     width: 100%;
     height: 100%;
     border-style: solid;
-    border-width: 0 2vh;
+    border-width: 2vh;
     border-color: white;
 }
