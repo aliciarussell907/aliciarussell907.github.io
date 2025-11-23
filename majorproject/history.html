@@ -1,28 +1,94 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-	
-	<!-- meta tags and title -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Page Title</title>
 
-	<!-- external and internal CSS -->
-	<link rel="stylesheet" href="styles.css" media="all">
-	<style>
-		/* in-file CSS here */
-	</style>
+    <!-- meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
 
-	<!-- external and internal JavaScript -->
-	<script src="scripts.js" defer></script>
-	<script>
-		// in-page JavaScript here
-	</script>
+    <!-- external and internal CSS -->
+    <link rel="stylesheet" href="styles.css" media="all">
+    <style>
+        html {
+            scroll-snap-type: y mandatory;
+            /* force scroll snap for vertical elements */
+        }
+
+        body {
+            overflow-x: hidden;
+            /* hide horizontal scrollbars */
+            overflow-y: auto;
+            /* show vertical scrollbars */
+        }
+
+        /* eliminate default padding from content elements */
+        h1,
+        h2,
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* all sections are positioned relative and have a full-page height of 100vh, plus some background settings */
+        section {
+            position: relative;
+            height: 100vh;
+            background-size: cover;
+            background-position: bottom center;
+            background-attachment: fixed;
+            scroll-snap-align: start;
+            /* force scrolling to align with the top edge of this element */
+        }
+
+        /* absolutely positioned full-width element with a border provides a frame */
+        .borderOverlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0.5rem solid rgb(0, 0, 0);
+        }
+
+        #ourStart {
+            background-image: url(images/3d\ printed\ spaceship\ and\ mushroom.jpg);
+        }
+
+        #teamGrows {
+            background-image: url(images/3d\ printed\ house.jpg);
+            background-position: left center;
+        }
+
+        #launchSite {
+            background-image: url(images/blueshoppingbag.jpg);
+        }
+
+
+        section>.content {
+            position: absolute;
+            width: 100%;
+            top: 0.5rem;
+            left: 0;
+            padding: 1rem;
+            text-align: center;
+            color: white;
+            font-size: 3vh;
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+    </style>
+
+    <!-- external and internal JavaScript -->
+    <script src="scripts.js" defer></script>
+    <script>
+        // in-page JavaScript here
+    </script>
 
 </head>
+
 <body>
-  <nav>
+    <nav>
         <a id="navBurger">&#9776;</a>
 
         <ul>
@@ -50,5 +116,32 @@
             <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
     </nav>
+
+    <header class="standard">
+        <div id="headertitle">
+            <h1>History</h1>
+            <p>NestCraft 3D</p>
+        </div>
+    </header>
+
+    <section id="ourStart">
+        <div id="historyStart">
+            <h2>Let's take it to the beginning...</h2>
+        </div>
+    </section>
+
+    <section id="teamGrows">
+        <div id="historyTeam">
+            <h2>Let's take it to the beginning...</h2>
+        </div>
+    </section>
+
+    <section id="launchSite">
+        <div id="historySite">
+            <h2>Let's take it to the beginning...</h2>
+        </div>
+    </section>
+
 </body>
+
 </html>
