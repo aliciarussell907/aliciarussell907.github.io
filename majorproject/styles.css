@@ -610,7 +610,8 @@ input {
     background-color: #FFFFFF95;
     padding-left: 5vw;
     font-size: 5vw;
-    padding: 3vh 6vw
+    padding: 3vh 6vw;
+    line-height: 2rem;
 }
 .borderOverlay {
     position: absolute;
