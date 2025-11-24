@@ -376,6 +376,20 @@ button.moreDetails {
     background-position: bottom center;
 }
 
+#redSilk {
+    background-color: #ec644b95;
+}
+
+#marble {
+    background-image: url(images/marble.jpg); 
+    background-size: 9vh;
+}
+
+#rbSilk{
+    background-image: url(images/rainbow.jpg);
+    background-size: 5vh;
+}
+
 /* Meet The Team -----------------------------------------------------------------------------------*/
 #MeetTheTeam h2 {
     text-align: center;
