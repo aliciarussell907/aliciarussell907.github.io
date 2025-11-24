@@ -370,6 +370,10 @@ button.moreDetails {
    background-color: #FFAD0080; 
 }
 
+#glitter {
+    background-image: url(images/glitter.jpg);
+}
+
 /* Meet The Team -----------------------------------------------------------------------------------*/
 #MeetTheTeam h2 {
     text-align: center;
