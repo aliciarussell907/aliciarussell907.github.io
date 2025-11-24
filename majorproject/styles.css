@@ -192,6 +192,21 @@ header.homepage {
     font-style: italic;
 }
 
+.homeNav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+.homeNavButton {
+    height: 9vh;
+    width: 9vh;
+    background-color: #BEE3DB;
+    border-color: #89B0AE;
+    font-family: "Modern Antiqua", serif;
+    border-radius: 50%
+}
+
 /* standard page header ----------------------------------------------------------------------------------- */
 header.standard {
     width: 100vw;
@@ -224,33 +239,12 @@ header.standard {
 
 }
 
-#homeIntro {
-    width: 90vw;
-    margin: 1rem auto;
-    text-align: center;
-    line-height: 1.5rem;
-}
+@media screen and (min-width: 1024px) {
+    header.standard {
+        height: 50vh;
+    }
 
-#homeIntro h2 {
-    background-color: #BEE3DB;
-    padding: 1rem;
-    border-radius: 5px;
-    line-height: 2rem;
-}
-
-.homeNav {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 1rem;
-}
-
-.homeNavButton {
-    height: 9vh;
-    width: 9vh;
-    background-color: #BEE3DB;
-    border-color: #89B0AE;
-    font-family: "Modern Antiqua", serif;
-    border-radius: 50%
+    
 }
 
 /* product blocks ----------------------------------------------------------------------------------- */
@@ -317,8 +311,51 @@ button.moreDetails {
     width: 100%;
 }
 
+@media screen and (min-width: 1024px) {
+    .productBlock {
+        width: calc(100vw*4/6);
+        margin: 0 auto;
+    }
+    
+    .productBlock h2{
+        font-size: 5vw;
+    }
+
+    .productBlock h3 {
+    font-size: 3vw;
+}
+    .productBlock p {
+    font-size: 2vw;
+}
+    .mySlides1, .mySlides2, .mySlides3 {
+    height: 80vh;   
+}
+    p.price {
+    text-align: left;
+}
+
+    
+    button.moreDetails {
+    height: 10vh;
+    width: 20vw;
+    font-size: 2vw;
+    margin: 1vh 0 1vh calc(100vw*2/6); 
+}
+    #comingSoon h2{
+    width: calc(100vw*4/6);
+    height: 20vh;
+    margin: 1vh auto;
+    font-size: 8vw;
+}
+    #comingSoon p {
+        font-size: 5vw;
+        width: 50%;
+        margin: 0 auto
+    }
+
+
 /* product details ----------------------------------------------------------------------------------- */
-.productDetails {
+.productDetails { 
     line-height: 2rem;
 }
 
