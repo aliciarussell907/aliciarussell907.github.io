@@ -372,6 +372,8 @@ button.moreDetails {
 
 #glitter {
     background-image: url(images/glitter.jpg);
+    background-size: 14vh;
+    background-position: bottom center;
 }
 
 /* Meet The Team -----------------------------------------------------------------------------------*/
