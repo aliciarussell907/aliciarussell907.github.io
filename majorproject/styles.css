@@ -258,6 +258,12 @@ header.homepage {
         #homeIntro {
             width: calc(100vw*4/6);
             margin: 0 2vw;
+            font-size: 2vw;
+            line-height: 5vh;
+        }
+
+        #homeIntro h2 {
+            line-height: 7vh;
         }
 
         .homeNav {
