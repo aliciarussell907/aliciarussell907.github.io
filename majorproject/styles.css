@@ -240,518 +240,530 @@ header.homepage {
     header.homepage {
         height: 95vh;
     }
-    
-    #homepagetitle {
-    background-color: #89B0AE90;
-    margin: 0 5vw;
-}
+
+    #homepagetitle h1 {
+        background-color: #89B0AE90;
+        margin: 4vh;
+    }
+
     #homepagetitle h2 {
-    font-size: 3vw;
-}
+        background-color: #89B0AE90;
+        font-size: 3vw;
 
-    #homeContent {
-        display: flex;
+
+        #homeContent {
+            display: flex;
+        }
+
+        #homeIntro {
+            width: calc(100vw*4/6);
+            margin: 0 2vw;
+        }
+
+        .homeNav {
+            margin: 5rem;
+        }
+
     }
 
-    #homeIntro{
-        width: calc(100vw*4/6);
-        margin: 0 2vw;
-    }
-
-    .homeNav {
-    margin: 5rem;
-}
-    
-}
-
-/* standard page header ----------------------------------------------------------------------------------- */
-header.standard {
-    width: 100vw;
-    height: 32vh;
-    display: flex;
-    background-image: url(images/leaves-background.jpg);
-    background-size: cover;
-    overflow: hidden;
-}
-
-#headertitle {
-    margin: 9vh;
-}
-
-#headertitle h1 {
-    font-size: 10vw;
-    color: #FAF9F9;
-    text-align: center;
-    padding: 2vh;
-    background-color: #89B0AE90;
-}
-
-#headertitle p {
-    font-size: 2vw;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    font-style: italic;
-    color: #555B6E;
-
-}
-
-@media screen and (min-width: 1024px) {
+    /* standard page header ----------------------------------------------------------------------------------- */
     header.standard {
-        height: 50vh;
+        width: 100vw;
+        height: 32vh;
+        display: flex;
+        background-image: url(images/leaves-background.jpg);
+        background-size: cover;
+        overflow: hidden;
     }
 
-    
-}
+    #headertitle {
+        margin: 9vh;
+    }
 
-/* product blocks ----------------------------------------------------------------------------------- */
-.productBlock {
-    padding: 1vh;
-    width: 100vw;
-}
+    #headertitle h1 {
+        font-size: 10vw;
+        color: #FAF9F9;
+        text-align: center;
+        padding: 2vh;
+        background-color: #89B0AE90;
+    }
 
-.productBlock h2 {
-    background-color: #BEE3DB;
-    text-align: center;
-}
+    #headertitle p {
+        font-size: 2vw;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-style: italic;
+        color: #555B6E;
 
-.productBlock h3 {
-    font-size: 5vw;
-    padding: 0;
-    margin: 0;
-}
+    }
 
-.productBlock p {
-    font-size: 3vw;
-    padding: 0;
-    margin: 0;
-    color: #555B6E;
-    margin: 0;
-}
+    @media screen and (min-width: 1024px) {
+        header.standard {
+            height: 50vh;
+        }
 
-.mySlides1,
-.mySlides2,
-.mySlides3 {
-    height: 40vh;
-    object-fit: cover;
-}
 
-p.price {
-    font-size: 5vw;
-    text-align: right;
-    margin: 0;
-    padding: 0;
-}
+    }
 
-button.moreDetails {
-    background-color: #BEE3DB;
-    border-color: #89B0AE;
-    font-family: "Modern Antiqua", serif;
-    margin: 1vh 30% 0 30%
-}
-
-#comingSoon {
-    background-color: #BEE3DB;
-    padding: 1vh;
-}
-
-#comingSoon h2 {
-    text-align: center;
-    background-color: #89B0AE;
-}
-
-#comingSoon p {
-    text-align: center;
-}
-
-#comingSoon img {
-    width: 100%;
-}
-
-@media screen and (min-width: 1024px) {
+    /* product blocks ----------------------------------------------------------------------------------- */
     .productBlock {
-        width: calc(100vw*4/6);
-        margin: 0 auto;
+        padding: 1vh;
+        width: 100vw;
     }
-    
-    .productBlock h2{
-        font-size: 5vw;
+
+    .productBlock h2 {
+        background-color: #BEE3DB;
+        text-align: center;
     }
 
     .productBlock h3 {
-    font-size: 3vw;
-}
-    .productBlock p {
-    font-size: 2vw;
-}
-    .mySlides1, .mySlides2, .mySlides3 {
-    height: 80vh;   
-}
-    p.price {
-    text-align: left;
-}
-
-    
-    button.moreDetails {
-    height: 10vh;
-    width: 20vw;
-    font-size: 2vw;
-    margin: 1vh 0 1vh calc(100vw*2/6); 
-}
-    #comingSoon h2{
-    width: calc(100vw*4/6);
-    height: 20vh;
-    margin: 1vh auto;
-    font-size: 8vw;
-}
-    #comingSoon p {
         font-size: 5vw;
-        width: 50%;
-        margin: 0 auto
+        padding: 0;
+        margin: 0;
     }
-}
 
-/* product details ----------------------------------------------------------------------------------- */
-.productDetails { 
-    line-height: 2rem;
-}
+    .productBlock p {
+        font-size: 3vw;
+        padding: 0;
+        margin: 0;
+        color: #555B6E;
+        margin: 0;
+    }
 
-.productDetails h2 {
-    text-align: center;
-}
+    .mySlides1,
+    .mySlides2,
+    .mySlides3 {
+        height: 40vh;
+        object-fit: cover;
+    }
 
-#productTagline {
-    text-align: center;
-    font-size: 3vw;
-    margin: 0 16vw 1vh;
-    padding: 1rem;
-    background-color: #89B0AE70;
-    border-radius: 15%;
-    border-style: dashed;
-    border-color: white;
-}
+    p.price {
+        font-size: 5vw;
+        text-align: right;
+        margin: 0;
+        padding: 0;
+    }
 
-#priceTag {
-    text-align: center;
-}
+    button.moreDetails {
+        background-color: #BEE3DB;
+        border-color: #89B0AE;
+        font-family: "Modern Antiqua", serif;
+        margin: 1vh 30% 0 30%
+    }
 
-#productDescription {
-    margin: 0 5vw;
-}
+    #comingSoon {
+        background-color: #BEE3DB;
+        padding: 1vh;
+    }
 
-#productNote {
-    text-align: center;
-    font-style: italic;
-    font-size: 2.7vw;
-    background-color: #F5275740;
-    margin: 1vh calc(100vw*2/6)
-}
+    #comingSoon h2 {
+        text-align: center;
+        background-color: #89B0AE;
+    }
 
-.sample {
-    width: 10vw;
-    height: 10vw;
-    border-radius: 50%;
-    margin: 1vh 5vw 5vh;
-}
+    #comingSoon p {
+        text-align: center;
+    }
 
-#glow {
-    background-color: #FFAD00;
-    border: 1px solid #FFAD00;
-    box-shadow: 0 0 10px 5px #FFAD00;
-}
+    #comingSoon img {
+        width: 100%;
+    }
 
-#crystal {
-   background-color: #FFAD0080; 
-}
+    @media screen and (min-width: 1024px) {
+        .productBlock {
+            width: calc(100vw*4/6);
+            margin: 0 auto;
+        }
 
-#glitter {
-    background-image: url(images/glitter.jpg);
-    background-size: 14vh;
-    background-position: bottom center;
-}
+        .productBlock h2 {
+            font-size: 5vw;
+        }
 
-#redSilk {
-    background-color: #ec644b95;
-}
+        .productBlock h3 {
+            font-size: 3vw;
+        }
 
-#marble {
-    background-image: url(images/marble.jpg); 
-    background-size: 9vh;
-}
+        .productBlock p {
+            font-size: 2vw;
+        }
 
-#rbSilk{
-    background-image: url(images/rainbow.jpg);
-    background-size: 5vh;
-}
+        .mySlides1,
+        .mySlides2,
+        .mySlides3 {
+            height: 80vh;
+        }
 
-/* Meet The Team -----------------------------------------------------------------------------------*/
-#MeetTheTeam h2 {
-    text-align: center;
-}
-
-#MeetTheTeam h3 {
-    text-align: center;
-    background-color: #89B0AE;
-    color: white;
-    margin: 0;
-}
-
-#MeetTheTeam p {
-    padding: 5vw;
-}
-
-#MeetTheTeam #admin img {
-    object-position: top center;
-}
-
-#LearnMore h2 {
-    text-align: center;
-    font-size: 1.7rem;
-    background-color: #89B0AE;
-    color: white;
-    margin: 0 15vw;
-}
-
-#LearnMore p {
-    padding: 2vw;
-}
-
-/* Contact Us ----------------------------------------------------------------------------------- */
-
-.ContactForm {
-    background-color: #89B0AE;
-    text-align: center;
-    margin: 5vw;
-    padding: 0.5vh;
-
-}
-
-div.ContactForm {
-    border-style: solid;
-    border-color: #BEE3DB;
-}
-
-h2.ContactForm {
-    border-bottom: dotted;
-    border-color: white;
-    margin: 1vh 10vw;
-}
-
-form.ContactForm {
-    line-height: 2.5vh;
-    padding: 0;
-    margin: 0 0 2vh 0;
-}
-
-button.ContactForm {
-    background-color: white;
-    padding: 2vw;
-    margin: 0 0 1vh 0;
-}
-
-p.ContactForm {
-    padding: 0;
-    margin: 0;
-    font-size: 1.5vh;
-    font-style: italic;
-}
-
-.Socials {
-    text-align: center;
-}
-
-/* Thank You Message ----------------------------------------------------------------------------------- */
-
-#ThankYouMessage {
-    width: 66vw;
-    margin: 5vh 10vw;
-    border-style: dashed;
-    padding: 3%;
-}
-
-#ThankYouMessage h2 {
-    text-align: center;
-    border-bottom-style: solid;
-    padding-bottom: 1rem;
-}
-
-/* Order Form ----------------------------------------------------------------------------------- */
-.OrderRequestForm {
-    margin: 2vh 5vw;
-    border-style: solid;
-}
-
-h2.OrderRequestForm {
-    border-style: none none dashed;
-    text-align: center;
-}
-
-p.OrderRequestForm {
-    border: none;
-    padding: 0;
-    margin: 0;
-    font-size: 1.5vh;
-    font-style: italic;
-}
-
-#contactInfo {
-    line-height: 1.8rem;
-    padding-bottom: 1rem;
-    border-style: dotted none;
-}
-
-#contactInfo h3 {
-    text-align: center;
-    padding: 0vh;
-    margin: 0;
-    background-color: #89B0AE70;
-    height: 3vh;
-}
-
-#productSelect {
-    line-height: 1.8rem;
-    padding-bottom: 1rem;
-    border-bottom-style: dotted;
-}
-
-#productSelect h3 {
-    text-align: center;
-    padding: 0vh;
-    margin: 0;
-    background-color: #89B0AE70;
-    height: 3vh;
-}
-
-#PlanterOptions,
-#SnakeOptions,
-#VaseOptions {
-    line-height: 1.8rem;
-    font-size: 3vw;
-    border-bottom-style: dotted;
-    padding: 2vh;
-}
-
-#delivery h3 {
-    text-align: center;
-    padding: 0vh;
-    margin: 0;
-    background-color: #89B0AE70;
-    height: 3vh;
-}
-
-#addressInput {
-    line-height: 1.8rem;
-    padding-left: 3vw;
-    margin-top: 1vh;
-}
-
-#addressInput h3 {
-    margin: 0 40vw 0 0;
-    background-color: #89B0AE70;
-    text-align: center;
-    font-size: 1rem;
-}
-
-button.OrderRequestForm {
-    margin: 2vh 40%;
-    scale: 150%;
-    background-color: #89B0AE70;
-    border-color: #89B0AE;
-    font-family: "Modern Antiqua", serif;
-}
-
-select {
-    border-width: 0.1rem;
-}
-
-input {
-    border-width: 0.1rem;
-}
-
-/* Order Received Message ----------------------------------------------------------------------------------- */
-
-#orderReceived {
-    width: 66vw;
-    margin: 5vh 10vw;
-    border-style: dashed;
-    padding: 3%;
-}
-
-#orderReceived h2 {
-    text-align: center;
-    border-bottom-style: solid;
-    padding-bottom: 1rem;
-}
-
-/* FAQ ----------------------------------------------------------------------------------- */
-.collapsible {
-    background-color: #89B0AE;
-    color: white;
-    cursor: pointer;
-    padding: 25px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 5vw;
-    font-family: "Modern Antiqua", serif;
-    padding-right: 9vw;
-}
-
-.active,
-.collapsible:hover {
-    background-color: #89B0AE70;
-    color: black;
-}
-
-.content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-    font-size: 5vw;
-}
-
-.collapsible:after {
-    content: '\27A4';
-    font-size: 5vw;
-    color: white;
-    float: right;
-}
-
-.active:after {
-    content: "\2B9F";
-    color: black;
-}
+        p.price {
+            text-align: left;
+        }
 
 
-/* History ----------------------------------------------------------------------------------- */
-#ourStart {
-    background-image: url(images/blueshoppingbag.jpg);
-}
+        button.moreDetails {
+            height: 10vh;
+            width: 20vw;
+            font-size: 2vw;
+            margin: 1vh 0 1vh calc(100vw*2/6);
+        }
 
-#teamGrows {
-    background-image: url(images/eggsinanest.jpg);
-}
+        #comingSoon h2 {
+            width: calc(100vw*4/6);
+            height: 20vh;
+            margin: 1vh auto;
+            font-size: 8vw;
+        }
 
-#launchSite {
-    background-image: url(images/openlaptop-blankscreen.jpg);
-}
+        #comingSoon p {
+            font-size: 5vw;
+            width: 50%;
+            margin: 0 auto
+        }
+    }
 
-#historyStart, #historyTeam, #historySite {
-    background-color: #FFFFFF95;
-    padding-left: 5vw;
-    font-size: 4vw;
-    padding: 3vh 6vw;
-    line-height: 2rem;
-}
-.borderOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-style: solid;
-    border-width: 2vh;
-    border-color: white;
-}
+    /* product details ----------------------------------------------------------------------------------- */
+    .productDetails {
+        line-height: 2rem;
+    }
+
+    .productDetails h2 {
+        text-align: center;
+    }
+
+    #productTagline {
+        text-align: center;
+        font-size: 3vw;
+        margin: 0 16vw 1vh;
+        padding: 1rem;
+        background-color: #89B0AE70;
+        border-radius: 15%;
+        border-style: dashed;
+        border-color: white;
+    }
+
+    #priceTag {
+        text-align: center;
+    }
+
+    #productDescription {
+        margin: 0 5vw;
+    }
+
+    #productNote {
+        text-align: center;
+        font-style: italic;
+        font-size: 2.7vw;
+        background-color: #F5275740;
+        margin: 1vh calc(100vw*2/6)
+    }
+
+    .sample {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+        margin: 1vh 5vw 5vh;
+    }
+
+    #glow {
+        background-color: #FFAD00;
+        border: 1px solid #FFAD00;
+        box-shadow: 0 0 10px 5px #FFAD00;
+    }
+
+    #crystal {
+        background-color: #FFAD0080;
+    }
+
+    #glitter {
+        background-image: url(images/glitter.jpg);
+        background-size: 14vh;
+        background-position: bottom center;
+    }
+
+    #redSilk {
+        background-color: #ec644b95;
+    }
+
+    #marble {
+        background-image: url(images/marble.jpg);
+        background-size: 9vh;
+    }
+
+    #rbSilk {
+        background-image: url(images/rainbow.jpg);
+        background-size: 5vh;
+    }
+
+    /* Meet The Team -----------------------------------------------------------------------------------*/
+    #MeetTheTeam h2 {
+        text-align: center;
+    }
+
+    #MeetTheTeam h3 {
+        text-align: center;
+        background-color: #89B0AE;
+        color: white;
+        margin: 0;
+    }
+
+    #MeetTheTeam p {
+        padding: 5vw;
+    }
+
+    #MeetTheTeam #admin img {
+        object-position: top center;
+    }
+
+    #LearnMore h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        background-color: #89B0AE;
+        color: white;
+        margin: 0 15vw;
+    }
+
+    #LearnMore p {
+        padding: 2vw;
+    }
+
+    /* Contact Us ----------------------------------------------------------------------------------- */
+
+    .ContactForm {
+        background-color: #89B0AE;
+        text-align: center;
+        margin: 5vw;
+        padding: 0.5vh;
+
+    }
+
+    div.ContactForm {
+        border-style: solid;
+        border-color: #BEE3DB;
+    }
+
+    h2.ContactForm {
+        border-bottom: dotted;
+        border-color: white;
+        margin: 1vh 10vw;
+    }
+
+    form.ContactForm {
+        line-height: 2.5vh;
+        padding: 0;
+        margin: 0 0 2vh 0;
+    }
+
+    button.ContactForm {
+        background-color: white;
+        padding: 2vw;
+        margin: 0 0 1vh 0;
+    }
+
+    p.ContactForm {
+        padding: 0;
+        margin: 0;
+        font-size: 1.5vh;
+        font-style: italic;
+    }
+
+    .Socials {
+        text-align: center;
+    }
+
+    /* Thank You Message ----------------------------------------------------------------------------------- */
+
+    #ThankYouMessage {
+        width: 66vw;
+        margin: 5vh 10vw;
+        border-style: dashed;
+        padding: 3%;
+    }
+
+    #ThankYouMessage h2 {
+        text-align: center;
+        border-bottom-style: solid;
+        padding-bottom: 1rem;
+    }
+
+    /* Order Form ----------------------------------------------------------------------------------- */
+    .OrderRequestForm {
+        margin: 2vh 5vw;
+        border-style: solid;
+    }
+
+    h2.OrderRequestForm {
+        border-style: none none dashed;
+        text-align: center;
+    }
+
+    p.OrderRequestForm {
+        border: none;
+        padding: 0;
+        margin: 0;
+        font-size: 1.5vh;
+        font-style: italic;
+    }
+
+    #contactInfo {
+        line-height: 1.8rem;
+        padding-bottom: 1rem;
+        border-style: dotted none;
+    }
+
+    #contactInfo h3 {
+        text-align: center;
+        padding: 0vh;
+        margin: 0;
+        background-color: #89B0AE70;
+        height: 3vh;
+    }
+
+    #productSelect {
+        line-height: 1.8rem;
+        padding-bottom: 1rem;
+        border-bottom-style: dotted;
+    }
+
+    #productSelect h3 {
+        text-align: center;
+        padding: 0vh;
+        margin: 0;
+        background-color: #89B0AE70;
+        height: 3vh;
+    }
+
+    #PlanterOptions,
+    #SnakeOptions,
+    #VaseOptions {
+        line-height: 1.8rem;
+        font-size: 3vw;
+        border-bottom-style: dotted;
+        padding: 2vh;
+    }
+
+    #delivery h3 {
+        text-align: center;
+        padding: 0vh;
+        margin: 0;
+        background-color: #89B0AE70;
+        height: 3vh;
+    }
+
+    #addressInput {
+        line-height: 1.8rem;
+        padding-left: 3vw;
+        margin-top: 1vh;
+    }
+
+    #addressInput h3 {
+        margin: 0 40vw 0 0;
+        background-color: #89B0AE70;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    button.OrderRequestForm {
+        margin: 2vh 40%;
+        scale: 150%;
+        background-color: #89B0AE70;
+        border-color: #89B0AE;
+        font-family: "Modern Antiqua", serif;
+    }
+
+    select {
+        border-width: 0.1rem;
+    }
+
+    input {
+        border-width: 0.1rem;
+    }
+
+    /* Order Received Message ----------------------------------------------------------------------------------- */
+
+    #orderReceived {
+        width: 66vw;
+        margin: 5vh 10vw;
+        border-style: dashed;
+        padding: 3%;
+    }
+
+    #orderReceived h2 {
+        text-align: center;
+        border-bottom-style: solid;
+        padding-bottom: 1rem;
+    }
+
+    /* FAQ ----------------------------------------------------------------------------------- */
+    .collapsible {
+        background-color: #89B0AE;
+        color: white;
+        cursor: pointer;
+        padding: 25px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 5vw;
+        font-family: "Modern Antiqua", serif;
+        padding-right: 9vw;
+    }
+
+    .active,
+    .collapsible:hover {
+        background-color: #89B0AE70;
+        color: black;
+    }
+
+    .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+        font-size: 5vw;
+    }
+
+    .collapsible:after {
+        content: '\27A4';
+        font-size: 5vw;
+        color: white;
+        float: right;
+    }
+
+    .active:after {
+        content: "\2B9F";
+        color: black;
+    }
+
+
+    /* History ----------------------------------------------------------------------------------- */
+    #ourStart {
+        background-image: url(images/blueshoppingbag.jpg);
+    }
+
+    #teamGrows {
+        background-image: url(images/eggsinanest.jpg);
+    }
+
+    #launchSite {
+        background-image: url(images/openlaptop-blankscreen.jpg);
+    }
+
+    #historyStart,
+    #historyTeam,
+    #historySite {
+        background-color: #FFFFFF95;
+        padding-left: 5vw;
+        font-size: 4vw;
+        padding: 3vh 6vw;
+        line-height: 2rem;
+    }
+
+    .borderOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-style: solid;
+        border-width: 2vh;
+        border-color: white;
+    }
