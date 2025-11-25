@@ -207,6 +207,21 @@ header.homepage {
     border-radius: 50%
 }
 
+@media screen and (min-width: 1024px) {
+    header.homepage {
+        height: 95vh;
+    }
+    
+    #homepagetitle {
+    background-color: #89B0AE90;
+    margin: 0 5vw;
+}
+    #homepagetitle h2 {
+    font-size: 3vw;
+}
+    
+}
+
 /* standard page header ----------------------------------------------------------------------------------- */
 header.standard {
     width: 100vw;
