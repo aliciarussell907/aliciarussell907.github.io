@@ -248,6 +248,19 @@ header.homepage {
     #homepagetitle h2 {
     font-size: 3vw;
 }
+
+    #homeContent {
+        display: flex;
+    }
+
+    #homeIntro{
+        width: calc(100vw*4/6);
+        margin: 0 2vw;
+    }
+
+    .homeNav {
+    margin: 5rem;
+}
     
 }
 
