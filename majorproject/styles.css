@@ -207,6 +207,35 @@ header.homepage {
     border-radius: 50%
 }
 
+#homeIntro {
+    width: 90vw;
+    margin: 1rem auto;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+#homeIntro h2 {
+    background-color: #BEE3DB;
+    padding: 1rem;
+    border-radius: 5px;
+    line-height: 2rem;
+}
+
+.homeNav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+.homeNavButton {
+    height: 9vh;
+    width: 9vh;
+    background-color: #BEE3DB;
+    border-color: #89B0AE;
+    font-family: "Modern Antiqua", serif;
+    border-radius: 50%
+}
+
 @media screen and (min-width: 1024px) {
     header.homepage {
         height: 95vh;
