@@ -268,6 +268,12 @@ header.homepage {
         line-height: 7vh;
     }
 
+    #homeIntro p{
+        width: 50vw;
+        margin: 5vh 1vw;
+        text-align: left;
+    }
+
     .homeNav {
         margin: 5rem;
         flex-direction: column;
@@ -278,7 +284,6 @@ header.homepage {
         width: 20vh;
         font-size: 2rem;
     }
-
 }
 
 /* standard page header ----------------------------------------------------------------------------------- */
