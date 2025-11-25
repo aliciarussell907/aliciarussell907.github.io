@@ -513,6 +513,18 @@ button.moreDetails {
     background-size: 5vh;
 }
 
+@media screen and (min-width: 1024px) {
+    .productDetails h2 {
+        font-size: 7rem;
+        margin: 9vh auto;
+    }
+
+    #productTagline {
+    font-size: 2vw;
+    line-height: 3rem;
+}
+}
+
 /* Meet The Team -----------------------------------------------------------------------------------*/
 #MeetTheTeam h2 {
     text-align: center;
