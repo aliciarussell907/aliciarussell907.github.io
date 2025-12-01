@@ -514,22 +514,56 @@ button.moreDetails {
 }
 
 @media screen and (min-width: 1024px) {
+    .productDetails {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
     .productDetails h2 {
         font-size: 7rem;
-        margin: 9vh auto;
+        margin: 9vh auto;   
     }
 
     #productTagline {
     font-size: 2vw;
     line-height: 3rem;
+    width: calc(100vw*3/6);
+    height: 20vh;
+    margin: 0 1vw;
+    padding: 2vw; 
 }
     .productImage {
         width: calc(100vw*2/6);
+        position: absolute;
+        left: calc(100vw*3/6);
+        top: 70vh; 
     }
 
     .mySlides {
         max-height: 50vw;
-        margin-left: calc(100vw*2/6);
+         margin: 0 8vw; 
+    }
+
+    .imagePreview {
+       width: calc(100vw*2/6);
+        margin: 0 8vw; 
+    }
+
+    #priceTag {
+        width: calc(100vw*2/6);
+        margin: 0 10%;
+        padding: 2vw;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        
+    }
+
+    #productDescription {
+        width: calc(100vw*1/6);
+    }
+
+    #productFeatures {
+        max-width: 5vw; 
     }
 
 }
