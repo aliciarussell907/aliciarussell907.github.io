@@ -918,6 +918,22 @@ p.ContactForm {
     padding-bottom: 1rem;
 }
 
+@media screen and (min-width: 1024px) {
+    #ThankYouMessage {
+        width: calc(100vw*4/6);
+        margin: 5vh auto;
+    }
+
+    #ThankYouMessage h2 {
+    font-size: 5vw;
+    }
+
+    #ThankYouMessage p {
+    font-size: 3vw;
+    }
+    
+}
+
 /* Order Form ----------------------------------------------------------------------------------- */
 .OrderRequestForm {
     margin: 2vh 5vw;
