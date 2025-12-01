@@ -62,49 +62,66 @@
     <div class="productDetails">
         <h2>Cobra Figurine</h2>
         <p id="productTagline">Add a bold, stylish touch to your décor with this sculptural cobra centerpiece.</p>
+        <section class="productImage">
+            <div class="w3-content productDetails">
+                <img class="mySlides" src="images/snake-forward.jpg" style="width:100%;display:none">
+                <img class="mySlides" src="images/snake-side.jpg" style="width:100%">
 
-        <div class="w3-content productDetails">
-            <img class="mySlides" src="images/snake-forward.jpg" style="width:100%;display:none">
-            <img class="mySlides" src="images/snake-side.jpg" style="width:100%">
-
-            <div class="w3-row-padding w3-section">
-                <div class="w3-col s4">
-                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/snake-forward.jpg"
-                        style="width:100%;cursor:pointer" onclick="currentDiv(1)">
-                </div>
-                <div class="w3-col s4">
-                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/snake-side.jpg"
-                        style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                <div class="w3-row-padding w3-section">
+                    <div class="w3-col s4">
+                        <img class="demo w3-opacity w3-hover-opacity-off" src="images/snake-forward.jpg"
+                            style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                    </div>
+                    <div class="w3-col s4">
+                        <img class="demo w3-opacity w3-hover-opacity-off" src="images/snake-side.jpg"
+                            style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
         <h3 id="priceTag">Starting at $30</h3>
-        <p id="productDescription">Bring a touch of bold artistry to your space with this intricately crafted 3D-printed
-            cobra figurine. Designed with striking scale textures and a dramatic upright pose, this piece captures the
-            commanding presence of a cobra in a modern, minimalist gray finish.<br>
-            <br>
-            Made from durable, lightweight PLA material, the sculpture is perfect for desks, shelves, or themed décor
-            setups. Its coiled body and raised hood create a dynamic sense of motion, making it an eye-catching accent
-            for reptile enthusiasts, collectors, or anyone who enjoys unique statement pieces.
-        </p>
 
-        <h3 id="productFeatures">Features:</h3>
-        <ul>
-            <li>Detailed scale patterning</li>
+        <div id="productContent">
+            <section id="productDescription">
+                <p>Bring a touch of bold artistry to your space with this intricately crafted
+                    3D-printed
+                    cobra figurine. Designed with striking scale textures and a dramatic upright pose, this piece
+                    captures
+                    the
+                    commanding presence of a cobra in a modern, minimalist gray finish.<br>
+                    <br>
+                    Made from durable, lightweight PLA material, the sculpture is perfect for desks, shelves, or themed
+                    décor
+                    setups. Its coiled body and raised hood create a dynamic sense of motion, making it an eye-catching
+                    accent
+                    for reptile enthusiasts, collectors, or anyone who enjoys unique statement pieces.
+                </p>
+            </section>
 
-            <li>Durable, eco-friendly PLA construction</li>
+            <section id="productFeatures">
+                <h3>Features:</h3>
+                <ul>
+                    <li>Detailed scale patterning</li>
 
-            <li>Great for home décor, gift-giving, or display collections</li>
-        </ul>
-    </div>
+                    <li>Durable, eco-friendly PLA construction</li>
 
-    <div class="customOptions">
-        <h3>Customizations available:</h3>
-        <ul>
-            <li>Marble PLA (+$10) <div id="marble" class="sample"></div></li>
-            <li>Transparent smoke black PLA (+$5) <div id="tSmoke" class="sample"></div></li>
-            <li>Silk rainbow PLA (+12) <div id="rbSilk" class="sample"></div></li>
-        </ul>
+                    <li>Great for home décor, gift-giving, or display collections</li>
+                </ul>
+        </div>
+        </section>
+        
+        <div class="customOptions">
+            <h3>Customizations available:</h3>
+            <ul>
+                <li>Marble PLA (+$10) <div id="marble" class="sample"></div>
+                </li>
+                <li>Transparent smoke black PLA (+$5) <div id="tSmoke" class="sample"></div>
+                </li>
+                <li>Silk rainbow PLA (+12) <div id="rbSilk" class="sample"></div>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <!-- javascript for slideshow -->
