@@ -706,6 +706,61 @@ button.moreDetails {
     padding: 2vw;
 }
 
+@media screen and (min-width: 1024px) {
+    #MeetTheTeam {
+        width: calc(100vw*5/6);
+       margin: 0 auto; 
+    }
+
+    #MeetTheTeam h2 {
+    font-size: 6rem;
+}
+    
+
+    .mySlides p{
+        width: calc(100vw*4/6);
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .teamPic {
+        max-width: calc(100vw*5/6);
+        min-height: 80vh;
+    }
+
+   #founder img{
+        object-position: 0% 26%;
+        
+    }
+
+    #designer img{
+        object-position: 0% 35%
+    }
+
+    #LearnMore {
+        width: calc(100vw*1/6);
+        position:absolute;
+        top: 160vh;
+        left: 75vw;
+        border: outset;
+        font-size: 1.2rem;
+    }
+
+    #LearnMore h2 {
+    text-align: center;
+    font-size: 2rem;
+    background-color: #89B0AE;
+    color: white;
+    margin: 0;
+}
+
+#LearnMore p {
+    padding: 2vw;
+}
+
+}
+
+
 /* Contact Us ----------------------------------------------------------------------------------- */
 
 .ContactForm {
