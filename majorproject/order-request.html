@@ -120,14 +120,16 @@
             <div id="productSelect">
                 <h3>Product Selection</h3>
                 <label for="product">* Please select which products you would like to request:</label><br>
-                <input type="checkbox" id="product" name="product" value="Planter" button
-                    onclick="ShowPlanterOptions()">
-                <label for="product1"> Jack-O-Lantern Planter</label><br>
-                <input type="checkbox" id="product" name="product" value="Snake" onclick="ShowSnakeOptions()">
-                <label for="product2">Cobra Figurine</label><br>
-                <input type="checkbox" id="product" name="product" value="Vase" onclick="ShowVaseOptions()">
-                <label for="product3">Rose in a Vase</label>
-
+                <div id="productCheckbox">
+                    <input type="checkbox" id="product" name="product" value="Planter" button
+                        onclick="ShowPlanterOptions()">
+                    <label for="product1"> Jack-O-Lantern Planter</label><br>
+                    <input type="checkbox" id="product" name="product" value="Snake" onclick="ShowSnakeOptions()">
+                    <label for="product2">Cobra Figurine</label><br>
+                    <input type="checkbox" id="product" name="product" value="Vase" onclick="ShowVaseOptions()">
+                    <label for="product3">Rose in a Vase</label>
+                </div>
+                
                 <!-- customization options & quantity -->
                 <div id="customMenus">
                     <!-- planter -->
@@ -174,39 +176,38 @@
                 </div>
             </div>
 
-                <!-- delivery method -->
-                <div id="deliveryOptions">
-                    <div id="delivery">
-                        <h3>Delivery Method</h3>
-                        <label for="deliverymethod">* Pick-up or Ship-to-Home?</label><br>
-                        <input type="radio" id="deliverymethod" name="deliverymethod" value="pickUp" required>
-                        <label for="pickUp">Pick-up</label><br>
-                        <input type="radio" id="deliverymethod" name="deliverymethod" value="ship"
-                            onclick="ShowAddress()">
-                        <label for="ship">Ship-to-Home</label><br>
-                    </div>
-                    <br>
+            <!-- delivery method -->
+            <div id="deliveryOptions">
+                <div id="delivery">
+                    <h3>Delivery Method</h3>
+                    <label for="deliverymethod">* Pick-up or Ship-to-Home?</label><br>
+                    <input type="radio" id="deliverymethod" name="deliverymethod" value="pickUp" required>
+                    <label for="pickUp">Pick-up</label><br>
+                    <input type="radio" id="deliverymethod" name="deliverymethod" value="ship" onclick="ShowAddress()">
+                    <label for="ship">Ship-to-Home</label><br>
+                </div>
+                <br>
 
-                    <!-- address input -->
-                    <div id="addressInput" style="display: none;">
-                        <h3>Shipping Address</h3>
-                        <label for="street">Street Address</label><br>
-                        <input type="text" id="street" name="street" value="" placeholder="123 Main St"><br>
-                        <label for="city">City</label><br>
-                        <input type="text" id="city" name="city" value="" placeholder="Anytown"><br>
-                        <label for="street">State</label><br>
-                        <input type="text" id="state" name="state" value="" maxlength="2" placeholder="ST"><br>
-                        <input type="number" id="zip" name="zip" value="" maxlength="5" placeholder="12345"><br>
-                        <p id="orderNote">Note: We only ship within the United States.
-                        </p>
-                        <p class="OrderRequestForm">* indicates required field
-                        </p>
-                    </div>
+                <!-- address input -->
+                <div id="addressInput" style="display: none;">
+                    <h3>Shipping Address</h3>
+                    <label for="street">Street Address</label><br>
+                    <input type="text" id="street" name="street" value="" placeholder="123 Main St"><br>
+                    <label for="city">City</label><br>
+                    <input type="text" id="city" name="city" value="" placeholder="Anytown"><br>
+                    <label for="street">State</label><br>
+                    <input type="text" id="state" name="state" value="" maxlength="2" placeholder="ST"><br>
+                    <input type="number" id="zip" name="zip" value="" maxlength="5" placeholder="12345"><br>
+                    <p id="orderNote">Note: We only ship within the United States.
+                    </p>
+                    <p class="OrderRequestForm">* indicates required field
+                    </p>
                 </div>
             </div>
-            <br>
-            <button type="submit" class="OrderRequestForm">Submit</button>
-        </form>
+    </div>
+    <br>
+    <button type="submit" class="OrderRequestForm">Submit</button>
+    </form>
     </div>
 </body>
 
