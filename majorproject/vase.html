@@ -64,75 +64,91 @@
         <p id="productTagline">Add a touch of modern elegance and color to any space with this charming decorative set.
         </p>
 
-        <div class="w3-content productDetails">
-            <img class="mySlides" src="images/rosevase.jpg" style="width:100%;display:none">
-            <img class="mySlides" src="images/rose-closeup.jpg" style="width:100%">
-
-            <div class="w3-row-padding w3-section">
-                <div class="w3-col s4">
-                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/rosevase.jpg"
-                        style="width:100%;cursor:pointer" onclick="currentDiv(1)">
-                </div>
-                <div class="w3-col s4">
-                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/rose-closeup.jpg"
-                        style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+        <section class="productImage">
+            <div class="w3-content productDetails">
+                <img class="mySlides" src="images/rosevase.jpg" style="width:100%;display:none">
+                <img class="mySlides" src="images/rose-closeup.jpg" style="width:100%">
+                <div class="imagePreview">
+                    <div class="w3-row-padding w3-section">
+                        <div class="w3-col s4">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="images/rosevase.jpg"
+                                style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                        </div>
+                        <div class="w3-col s4">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="images/rose-closeup.jpg"
+                                style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
         <h3 id="priceTag">Starting at $50</h3>
-        <p id="productDescription">Elevate your décor with this striking modern display piece featuring a bold geometric
-            black vase paired with a vibrant 3D-printed red rose. The vase’s angular, faceted design adds a contemporary
-            touch, while the bright red bloom and green stem introduce a playful pop of color that stands out
-            beautifully against the minimalist form.<br>
-            <br>
-            Crafted from durable, lightweight PLA, both the vase and rose are designed to maintain their shape and color
-            over time—no watering, wilting, or maintenance required. Perfect as a desk accent, a gift for someone
-            special, or a stylish centerpiece for any room.
-        </p>
 
-        <h3 id="productFeatures">Features:</h3>
-        <ul>
-            <li>Modern geometric vase design with clean, sculptural lines</li>
+        <div id="productContent">
+            <section id="productDescription">
+                <p>Elevate your décor with this striking modern display piece featuring a bold geometric
+                    black vase paired with a vibrant 3D-printed red rose. The vase’s angular, faceted design adds a
+                    contemporary
+                    touch, while the bright red bloom and green stem introduce a playful pop of color that stands out
+                    beautifully against the minimalist form.<br>
+                    <br>
+                    Crafted from durable, lightweight PLA, both the vase and rose are designed to maintain their shape
+                    and color
+                    over time—no watering, wilting, or maintenance required. Perfect as a desk accent, a gift for
+                    someone
+                    special, or a stylish centerpiece for any room.
+                </p>
+            </section>
 
-            <li>Lightweight and long-lasting—never wilts or fades</li>
+            <section id="productFeatures">
+                <h3>Features:</h3>
+                <ul>
+                    <li>Modern geometric vase design with clean, sculptural lines</li>
 
-            <li>Made from eco-friendly, durable PLA material</li>
+                    <li>Lightweight and long-lasting—never wilts or fades</li>
 
-            <li>Ideal for home décor, office spaces, or gift-giving</li>
-        </ul>
-    </div>
+                    <li>Made from eco-friendly, durable PLA material</li>
 
-     <div class="customOptions">
-        <h3>Customizations available:</h3>
-        <ul>
-            <li>Silk red PLA for rose (+$10) <div id="redSilk" class="sample"></div></li>
-            <li>Marble PLA for vase (+$20) <div id="marble" class="sample"></div></li>
-            <li>Silk rainbow PLA for rose (+$12) <div id="rbSilk" class="sample"></div></li>
-        </ul>
-    </div>
+                    <li>Ideal for home décor, office spaces, or gift-giving</li>
+                </ul>
+            </section>
+        </div>
 
-    <!-- javascript for slideshow -->
-    <script>
-        function currentDiv(n) {
-            showDivs(slideIndex = n);
-        }
+        <div class="customOptions">
+            <h3>Customizations available:</h3>
+            <ul>
+                <li>Silk red PLA for rose (+$10) <div id="redSilk" class="sample"></div>
+                </li>
+                <li>Marble PLA for vase (+$20) <div id="marble" class="sample"></div>
+                </li>
+                <li>Silk rainbow PLA for rose (+$12) <div id="rbSilk" class="sample"></div>
+                </li>
+            </ul>
+        </div>
 
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+        <!-- javascript for slideshow -->
+        <script>
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
             }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " w3-opacity-off";
             }
-            x[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " w3-opacity-off";
-        }
-    </script>
+        </script>
 </body>
 
 </html>
