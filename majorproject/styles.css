@@ -533,7 +533,7 @@ button.moreDetails {
         line-height: 2rem;
         width: calc(100vw*3/6);
         max-height: 20vh;
-        margin: 0 5vw;
+        margin: 0 1vw;
         padding: 2vw;
     }
 
@@ -541,8 +541,8 @@ button.moreDetails {
         width: 40vw;
         position: absolute;
         left: calc(100vw*3/6);
-        top: 73vh;
-        margin: 0 0 5vh 9vw;
+        top: 75vh;
+        margin-left: 7vw;
     }
 
     .mySlides {
@@ -572,13 +572,14 @@ button.moreDetails {
     #productDescription {
         width: 50%;
         font-size: 1.2rem;
+        margin: 1vh;
     }
 
     #productFeatures {
         font-size: 1.2rem;
         position: absolute;
         top: 103vh;
-        left: 35vw;
+        left: 33vw;
         max-width: 20vw;
         border: outset;
         padding: 1vw;
@@ -597,7 +598,7 @@ button.moreDetails {
     #productNote {
         font-size: 1.3rem;
         width: 50%;
-        margin: 1vw 5vw;
+        margin: 1vw 0;
     }
 
     .customOptions {
