@@ -520,15 +520,15 @@ button.moreDetails {
     }
     
     .productDetails h2 {
-        font-size: 7rem;
+        font-size: 7vw;
         margin: 9vh auto;   
     }
 
     #productTagline {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 2vw;
+    line-height: 2rem;
     width: calc(100vw*3/6);
-    height: 20vh;
+    max-height: 20vh;
     margin: 0 5vw;
     padding: 2vw; 
 }
@@ -536,18 +536,18 @@ button.moreDetails {
         width: 40vw;
         position: absolute;
         left: calc(100vw*3/6);
-        top: 73vh; 
+        top: 73vh;
+        margin: 0 0 5vh 0;
     }
 
     .mySlides {
-        height: 75vh;
+        height: 50vw;
         margin-left: 9vw;
-     
     }
 
     .imagePreview {
        width: 40vw;
-        margin: 0 9vw; 
+        margin: 0 9vw 10vh; 
     }
 
     #priceTag {
@@ -560,7 +560,7 @@ button.moreDetails {
 
     #productContent {
         width: calc(100vw*3/6);
-        margin: 0;
+        margin: 1vw;
         padding: 0;
     }
 
@@ -572,7 +572,7 @@ button.moreDetails {
     #productFeatures {
         font-size: 1.2rem;
         position: absolute;
-        top: 101vh;
+        top: 103vh;
         left: 35vw;
         max-width: 20vw;
         border: outset;
@@ -597,8 +597,8 @@ button.moreDetails {
 
     .customOptions {
         width: 100vw;
-        margin: 10vh 1vw 0 0;
-        padding: 0;
+        margin: 15vh 1vw 0 0;
+        padding-top: 5vh;
     }
 
    .customOptions li {
