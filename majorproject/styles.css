@@ -887,9 +887,21 @@ p.ContactForm {
 
     .Socials {
         position: absolute;
-        top: 90vh;
-        left: 68vw;
+        top: 80vh;
+        left: 60vw;
     }
+
+    .fa {
+    padding: 0.9vw;
+    width: 3vw;
+    height: 3vw;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    scale: 2;
+    margin: 2vw;
+    }
+
 }
 
 /* Thank You Message ----------------------------------------------------------------------------------- */
