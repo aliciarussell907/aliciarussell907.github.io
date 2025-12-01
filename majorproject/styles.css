@@ -513,6 +513,10 @@ button.moreDetails {
     background-size: 5vh;
 }
 
+#tSmoke {
+    background-color: #100c0895;
+}
+
 @media screen and (min-width: 1024px) {
     .productDetails {
         display: flex;
