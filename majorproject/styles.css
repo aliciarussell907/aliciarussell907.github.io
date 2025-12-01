@@ -523,6 +523,15 @@ button.moreDetails {
     font-size: 2vw;
     line-height: 3rem;
 }
+    .productImage {
+        width: calc(100vw*2/6);
+    }
+
+    .mySlides {
+        max-height: 50vw;
+        margin-left: calc(100vw*2/6);
+    }
+
 }
 
 /* Meet The Team -----------------------------------------------------------------------------------*/
