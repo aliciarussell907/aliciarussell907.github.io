@@ -98,17 +98,22 @@
             <!-- contact info -->
             <div id=contactInfo>
                 <h3>Contact Information</h3>
-                <label for="fname">* First name:</label><br>
-                <input type="text" id="fname" name="fname" value="" required><br>
+                <div id="orderName">
+                    <label for="fname">* First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="" required><br>
 
-                <label for="lname">* Last name:</label><br>
-                <input type="text" id="lname" name="lname" value="" required><br>
+                    <label for="lname">* Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="" required><br>
+                </div>
 
-                <label for="email">* Your email:</label><br>
-                <input type="email" id="email" name="email" placeholder="youremail@youremail.com" value="" required><br>
+                <div id="orderContact">
+                    <label for="email">* Your email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="youremail@youremail.com" value=""
+                        required><br>
 
-                <label for="phone">* Your phone number:</label><br>
-                <input type="tel" id="phone" name="phone" placeholder="555-123-4567" value="" required><br>
+                    <label for="phone">* Your phone number:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="555-123-4567" value="" required><br>
+                </div>
             </div>
 
             <!-- product selection -->
@@ -124,77 +129,82 @@
                 <label for="product3">Rose in a Vase</label>
 
                 <!-- customization options & quantity -->
-                <!-- planter -->
-                <div id="PlanterOptions" style="display: none;">
-                    <h3>Options for Jack-O-Lantern Planter</h3>
-                    <label for="planterCustomized">Customized?</label>
-                    <select id="planterCustomized" name="planterCustomized">
-                        <option value="No">No, standard color option</option>
-                        <option value="Yes1">Glow-in-the-dark</option>
-                        <option value="Yes2">Crystal transparent</option>
-                        <option value="Yes3">Glitter</option>
-                    </select><br>
-                    <label for="planterQuantity">Quantity? (max of 5 per order)</label>
-                    <input type="number" id="planterQuantity" name="planterQuantity" min="1" max="5" value="">
+                <div id="customMenus">
+                    <!-- planter -->
+                    <div id="PlanterOptions" style="display: none;">
+                        <h3>Options for Jack-O-Lantern Planter</h3>
+                        <label for="planterCustomized">Customized?</label>
+                        <select id="planterCustomized" name="planterCustomized">
+                            <option value="No">No, standard color option</option>
+                            <option value="Yes1">Glow-in-the-dark</option>
+                            <option value="Yes2">Crystal transparent</option>
+                            <option value="Yes3">Glitter</option>
+                        </select><br>
+                        <label for="planterQuantity">Quantity? (max of 5 per order)</label>
+                        <input type="number" id="planterQuantity" name="planterQuantity" min="1" max="5" value="">
+                    </div>
+
+                    <!-- snake -->
+                    <div id="SnakeOptions" style="display: none;">
+                        <h3>Options for Cobra Figurine</h3>
+                        <label for="snakeCustomized">Customized?</label>
+                        <select id="snakeCustomized" name="snakeCustomized">
+                            <option value="No">No, standard color option</option>
+                            <option value="Yes1">Marble</option>
+                            <option value="Yes2">Transparent smoke black</option>
+                            <option value="Yes3">Silk rainbow</option>
+                        </select><br>
+                        <label for="snakeQuantity">Quantity? (max of 5 per order)</label>
+                        <input type="number" id="snakeQuantity" name="snakeQuantity" min="1" max="5" value="">
+                    </div>
+
+                    <!-- vase -->
+                    <div id="VaseOptions" style="display: none;">
+                        <h3>Options for Rose in a Vase</h3>
+                        <label for="vaseCustomized">Customized?</label>
+                        <select id="vaseCustomized" name="vaseCustomized">
+                            <option value="No">No, standard color option</option>
+                            <option value="Yes1">Silk red rose</option>
+                            <option value="Yes2">Marble vase</option>
+                            <option value="Yes3">Silk rainbow rose</option>
+                        </select><br>
+                        <label for="vaseQuantity">Quantity? (max of 5 per order)</label>
+                        <input type="number" id="vaseQuantity" name="vaseQuantity" min="1" max="5" value="">
+                    </div>
                 </div>
 
-                <!-- snake -->
-                <div id="SnakeOptions" style="display: none;">
-                    <h3>Options for Cobra Figurine</h3>
-                    <label for="snakeCustomized">Customized?</label>
-                    <select id="snakeCustomized" name="snakeCustomized">
-                        <option value="No">No, standard color option</option>
-                        <option value="Yes1">Marble</option>
-                        <option value="Yes2">Transparent smoke black</option>
-                        <option value="Yes3">Silk rainbow</option>
-                    </select><br>
-                    <label for="snakeQuantity">Quantity? (max of 5 per order)</label>
-                    <input type="number" id="snakeQuantity" name="snakeQuantity" min="1" max="5" value="">
-                </div>
+                <!-- delivery method -->
+                <div id="deliveryOptions">
+                    <div id="delivery">
+                        <h3>Delivery Method</h3>
+                        <label for="deliverymethod">* Pick-up or Ship-to-Home?</label><br>
+                        <input type="radio" id="deliverymethod" name="deliverymethod" value="pickUp" required>
+                        <label for="pickUp">Pick-up</label><br>
+                        <input type="radio" id="deliverymethod" name="deliverymethod" value="ship"
+                            onclick="ShowAddress()">
+                        <label for="ship">Ship-to-Home</label><br>
+                    </div>
+                    <br>
 
-                <!-- vase -->
-                <div id="VaseOptions" style="display: none;">
-                    <h3>Options for Rose in a Vase</h3>
-                    <label for="vaseCustomized">Customized?</label>
-                    <select id="vaseCustomized" name="vaseCustomized">
-                        <option value="No">No, standard color option</option>
-                        <option value="Yes1">Silk red rose</option>
-                        <option value="Yes2">Marble vase</option>
-                        <option value="Yes3">Silk rainbow rose</option>
-                    </select><br>
-                    <label for="vaseQuantity">Quantity? (max of 5 per order)</label>
-                    <input type="number" id="vaseQuantity" name="vaseQuantity" min="1" max="5" value="">
+                    <!-- address input -->
+                    <div id="addressInput" style="display: none;">
+                        <h3>Shipping Address</h3>
+                        <label for="street">Street Address</label><br>
+                        <input type="text" id="street" name="street" value="" placeholder="123 Main St"><br>
+                        <label for="city">City</label><br>
+                        <input type="text" id="city" name="city" value="" placeholder="Anytown"><br>
+                        <label for="street">State</label><br>
+                        <input type="text" id="state" name="state" value="" maxlength="2" placeholder="ST"><br>
+                        <input type="number" id="zip" name="zip" value="" maxlength="5" placeholder="12345"><br>
+                        <p id="orderNote">Note: We only ship within the United States.
+                        </p>
+                        <p class="OrderRequestForm">* indicates required field
+                        </p>
+                    </div>
                 </div>
-            </div>
-
-            <!-- delivery method -->
-            <div id="delivery">
-                <h3>Delivery Method</h3>
-                <label for="deliverymethod">* Pick-up or Ship-to-Home?</label><br>
-                <input type="radio" id="deliverymethod" name="deliverymethod" value="pickUp" required>
-                <label for="pickUp">Pick-up</label><br>
-                <input type="radio" id="deliverymethod" name="deliverymethod" value="ship" onclick="ShowAddress()">
-                <label for="ship">Ship-to-Home</label><br>
             </div>
             <br>
-
-            <!-- address input -->
-            <div id="addressInput" style="display: none;">
-                <h3>Shipping Address</h3>
-                <label for="street">Street Address</label><br>
-                <input type="text" id="street" name="street" value="" placeholder="123 Main St"><br>
-                <label for="city">City</label><br>
-                <input type="text" id="city" name="city" value="" placeholder="Anytown"><br>
-                <label for="street">State</label><br>
-                <input type="text" id="state" name="state" value="" maxlength="2" placeholder="ST"><br>
-                <input type="number" id="zip" name="zip" value="" maxlength="5" placeholder="12345"><br>
-                <p id="orderNote">Note: We only ship within the United States.
-                </p>
-                <p class="OrderRequestForm">* indicates required field
-                </p>
-            </div>
-                <br>
-                <button type="submit" class="OrderRequestForm">Submit</button>
+            <button type="submit" class="OrderRequestForm">Submit</button>
         </form>
     </div>
 </body>
