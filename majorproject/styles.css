@@ -805,14 +805,90 @@ p.ContactForm {
     text-align: center;
 }
 
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 @media screen and (min-width: 1024px) {
     .ContactForm {
         max-width: calc(100vw*3/6);
     }
 
+    h2.ContactForm {
+        font-size: 3vw;
+    }
+
     #contactFormInput {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
+        line-height: 3vh;
+    }
+
+    #contactFormInput div {
+        margin: 1vw;
+    }
+
+    #formSubmit {
+        width: 100%;
+    }
+
+    #messageInput {
+        line-height: 3vh
+    }
+
+    button.ContactForm {
+        width: 10vw;
+        max-height: 5vh;
+        font-size: 1.2vw;
+        padding: 1rem;
+
+    }
+
+    textarea {
+        width: 40vw;
+    }
+
+    .Socials {
+        position: absolute;
+        top: 90vh;
+        left: 68vw;
     }
 }
 
