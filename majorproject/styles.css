@@ -268,7 +268,7 @@ header.homepage {
         line-height: 7vh;
     }
 
-    #homeIntro p{
+    #homeIntro p {
         width: 50vw;
         margin: 5vh 1vw;
         text-align: left;
@@ -522,36 +522,37 @@ button.moreDetails {
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     .productDetails h2 {
         font-size: 7vw;
-        margin: 9vh auto;   
+        margin: 9vh auto;
     }
 
     #productTagline {
-    font-size: 2vw;
-    line-height: 2rem;
-    width: calc(100vw*3/6);
-    max-height: 20vh;
-    margin: 0 5vw;
-    padding: 2vw; 
-}
+        font-size: 2vw;
+        line-height: 2rem;
+        width: calc(100vw*3/6);
+        max-height: 20vh;
+        margin: 0 5vw;
+        padding: 2vw;
+    }
+
     .productImage {
         width: 40vw;
         position: absolute;
         left: calc(100vw*3/6);
         top: 73vh;
-        margin: 0 0 5vh 0;
+        margin: 0 0 5vh 9vw;
     }
 
     .mySlides {
         height: 50vw;
-        margin-left: 9vw;
+        object-fit: scale-down;
     }
 
     .imagePreview {
-       width: 40vw;
-        margin: 0 9vw 10vh; 
+        width: 40vw;
+        margin: 0 auto;
     }
 
     #priceTag {
@@ -559,7 +560,7 @@ button.moreDetails {
         margin: 0 10%;
         padding: 2vw;
         font-size: 2rem;
-        
+
     }
 
     #productContent {
@@ -584,11 +585,11 @@ button.moreDetails {
         border-color: #89B0AE;
     }
 
-    #productFeatures li{
+    #productFeatures li {
         padding-top: 1.1rem;
     }
 
-    #productFeatures h3{
+    #productFeatures h3 {
         font-size: 2.5rem;
         font-weight: bold;
     }
@@ -605,35 +606,40 @@ button.moreDetails {
         padding-top: 5vh;
     }
 
-   .customOptions li {
+    .customOptions li {
         display: inline-flex;
-       flex-direction:column;
-       width: 30%;
-       margin: 1vw;
-       padding: 1vw;
-       font-size: 1.5rem;
-       text-align: center;
-       border: solid;
-       border-radius: 10%;
-       height: 30vh;
+        flex-direction: column;
+        width: 30%;
+        margin: 1vw;
+        padding: 1vw;
+        font-size: 1.5rem;
+        text-align: center;
+        border: solid;
+        border-radius: 10%;
+        height: 30vh;
     }
 
-    .customOptions h3{
+    .customOptions h3 {
         font-size: 3rem;
         padding: 1vw;
-        font-weight:bold;
+        font-weight: bold;
     }
 
     .sample {
-    width: 8vw;
-    height: 8vw;
-    border-radius: 50%;
-    margin: auto;
-}
-    #glitter {
-    background-size: 45vh;
-}
+        width: 8vw;
+        height: 8vw;
+        border-radius: 50%;
+        margin: auto;
+    }
 
+    #glitter,
+    #marble {
+        background-size: 45vh;
+    }
+
+    #rbSilk {
+        background-size: 20vh;
+    }
 }
 
 /* Meet The Team -----------------------------------------------------------------------------------*/
