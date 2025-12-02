@@ -322,6 +322,7 @@ header.standard {
     header.standard {
         height: 50vh;
     }
+
     #headertitle h1 {
         font-size: 8vw;
     }
@@ -1182,7 +1183,7 @@ input {
 }
 
 @media screen and (min-width: 1024px) {
- .collapsible {
+    .collapsible {
         width: calc(100vw*5/6);
         margin: 2vh 8vw;
         font-size: 3vw;
@@ -1235,4 +1236,17 @@ input {
     border-color: white;
 }
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+
+    #historyStart,
+    #historyTeam,
+    #historySite {
+        height: 100vh;
+        font-size: 3vw;
+        line-height: 5vh;
+    }
+
+    #teamGrows {
+        background-position: 0% 20%;
+    }
+}
