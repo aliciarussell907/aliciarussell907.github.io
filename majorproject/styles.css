@@ -1179,7 +1179,25 @@ input {
     color: black;
 }
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+ .collapsible {
+        width: calc(100vw*5/6);
+        margin: 2vh 8vw;
+        font-size: 3vw;
+    }
+
+    .collapsible:after {
+        font-size: 3vw;
+    }
+
+    .content {
+        width: calc(100vw*5/6);
+        margin: 0 8vw 2vh;
+        font-size: 3vw;
+        line-height: 6vh;
+    }
+
+}
 
 /* History ----------------------------------------------------------------------------------- */
 #ourStart {
