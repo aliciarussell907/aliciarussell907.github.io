@@ -1123,7 +1123,16 @@ input {
     padding-bottom: 1rem;
 }
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+        #orderReceived {
+        width: calc(100vw*4/6);
+        margin: 5vh auto;
+    }
+
+    #orderReceived h2 {
+        font-size: 5vw;
+    }
+}
 
 /* FAQ ----------------------------------------------------------------------------------- */
 .collapsible {
