@@ -48,17 +48,61 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //javascript for faq collapsible
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
         }
+    });
+}
+
+//javascript for slideshows
+var slideIndex = [1, 1, 1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+showDivs(1, 0);
+showDivs(1, 1);
+showDivs(1, 2);
+
+function plusDivs(n, no) {
+    showDivs(slideIndex[no] += n, no);
+}
+
+function showDivs(n, no) {
+    var i;
+    var x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) { slideIndex[no] = 1 }
+    if (n < 1) { slideIndex[no] = x.length }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex[no] - 1].style.display = "block";
+}
+
+
+var slideIndex = [1, 1, 1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+showDivs(1, 0);
+showDivs(1, 1);
+showDivs(1, 2);
+
+function plusDivs(n, no) {
+    showDivs(slideIndex[no] += n, no);
+}
+
+function showDivs(n, no) {
+    var i;
+    var x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) { slideIndex[no] = 1 }
+    if (n < 1) { slideIndex[no] = x.length }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex[no] - 1].style.display = "block";
+}
