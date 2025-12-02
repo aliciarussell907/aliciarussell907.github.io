@@ -990,7 +990,7 @@ p.OrderRequestForm {
     padding: 2vh;
 }
 
-#delivery h3 {
+#deliveryOptions h3 {
     text-align: center;
     padding: 0vh;
     margin: 0;
@@ -1090,6 +1090,7 @@ input {
     #delivery {
         width: 48%;
         line-height: 3vh;
+        margin: 1vh 1vw 5vh;
     }
 
     #addressInput {
