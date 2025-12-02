@@ -873,10 +873,11 @@ p.ContactForm {
     }
 
     button.ContactForm {
-        width: 10vw;
-        max-height: 5vh;
-        font-size: 1.2vw;
-        padding: 1rem;
+        margin: 2vh 40%;
+        scale: 150%;
+        background-color: #89B0AE70;
+        border-color: #89B0AE;
+        font-family: "Modern Antiqua", serif;
 
     }
 
@@ -1124,9 +1125,7 @@ input {
     padding-bottom: 1rem;
 }
 
-@media screen and (min-width: 1024px) {
-
-}
+@media screen and (min-width: 1024px) {}
 
 /* FAQ ----------------------------------------------------------------------------------- */
 .collapsible {
@@ -1169,9 +1168,7 @@ input {
     color: black;
 }
 
-@media screen and (min-width: 1024px) {
-    
-}
+@media screen and (min-width: 1024px) {}
 
 /* History ----------------------------------------------------------------------------------- */
 #ourStart {
@@ -1207,6 +1204,4 @@ input {
     border-color: white;
 }
 
-@media screen and (min-width: 1024px) {
-    
-}
+@media screen and (min-width: 1024px) {}
