@@ -179,29 +179,32 @@
             <!-- delivery method -->
             <div id="deliveryOptions">
                 <h3>Delivery Method</h3>
-                <div id="delivery">
-                    <label for="deliverymethod">* Pick-up or Ship-to-Home?</label><br>
-                    <input type="radio" id="deliverymethod" name="deliverymethod" value="pickUp" required>
-                    <label for="pickUp">Pick-up</label><br>
-                    <input type="radio" id="deliverymethod" name="deliverymethod" value="ship" onclick="ShowAddress()">
-                    <label for="ship">Ship-to-Home</label><br>
-                </div>
-                <br>
+                <div id="deliveryOptionsInput">
+                    <div id="delivery">
+                        <label for="deliverymethod">* Pick-up or Ship-to-Home?</label><br>
+                        <input type="radio" id="deliverymethod" name="deliverymethod" value="pickUp" required>
+                        <label for="pickUp">Pick-up</label><br>
+                        <input type="radio" id="deliverymethod" name="deliverymethod" value="ship"
+                            onclick="ShowAddress()">
+                        <label for="ship">Ship-to-Home</label><br>
+                    </div>
+                    <br>
 
-                <!-- address input -->
-                <div id="addressInput" style="display: none;">
-                    <h3>Shipping Address</h3>
-                    <label for="street">Street Address</label><br>
-                    <input type="text" id="street" name="street" value="" placeholder="123 Main St"><br>
-                    <label for="city">City</label><br>
-                    <input type="text" id="city" name="city" value="" placeholder="Anytown"><br>
-                    <label for="street">State</label><br>
-                    <input type="text" id="state" name="state" value="" maxlength="2" placeholder="ST"><br>
-                    <input type="number" id="zip" name="zip" value="" maxlength="5" placeholder="12345"><br>
-                    <p id="orderNote">Note: We only ship within the United States.
-                    </p>
-                    <p class="OrderRequestForm">* indicates required field
-                    </p>
+                    <!-- address input -->
+                    <div id="addressInput" style="display: none;">
+                        <h3>Shipping Address</h3>
+                        <label for="street">Street Address</label><br>
+                        <input type="text" id="street" name="street" value="" placeholder="123 Main St"><br>
+                        <label for="city">City</label><br>
+                        <input type="text" id="city" name="city" value="" placeholder="Anytown"><br>
+                        <label for="street">State</label><br>
+                        <input type="text" id="state" name="state" value="" maxlength="2" placeholder="ST"><br>
+                        <input type="number" id="zip" name="zip" value="" maxlength="5" placeholder="12345"><br>
+                        <p id="orderNote">Note: We only ship within the United States.
+                        </p>
+                        <p class="OrderRequestForm">* indicates required field
+                        </p>
+                    </div>
                 </div>
             </div>
             <br>
