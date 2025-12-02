@@ -1255,7 +1255,7 @@ input {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap:wrap;
     font-size: 2vw;
     background-color: #BEE3DB;
@@ -1263,7 +1263,7 @@ footer {
 }
 
 #fLogo img {
-    width: 20vw;
+    width: 25vw;
 }
 
 #fLogo, #fLinks, #fSpace {
@@ -1274,6 +1274,7 @@ footer {
 #fLinks {
     border-left-style: ridge;
     border-left-color: #89B0AE;
+    line-height: 2vh;
 }
 
 #fCopyright {
@@ -1281,4 +1282,5 @@ footer {
     font-style:italic;
     font-size:smaller;
     padding-left: 5vw;
+}ing-left: 5vw;
 }
