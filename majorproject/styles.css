@@ -395,7 +395,7 @@ button.moreDetails {
 }
 
 @media screen and (min-width: 1024px) {
-  #products {
+    #products {
         display: flex;
         width: 100vw;
         flex-wrap: wrap;
@@ -712,7 +712,8 @@ button.moreDetails {
 @media screen and (min-width: 1024px) {
     #MeetTheTeam {
         width: calc(100vw*5/6);
-        margin: 0 auto;
+        margin: 5vh 8vw;
+        display: inline-block;
     }
 
     #MeetTheTeam h2 {
@@ -1256,7 +1257,7 @@ input {
 footer {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     font-size: 2vw;
     background-color: #BEE3DB;
     padding-top: 4vh;
@@ -1266,7 +1267,9 @@ footer {
     width: 25vw;
 }
 
-#fLogo, #fLinks, #fSpace {
+#fLogo,
+#fLinks,
+#fSpace {
     max-width: 30vw;
     padding: 1.5vw;
 }
@@ -1278,19 +1281,19 @@ footer {
 }
 
 
-#fLinks h2{
+#fLinks h2 {
     font-size: 3vw;
 }
 
 #fCopyright {
     width: 100vw;
-    font-style:italic;
-    font-size:smaller;
+    font-style: italic;
+    font-size: smaller;
     padding-left: 5vw;
 }
 
 @media screen and (min-width: 1024px) {
-   #fLinks {
-       line-height: 7vh;
-   } 
+    #fLinks {
+        line-height: 7vh;
+    }
 }
