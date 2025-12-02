@@ -1255,5 +1255,21 @@ input {
 
 footer {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    flex-wrap:wrap;
+    font-size: 2vw;
+}
+
+#fLogo img {
+    width: 20vw;
+}
+
+#fLogo, #fLinks, #fCompany {
+    max-width: 30vw;
+    padding: 1.5vw;
+}
+
+#fCopyright {
+    width: 100vw;
+    font-style:italic;
 }
