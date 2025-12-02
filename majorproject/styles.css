@@ -395,18 +395,16 @@ button.moreDetails {
 }
 
 @media screen and (min-width: 1024px) {
-    #products {
+  #products {
         display: flex;
         width: 100vw;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 5vw;
-        margin-left: 2.5vw;
+        justify-content: space-evenly;
     }
 
     .productBlock {
         display: flex;
-        width: 45vw;
+        width: 29vw;
         margin: 5vh 0;
         padding: 1vw;
         flex-direction: column;
@@ -415,33 +413,34 @@ button.moreDetails {
     }
 
     .productBlock h2 {
-        font-size: 5vw;
-    }
-
-    .productBlock h3 {
         font-size: 3vw;
     }
 
-    .productBlock p {
+    .productBlock h3 {
         font-size: 2vw;
+    }
+
+    .productBlock p {
+        font-size: 1.5vw;
     }
 
     .mySlides1,
     .mySlides2,
     .mySlides3 {
-        height: auto;
+        height: 40vh;
     }
 
     p.price {
         text-align: left;
+        margin: 1vh auto;
     }
 
 
     button.moreDetails {
-        height: 10vh;
-        width: 20vw;
+        height: 5vh;
+        width: 15vw;
         font-size: 2vw;
-        margin: 2vh 0;
+        margin: 2vh auto;
     }
 
     #comingSoon {
