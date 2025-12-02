@@ -1277,6 +1277,11 @@ footer {
     line-height: 2vh;
 }
 
+
+#fLinks h2{
+    font-size: 3vw;
+}
+
 #fCopyright {
     width: 100vw;
     font-style:italic;
