@@ -1258,18 +1258,27 @@ footer {
     justify-content: space-between;
     flex-wrap:wrap;
     font-size: 2vw;
+    background-color: #BEE3DB;
+    padding-top: 4vh;
 }
 
 #fLogo img {
     width: 20vw;
 }
 
-#fLogo, #fLinks, #fCompany {
+#fLogo, #fLinks, #fSpace {
     max-width: 30vw;
     padding: 1.5vw;
+}
+
+#fLinks {
+    border-left-style: ridge;
+    border-left-color: #89B0AE;
 }
 
 #fCopyright {
     width: 100vw;
     font-style:italic;
+    font-size:smaller;
+    padding-left: 5vw;
 }
