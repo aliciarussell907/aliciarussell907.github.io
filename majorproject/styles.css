@@ -875,8 +875,6 @@ p.ContactForm {
     button.ContactForm {
         margin: 2vh 40%;
         scale: 150%;
-        background-color: #89B0AE70;
-        border-color: #89B0AE;
         font-family: "Modern Antiqua", serif;
 
     }
