@@ -891,14 +891,14 @@ p.ContactForm {
     }
 
     .fa {
-    padding: 0.9vw;
-    width: 3vw;
-    height: 3vw;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    scale: 2;
-    margin: 2vw;
+        padding: 0.9vw;
+        width: 3vw;
+        height: 3vw;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        scale: 2;
+        margin: 2vw;
     }
 
 }
@@ -925,13 +925,13 @@ p.ContactForm {
     }
 
     #ThankYouMessage h2 {
-    font-size: 5vw;
+        font-size: 5vw;
     }
 
     #ThankYouMessage p {
-    font-size: 3vw;
+        font-size: 3vw;
     }
-    
+
 }
 
 /* Order Form ----------------------------------------------------------------------------------- */
@@ -1025,6 +1025,87 @@ select {
 
 input {
     border-width: 0.1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .OrderRequestForm {
+        max-width: calc(100vw*4/6);
+        margin: 5vh auto;
+    }
+
+    h2.OrderRequestForm {
+        font-size: 5vw;
+    }
+
+    #contactInfo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly
+    }
+
+    #contactInfo h3 {
+        width: 100%;
+    }
+
+    #productSelect {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-size: 1.5vw;
+    }
+
+    #productSelect h3 {
+        width: 100%;
+    }
+
+    #customMenus {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    #customMenus h3 {
+        overflow: hidden;
+    }
+
+    #PlanterOptions,
+    #SnakeOptions,
+    #VaseOptions {
+        width: 30%;
+        height: auto;
+        font-size: 1vw;
+        border: outset;
+        margin-top: 3vh;
+    }
+
+    #deliveryOptionsInput {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    #delivery {
+        width: 48%;
+        line-height: 3vh;
+    }
+
+    #addressInput {
+        width: 48%;
+        line-height: 4vh;
+        border: outset;
+        text-align: center;
+        line-height: 3vh;
+    }
+
+    #addressInput h3 {
+        margin: 1vh;
+        width: 90%;
+        font-size: 1.5vw;
+    }
+
 }
 
 /* Order Received Message ----------------------------------------------------------------------------------- */
