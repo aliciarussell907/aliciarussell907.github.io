@@ -1283,3 +1283,9 @@ footer {
     font-size:smaller;
     padding-left: 5vw;
 }
+
+@media screen and (min-width: 1024px) {
+   #fLinks {
+       line-height: 7vh;
+   } 
+}
