@@ -1250,3 +1250,10 @@ input {
         background-position: 0% 20%;
     }
 }
+
+/* Footer ----------------------------------------------------------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: space-between
+}
