@@ -315,7 +315,8 @@ header.standard {
     margin: 0;
     font-style: italic;
     color: #555B6E;
-
+    background-color: #ffffff80;
+    border-radius: 5%
 }
 
 @media screen and (min-width: 1024px) {
