@@ -322,7 +322,9 @@ header.standard {
     header.standard {
         height: 50vh;
     }
-
+    #headertitle h1 {
+        font-size: 8vw;
+    }
 
 }
 
