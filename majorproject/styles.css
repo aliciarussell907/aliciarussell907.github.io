@@ -181,7 +181,7 @@ nav>ul>li>ul>li:hover a {
 }
 
 
-/* homepage header ----------------------------------------------------------------------------------- */
+/* homepage----------------------------------------------------------------------------------- */
 header.homepage {
     width: 100vw;
     height: fit-content;
@@ -199,7 +199,7 @@ header.homepage {
 
 #homepagetitle h1 {
     font-size: 25vw;
-    color: #00000050;
+    color: transparent;
     letter-spacing: 3vw;
 }
 
@@ -232,10 +232,12 @@ header.homepage {
 }
 
 #homeIntro h2 {
-    background-color: #BEE3DB;
+    background-color: var(--granite);
     padding: 1rem;
     border-radius: 5px;
     line-height: 2rem;
+    color: white;
+    font-weight: lighter;
 }
 
 .homeNav {
@@ -245,34 +247,37 @@ header.homepage {
 }
 
 .homeNavButton {
-    height: 9vh;
-    width: 9vh;
-    background-color: #BEE3DB;
-    border-color: #89B0AE;
+    height: 5rem;
+    width: 9rem;
+    background-color: var(--granite);
+    border-color: var(--black);
+    color:white;
     font-family: "Modern Antiqua", serif;
-    border-radius: 50%
+    border-radius: 20%;
+    font-size: 0.8rem;
+    margin:1rem;
 }
 
 
 @media screen and (min-width: 1024px) {
-    header.homepage {
-        height: 95vh;
-    }
-
     #homepagetitle h1 {
-        background-color: #89B0AE90;
-        margin: 4vh;
+        font-size: 10rem;
+        letter-spacing: 4rem;
+        font-weight: 1000; 
     }
 
     #homepagetitle h2 {
-        background-color: #89B0AE90;
-        font-size: 3vw;
-        margin: 35vh 23vw;
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+        font-weight: 1000;
     }
 
 
     #homeContent {
         display: flex;
+        background-color: var(--charcoal-brown);
+        color: white;
     }
 
     #homeIntro {
@@ -284,6 +289,8 @@ header.homepage {
 
     #homeIntro h2 {
         line-height: 7vh;
+        width: 100vw;
+        margin: 0 -2vw;
     }
 
     #homeIntro p {
