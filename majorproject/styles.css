@@ -29,10 +29,10 @@ body h3 {
 /* define variables */
 :root {
     --nav-height: 3rem;
-    --nav-bkgd-color: #89B0AE;
-    --nav-text-color: #FAF9F9;
-    --nav-hover-bkgd-color: #BEE3DB;
-    --nav-hover-text-color: #555B6E;
+    --nav-bkgd-color: #4E5F51;
+    --nav-text-color: #C3CDD3;
+    --nav-hover-bkgd-color: #30452F;
+    --nav-hover-text-color: #030401;
 }
 
 nav {
@@ -172,11 +172,11 @@ nav>ul>li>ul>li:hover a {
 /* homepage header ----------------------------------------------------------------------------------- */
 header.homepage {
     width: 100vw;
-    height:fit-content;
+    height: fit-content;
 }
 
 #homepagetitle {
-    text-transform:uppercase;
+    text-transform: uppercase;
     text-align: center;
     background-image: url(images/treetexture.jpg);
     background-size: cover;
@@ -188,7 +188,7 @@ header.homepage {
 #homepagetitle h1 {
     font-size: 25vw;
     color: #00000050;
-    letter-spacing: 3vw;  
+    letter-spacing: 3vw;
 }
 
 #homepagetitle h2 {
