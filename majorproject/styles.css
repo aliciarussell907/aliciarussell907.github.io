@@ -1284,7 +1284,7 @@ footer {
     justify-content: space-evenly;
     flex-wrap: wrap;
     font-size: 2vw;
-    background-color: #BEE3DB;
+    background-color: var(--granite);
     padding-top: 4vh;
 }
 
@@ -1301,13 +1301,20 @@ footer {
 
 #fLinks {
     border-left-style: ridge;
-    border-left-color: #89B0AE;
+    border-left-color: var(--charcoal-brown);
     line-height: 2vh;
 }
 
 
 #fLinks h2 {
     font-size: 3vw;
+    color: var(--pale-slate)
+}
+
+#fLinks a {
+    color: var(--pale-slate);
+    font-family: Arial;
+    text-decoration:wavy
 }
 
 #fCopyright {
