@@ -176,20 +176,24 @@ header.homepage {
     background-image: url(images/3d\ printed\ house.jpg);
     background-position: center center;
     background-size: cover;
+    background-size: cover;
+    background-clip: text;
 }
 
 #homepagetitle {
-    padding-top: 10vh;
+    text-transform:uppercase;
     text-align: center;
 }
 
 #homepagetitle h1 {
     font-size: 12vw;
+    color: transparent;
 }
 
 #homepagetitle h2 {
     font-size: 5vw;
     font-style: italic;
+    color: transparent;
 }
 
 .homeNav {
