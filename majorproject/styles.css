@@ -314,15 +314,16 @@ header.homepage {
 /* standard page header ----------------------------------------------------------------------------------- */
 header.standard {
     width: 100vw;
-    height: 32vh;
-    display: flex;
-    background-image: url(images/leaves-background.jpg);
+    height: 30vh;
+    background-image: url(images/eggsinanest.jpg);
     background-size: cover;
-    overflow: hidden;
+    background-position: center center;
 }
 
 #headertitle {
-    margin: 9vh;
+    position:absolute;
+    width: 100vw;
+    bottom: 69vh;
 }
 
 #headertitle h1 {
@@ -330,18 +331,13 @@ header.standard {
     color: #FAF9F9;
     text-align: center;
     padding: 2vh;
-    background-color: #89B0AE90;
+    background-color: var(--charcoal-brown);
+    opacity: 90%;
+    
 }
 
 #headertitle p {
-    font-size: 2vw;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    font-style: italic;
-    color: #555B6E;
-    background-color: #ffffff80;
-    border-radius: 5%
+display:none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -349,8 +345,12 @@ header.standard {
         height: 50vh;
     }
 
+    #headertitle {
+        bottom:49vh;
+    }
+
     #headertitle h1 {
-        font-size: 8vw;
+        font-size: 8vw; 
     }
 
 }
