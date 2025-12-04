@@ -172,22 +172,23 @@ nav>ul>li>ul>li:hover a {
 /* homepage header ----------------------------------------------------------------------------------- */
 header.homepage {
     width: 100vw;
-    height: 80vh;
-    background-image: url(images/3Dearth.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-size: cover;
-    background-clip: text;
+    height:fit-content;
 }
 
 #homepagetitle {
     text-transform:uppercase;
     text-align: center;
+    background-image: url(images/treetexture.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-clip: text;
+    padding-bottom: 5vh;
 }
 
 #homepagetitle h1 {
-    font-size: 12vw;
-    color: transparent;
+    font-size: 25vw;
+    color: #00000050;
+    letter-spacing: 3vw;  
 }
 
 #homepagetitle h2 {
@@ -239,6 +240,7 @@ header.homepage {
     font-family: "Modern Antiqua", serif;
     border-radius: 50%
 }
+
 
 @media screen and (min-width: 1024px) {
     header.homepage {
