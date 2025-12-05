@@ -359,24 +359,31 @@ display:none;
 .productBlock {
     padding: 1vh;
     width: 100vw;
+    background-color: white;
+    margin: 1rem auto;
 }
 
 .productBlock h2 {
-    background-color: #BEE3DB;
+    background-color: var(--granite);
     text-align: center;
+    color:white;
+    border: solid var(--dark-spruce) 0.3rem;
+    border-radius: 20px;
+    padding: 0 0.5rem;
 }
 
 .productBlock h3 {
-    font-size: 5vw;
+    font-size: 1.5rem;
     padding: 0;
     margin: 0;
+     color: var(--granite);
 }
 
 .productBlock p {
-    font-size: 3vw;
+    font-size: 1rem;
     padding: 0;
     margin: 0;
-    color: #555B6E;
+    color: var(--dark-spruce);
     margin: 0;
 }
 
@@ -388,31 +395,40 @@ display:none;
 }
 
 p.price {
-    font-size: 5vw;
+    font-size: 1.3rem;
     text-align: right;
     margin: 0;
     padding: 0;
+    color: var(--charcoal-brown)
 }
 
 button.moreDetails {
-    background-color: #BEE3DB;
-    border-color: #89B0AE;
+    background-color: var(--granite);
+    border-color: var(--charcoal-brown);
     font-family: "Modern Antiqua", serif;
-    margin: 1vh 30% 0 30%
+    margin: 1vh 30% 0 30%;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5rem;
 }
 
 #comingSoon {
-    background-color: #BEE3DB;
     padding: 1vh;
+    background-image: url(images/treetexture.jpg);
+    background-size: cover;
 }
 
 #comingSoon h2 {
+    background-color: var(--granite);
     text-align: center;
-    background-color: #89B0AE;
+    border-radius: 10px;
 }
 
 #comingSoon p {
+    background-color: var(--granite);
     text-align: center;
+    border-radius: 10px;
+    margin: 1rem 5rem;
 }
 
 #comingSoon img {
@@ -429,63 +445,58 @@ button.moreDetails {
 
     .productBlock {
         display: flex;
-        width: 29vw;
+        width: 30vw;
         margin: 5vh 0;
         padding: 1vw;
         flex-direction: column;
         flex-wrap: nowrap;
         border: outset;
+        height: 60vh;
     }
 
     .productBlock h2 {
-        font-size: 3vw;
-    }
+    font-size: 2vw;
+}
 
-    .productBlock h3 {
-        font-size: 2vw;
-    }
-
-    .productBlock p {
-        font-size: 1.5vw;
-    }
+.productBlock h3 {
+    font-size: 1.5rem;
+}
 
     .mySlides1,
     .mySlides2,
     .mySlides3 {
-        height: 40vh;
-    }
-
-    p.price {
-        text-align: left;
-        margin: 1vh auto;
-    }
-
+    height: 20vh;
+    object-fit: cover;
+}
 
     button.moreDetails {
-        height: 5vh;
-        width: 15vw;
-        font-size: 2vw;
-        margin: 2vh auto;
+        width: 10vw;
+        font-size: 1rem;
+        margin: auto auto 0; 
+    }
+
+    button.moreDetails:hover{
+        opacity: 50%;
     }
 
     #comingSoon {
-        width: calc(100vw*5/6);
+        width: calc(100vw*3/6);
         margin: 5vh auto;
         border: outset;
-        border-color: #89B0AE;
+        border-color: var(--dark-spruce);
+        color: white;
     }
 
     #comingSoon h2 {
         width: 100%;
-        height: 20vh;
         margin: 1vh auto;
-        font-size: 8vw;
+        font-size: 4rem; 
     }
 
     #comingSoon p {
-        font-size: 5vw;
+        font-size: 2rem;
         width: 50%;
-        margin: 0 auto
+        margin: 1rem auto;
     }
 }
 
