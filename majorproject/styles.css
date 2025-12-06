@@ -240,6 +240,14 @@ header.homepage {
     font-weight: lighter;
 }
 
+#homeImg {
+    width: 90vw;
+    margin:0;
+    padding: 0;
+    border-radius: 20px;
+    border: solid var(--dark-spruce) 3px;
+}
+
 .homeNav {
     display: flex;
     justify-content: space-evenly;
@@ -295,8 +303,15 @@ header.homepage {
 
     #homeIntro p {
         width: 50vw;
-        margin: 5vh 1vw;
+        margin: 5vh 1vw 1vh 10vw;
         text-align: left;
+    }
+
+    #homeImg {
+        width: 50vw;
+        max-height: 40vh;
+        object-fit: cover;
+        margin-right: auto; 
     }
 
     .homeNav {
