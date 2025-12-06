@@ -529,14 +529,23 @@ button.moreDetails {
     font-size: 3vw;
     margin: 0 16vw 1vh;
     padding: 1rem;
-    background-color: #89B0AE70;
+    background-color: var(--granite);
     border-radius: 15%;
     border-style: dashed;
-    border-color: white;
+    border-color: var(--pale-slate);
+    color: white;
+}
+
+.productImage {
+    background-color: white;
+    padding: 1rem;
 }
 
 #priceTag {
     text-align: center;
+    background-color: var(--charcoal-brown);
+    color: white;
+    margin:0;
 }
 
 #productDescription {
@@ -632,9 +641,10 @@ button.moreDetails {
 
     #priceTag {
         width: calc(100vw*2/6);
-        margin: 0 10%;
-        padding: 2vw;
+        margin: 1rem 10%;
+        padding: 1rem;
         font-size: 2rem;
+        border-radius: 20px;
 
     }
 
@@ -658,7 +668,8 @@ button.moreDetails {
         max-width: 20vw;
         border: outset;
         padding: 1vw;
-        border-color: #89B0AE;
+        background-color: white;
+        color: var(--charcoal-brown)
     }
 
     #productFeatures li {
@@ -693,6 +704,7 @@ button.moreDetails {
         border: solid;
         border-radius: 10%;
         height: 30vh;
+        background-color:white;
     }
 
     .customOptions h3 {
@@ -717,7 +729,6 @@ button.moreDetails {
         background-size: 20vh;
     }
 }
-
 /* Meet The Team -----------------------------------------------------------------------------------*/
 #MeetTheTeam img {
     width: 100vw;
