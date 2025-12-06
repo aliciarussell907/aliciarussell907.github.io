@@ -729,6 +729,8 @@ button.moreDetails {
         background-size: 20vh;
     }
 }
+
+
 /* Meet The Team -----------------------------------------------------------------------------------*/
 #MeetTheTeam img {
     width: 100vw;
@@ -746,7 +748,7 @@ button.moreDetails {
 
 #MeetTheTeam h3 {
     text-align: center;
-    background-color: #89B0AE;
+    background-color: var(--charcoal-brown);
     color: white;
     margin: 0;
 }
@@ -762,7 +764,7 @@ button.moreDetails {
 #LearnMore h2 {
     text-align: center;
     font-size: 1.7rem;
-    background-color: #89B0AE;
+    background-color: var(--charcoal-brown);
     color: white;
     margin: 0 15vw;
 }
@@ -782,6 +784,9 @@ button.moreDetails {
         font-size: 6rem;
     }
 
+    #MeetTheTeam h3{
+        font-size: 3rem;
+    }
 
     .mySlides p {
         width: calc(100vw*4/6);
@@ -806,16 +811,16 @@ button.moreDetails {
     #LearnMore {
         width: calc(100vw*1/6);
         position: absolute;
-        top: 160vh;
+        top: 165vh;
         left: 75vw;
         border: outset;
         font-size: 1.2rem;
+        background-color: white;
     }
 
     #LearnMore h2 {
         text-align: center;
         font-size: 2rem;
-        background-color: #89B0AE;
         color: white;
         margin: 0;
     }
