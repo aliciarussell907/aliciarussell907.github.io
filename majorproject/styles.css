@@ -1008,8 +1008,9 @@ p.OrderRequestForm {
     text-align: center;
     padding: 0vh;
     margin: 0;
-    background-color: #89B0AE70;
+    background-color: var(--granite);
     height: 3vh;
+    color:white;
 }
 
 #productSelect {
@@ -1022,8 +1023,9 @@ p.OrderRequestForm {
     text-align: center;
     padding: 0vh;
     margin: 0;
-    background-color: #89B0AE70;
+    background-color: var(--granite);
     height: 3vh;
+    color:white;
 }
 
 #PlanterOptions,
@@ -1039,8 +1041,9 @@ p.OrderRequestForm {
     text-align: center;
     padding: 0vh;
     margin: 0;
-    background-color: #89B0AE70;
+    background-color: var(--granite);
     height: 3vh;
+    color:white;
 }
 
 #addressInput {
@@ -1051,17 +1054,19 @@ p.OrderRequestForm {
 
 #addressInput h3 {
     margin: 0 40vw 0 0;
-    background-color: #89B0AE70;
+    background-color: var(--granite);
     text-align: center;
     font-size: 1rem;
+    color:white;
 }
 
 button.OrderRequestForm {
     margin: 2vh 40%;
     scale: 150%;
-    background-color: #89B0AE70;
-    border-color: #89B0AE;
+    background-color: var(--granite);
+    border-color: var(--charcoal-brown);
     font-family: "Modern Antiqua", serif;
+    color:white;
 }
 
 select {
