@@ -421,7 +421,17 @@ button.moreDetails {
     background-color: var(--granite);
     border-color: var(--charcoal-brown);
     font-family: "Modern Antiqua", serif;
-    margin: 1vh 30% 0 30%;
+    margin: 1vh auto;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+
+button.orderFormButton {
+    background-color: var(--granite);
+    border-color: var(--charcoal-brown);
+    font-family: "Modern Antiqua", serif;
+    margin: 1vh auto;
     color: white;
     border-radius: 20px;
     padding: 0.5rem;
