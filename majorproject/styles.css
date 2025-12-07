@@ -835,16 +835,21 @@ button.moreDetails {
 /* Contact Us ----------------------------------------------------------------------------------- */
 
 .ContactForm {
-    background-color: #89B0AE;
+    background-color: var(--granite);
     text-align: center;
     margin: 5vw;
     padding: 0.5vh;
+    color: white;
 
+}
+
+.ContactForm a{
+    color: var(--pale-slate);
 }
 
 div.ContactForm {
     border-style: solid;
-    border-color: #BEE3DB;
+    border-color: var(--black);
 }
 
 h2.ContactForm {
@@ -860,7 +865,7 @@ form.ContactForm {
 }
 
 button.ContactForm {
-    background-color: white;
+    background-color: var(--charcoal-brown);
     padding: 2vw;
     margin: 0 0 1vh 0;
 }
@@ -874,6 +879,7 @@ p.ContactForm {
 
 .Socials {
     text-align: center;
+    color: var(--charcoal-brown)
 }
 
 .fa {
@@ -945,7 +951,7 @@ p.ContactForm {
 
     button.ContactForm {
         margin: 2vh 40%;
-        scale: 150%;
+        scale: 100%;
         font-family: "Modern Antiqua", serif;
 
     }
@@ -969,37 +975,6 @@ p.ContactForm {
         border-radius: 50%;
         scale: 2;
         margin: 2vw;
-    }
-
-}
-
-/* Thank You Message ----------------------------------------------------------------------------------- */
-
-#ThankYouMessage {
-    width: 66vw;
-    margin: 5vh 10vw;
-    border-style: dashed;
-    padding: 3%;
-}
-
-#ThankYouMessage h2 {
-    text-align: center;
-    border-bottom-style: solid;
-    padding-bottom: 1rem;
-}
-
-@media screen and (min-width: 1024px) {
-    #ThankYouMessage {
-        width: calc(100vw*4/6);
-        margin: 5vh auto;
-    }
-
-    #ThankYouMessage h2 {
-        font-size: 5vw;
-    }
-
-    #ThankYouMessage p {
-        font-size: 3vw;
     }
 
 }
