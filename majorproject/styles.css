@@ -570,6 +570,15 @@ button.orderFormButton {
     margin: 1vh calc(100vw*2/6)
 }
 
+button.detailsOrderButton {
+    background-color: var(--granite);
+    border-color: var(--charcoal-brown);
+    color: white;
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin: 1vh 37vw;
+}
+
 .sample {
     width: 10vw;
     height: 10vw;
@@ -697,6 +706,11 @@ button.orderFormButton {
         margin: 1vw 0;
     }
 
+    button.detailsOrderButton{
+        width:30%;
+        margin:7vh;
+    }
+
     .customOptions {
         width: 100vw;
         margin: 15vh 1vw 0 0;
@@ -739,6 +753,7 @@ button.orderFormButton {
         background-size: 20vh;
     }
 }
+
 
 
 /* Meet The Team -----------------------------------------------------------------------------------*/
