@@ -1190,43 +1190,37 @@ input {
 }
 
 /* FAQ ----------------------------------------------------------------------------------- */
-.collapsible {
-    background-color: var(--dark-spruce);
-    color: white;
-    cursor: pointer;
-    padding: 25px;
+#ourStart {
+    background-image: url(images/blueshoppingbag.jpg);
+}
+
+#teamGrows {
+    background-image: url(images/eggsinanest.jpg);
+}
+
+#launchSite {
+    background-image: url(images/openlaptop-blankscreen.jpg);
+}
+
+#historyStart,
+#historyTeam,
+#historySite {
+    background-color: #FFFFFF95;
+    padding-left: 5vw;
+    font-size: 4vw;
+    padding: 3vh 6vw;
+    line-height: 2rem;
+}
+
+.borderOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 5vw;
-    font-family: "Modern Antiqua", serif;
-    padding-right: 9vw;
-}
-
-.active,
-.collapsible:hover {
-    background-color: var(--granite);
-
-}
-
-.content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-    font-size: 5vw;
-}
-
-.collapsible:after {
-    content: '\27A4';
-    font-size: 5vw;
-    color: white;
-    float: right;
-}
-
-.active:after {
-    content: "\2B9F";
+    height: 100%;
+    border-style: solid;
+    border-width: 2vh;
+    border-color: var(--pale-slate);
 }
 
 @media screen and (min-width: 1024px) {
